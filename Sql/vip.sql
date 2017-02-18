@@ -10,7 +10,7 @@ Target Server Type    : MariaDB
 Target Server Version : 100021
 File Encoding         : 65001
 
-Date: 2017-02-18 16:41:42
+Date: 2017-02-19 00:47:17
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -179,6 +179,7 @@ CREATE TABLE `feedback` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT COMMENT '反馈编号',
   `uid` int(10) unsigned NOT NULL DEFAULT '0' COMMENT '用户编号',
   `issueid` int(10) unsigned NOT NULL DEFAULT '0' COMMENT '问题编号',
+  `content` varchar(255) DEFAULT '' COMMENT '‘反馈内容''',
   `atime` int(10) unsigned DEFAULT '0' COMMENT '反馈时间',
   `status` tinyint(1) unsigned DEFAULT '0' COMMENT '问题解决状态：0 为待解决 1为已解决',
   PRIMARY KEY (`id`)
