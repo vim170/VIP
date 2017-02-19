@@ -1,0 +1,1657 @@
+#da{
+	height: 100%;
+	background: #F1F3F4;
+	
+}
+
+.box{
+	width: 900px;
+	// height: 700px;
+	// border: 1px solid red;
+	margin-left: 200px;
+}
+
+.zuo{
+	width: 700px;
+	// border: 1px solid red;
+	float: left;
+}
+
+.you{
+	width: 195px;
+	height: 800px;
+	float: left;
+	// border: 1px solid red;
+}
+.kuang{
+	
+	margin-top: 20px;
+	margin-bottom: 70px;
+	// border:1px solid red;
+}
+
+.top{
+	margin-left: 35px;
+	background: #F5F5F5;
+	width: 90%;
+	height: 30px;
+	line-height: 30px;
+}
+.hot{
+	float: right;
+}
+
+.nr{
+	float: left;
+}
+
+.zhong{
+	margin-left: 35px;
+	width: 90%;
+	height: 100px;
+	border-bottom-style: dotted;
+	border-width: 1px;
+	border-color: #DEDEDE;
+}
+
+.hy{
+	font-size: 12px;
+	margin-top: 10px;
+}
+.lei{
+	margin-top: 10px;
+	font-size: 12px;
+}
+.lei a{
+	color: #F10180;
+}
+.lei a:hover{
+	text-decoration: underline;
+}
+
+.cont{
+	margin-top: 10px;
+	font-size: 12px;
+	padding-left: 26px;
+}
+.xia{
+	height: 60px;
+	width: 90%;
+	margin-left: 35px;
+}
+.shang{
+	margin-top: 10px;
+	height: 20px;
+	line-height: 20px;
+}
+.tim{
+	float: right;
+	color: #999999;
+	font-size: 14px;
+}
+.gh{
+	font-size: 14px;
+	color: #225599;
+}
+.xxia{
+	margin-top: 10px;
+}
+
+.xxia .daa{
+	float: left;
+}
+.xxia .huif{
+	width: 600px;
+	float: right;
+	font-size: 12px;
+	color: #225599;
+	// border: 1px solid red;
+	height: 36px;
+	overflow: hidden;
+}
+.xxia .dkg{
+	width: 600px;
+	float: right;
+	font-size: 12px;
+	color: #225599;
+	height: 100px;
+	overflow: ;
+
+}
+.xxia .kg{
+	float: right;
+	margin-left: 40px;
+	font-size: 12px;
+	color: #FC6EAB;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.self_help {
+    width: 100%;
+    overflow: hidden;
+    padding-bottom: 10px;
+}
+
+.self_help h5 {
+    background: #ffebf4;
+    margin-bottom: 10px;
+    font-weight: normal;
+    font-size: 14px;
+    font-family: microsoft yahei;
+    text-align: center;
+    line-height: 30px;
+}
+.self_help p {
+    padding: 5px 0 5px 28px;
+}
+.self_help p a.self_help_2 {
+    
+    // background-image: url(/home/imgs/6.png);
+    background-position: left 0px;
+}
+.self_help p a {
+    padding-left: 40px;
+    display: block;
+    line-height: 29px;
+    color: #2F3337;
+    // background-image: url(../images/self_help_imgs.png);
+    background-image: url(/ho/imgs/aab.png);
+    background-repeat: no-repeat;
+}
+a {
+    text-decoration: none;
+}
+.self_help p a.self_help_4 {
+    background-position: left -213px;
+    // background-image: url(/home/imgs/2.png);
+}
+.self_help p a.self_help_1 {
+    background-position: left 0;
+    // background-image: url(/home/imgs/1.png);
+}
+.self_help p a.self_help_9 {
+    background-position: left -567px;
+    // background-image: url(/home/imgs/9.png);
+}
+.self_help p a.self_help_8 {
+    background-position: left -496px;
+    // background-image: url(/home/imgs/8.png);
+}
+.self_help p a.self_help_10 {
+    background-position: left -638px;
+    // background-image: url(/home/imgs/10.png);
+}
+.self_help p a.self_help_12 {
+    background-position: left -780px;
+    // background-image: url(/home/imgs/7.png);
+}
+.self_help p a.self_help_11 {
+    background-position: left -709px;
+    // background-image: url(/home/imgs/11.png);
+}
+.self_help p a.self_help_7 {
+    background-position: left -425px;
+    // background-image: url(/home/imgs/7.png);
+}
+.self_help p a.self_help_3 {
+    background-position: left -142px;
+    // background-image: url(/home/imgs/3.png);
+}
+.self_help p a.self_help_6 {
+    background-position: left -354px;
+    // background-image: url(/home/imgs/6.png);
+}
+
+
+
+
+
+
+// /////////////////////////////////////////////////////////////
+.layout {
+    width: 1000px;
+    margin: 0px auto;
+}
+.mt45 {
+    margin-top: 45px !important;
+}
+.clearfix {
+}
+.left_module {
+    min-height: 610px;
+    width: 766px;
+    border: 1px solid #E5E7E8;
+    background: #FFF;
+    box-shadow: 0 0 10px #e0dfe0;
+}
+.fleft, .fl {
+    float: left;
+    _display: inline;
+}
+.left_module_title {
+    text-align: center;
+    padding: 20px 0px;
+    border-bottom: 1px dashed #CACACA;
+    line-height: 30px;
+}
+.left_module_title h2 {
+    font-family: microsoft yahei;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+}
+.left_module_title h2 span {
+    color: #f10180;
+    font-size: 18px;
+}
+.left_module_title p {
+    color: #666;
+}
+.left_module_title p a {
+    color: #1d94d1;
+}
+a {
+    text-decoration: none;
+}
+.feedback_form {
+    padding-bottom: 80px;
+}
+.feedback_form li {
+    width: 100%;
+    vertical-align: middle;
+    margin-top: 20px;
+}
+.clearfix {
+}
+li {
+    list-style: none;
+}
+.field_form {
+    float: left;
+    margin-right: 10px;
+    width: 145px;
+    text-align: right;
+    line-height: 28px;
+    height: 28px;
+}
+.feedback_type {
+    float: left;
+    margin: 7px 0 0;
+    margin: 4px 0 0\9;
+    _margin: 3px 0 0;
+}
+input, select, textarea {
+    outline: none;
+}
+user agent stylesheet
+input[type="radio" i] {
+    margin: 3px 3px 0px 5px;
+}
+user agent stylesheet
+input[type="radio" i] {
+    -webkit-appearance: radio;
+    box-sizing: border-box;
+}
+user agent stylesheet
+input[type="radio" i], input[type="checkbox" i] {
+    background-color: initial;
+    margin: 3px 0.5ex;
+    padding: initial;
+    border: initial;
+}
+user agent stylesheet
+input {
+    -webkit-appearance: textfield;
+    background-color: white;
+    -webkit-rtl-ordering: logical;
+    user-select: text;
+    cursor: auto;
+    padding: 1px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: initial;
+    border-image: initial;
+}
+user agent stylesheet
+input, textarea, keygen, select, button {
+    text-rendering: auto;
+    color: initial;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    margin: 0em 0em 0em 0em;
+    font: 13.3333px Arial;
+}
+user agent stylesheet
+input, textarea, keygen, select, button, meter, progress {
+    -webkit-writing-mode: horizontal-tb;
+}
+Inherited from li.clearfix
+li {
+    list-style: none;
+}
+user agent stylesheet
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+Inherited from ul.feedback_form
+user agent stylesheet
+ul, menu, dir {
+    display: block;
+    list-style-type: disc;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 40px;
+}
+.feedback_type_lab {
+    float: left;
+    margin: 0 22px 0 3px;
+    line-height: 28px;
+}
+.feedback_type {
+    float: left;
+    margin: 7px 0 0;
+    margin: 4px 0 0\9;
+    _margin: 3px 0 0;
+}
+
+input, select, textarea {
+    outline: none;
+}
+user agent stylesheet
+input[type="radio" i] {
+    margin: 3px 3px 0px 5px;
+}
+user agent stylesheet
+input[type="radio" i] {
+    -webkit-appearance: radio;
+    box-sizing: border-box;
+}
+user agent stylesheet
+input[type="radio" i], input[type="checkbox" i] {
+    background-color: initial;
+    margin: 3px 0.5ex;
+    padding: initial;
+    border: initial;
+}
+user agent stylesheet
+input {
+    -webkit-appearance: textfield;
+    background-color: white;
+    -webkit-rtl-ordering: logical;
+    user-select: text;
+    cursor: auto;
+    padding: 1px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: initial;
+    border-image: initial;
+}
+user agent stylesheet
+input, textarea, keygen, select, button {
+    text-rendering: auto;
+    color: initial;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    margin: 0em 0em 0em 0em;
+    font: 13.3333px Arial;
+}
+user agent stylesheet
+input, textarea, keygen, select, button, meter, progress {
+    -webkit-writing-mode: horizontal-tb;
+}
+Inherited from li.clearfix
+li {
+    list-style: none;
+}
+user agent stylesheet
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+Inherited from ul.feedback_form
+user agent stylesheet
+ul, menu, dir {
+    display: block;
+    list-style-type: disc;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 40px;
+}
+.feedback_type_lab {
+    float: left;
+    margin: 0 22px 0 3px;
+    line-height: 28px;
+}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+user agent stylesheet
+label {
+    cursor: default;
+}
+Inherited from li.clearfix
+li {
+    list-style: none;
+}
+user agent stylesheet
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+Inherited from ul.feedback_form
+user agent stylesheet
+ul, menu, dir {
+    display: block;
+    list-style-type: disc;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 40px;
+}
+.feedback_type {
+    float: left;
+    margin: 7px 0 0;
+    margin: 4px 0 0\9;
+    _margin: 3px 0 0;
+}
+input, select, textarea {
+    outline: none;
+}
+user agent stylesheet
+input[type="radio" i] {
+    margin: 3px 3px 0px 5px;
+}
+user agent stylesheet
+input[type="radio" i] {
+    -webkit-appearance: radio;
+    box-sizing: border-box;
+}
+user agent stylesheet
+input[type="radio" i], input[type="checkbox" i] {
+    background-color: initial;
+    margin: 3px 0.5ex;
+    padding: initial;
+    border: initial;
+}
+user agent stylesheet
+input {
+    -webkit-appearance: textfield;
+    background-color: white;
+    -webkit-rtl-ordering: logical;
+    user-select: text;
+    cursor: auto;
+    padding: 1px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: initial;
+    border-image: initial;
+}
+user agent stylesheet
+input, textarea, keygen, select, button {
+    text-rendering: auto;
+    color: initial;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    margin: 0em 0em 0em 0em;
+    font: 13.3333px Arial;
+}
+user agent stylesheet
+input, textarea, keygen, select, button, meter, progress {
+    -webkit-writing-mode: horizontal-tb;
+}
+Inherited from li.clearfix
+li {
+    list-style: none;
+}
+user agent stylesheet
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+Inherited from ul.feedback_form
+user agent stylesheet
+ul, menu, dir {
+    display: block;
+    list-style-type: disc;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 40px;
+}
+.feedback_form li {
+    width: 100%;
+    vertical-align: middle;
+    margin-top: 20px;
+}
+
+.clearfix {
+}
+li {
+    list-style: none;
+}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+user agent stylesheet
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+Inherited from ul.feedback_form
+user agent stylesheet
+ul, menu, dir {
+    display: block;
+    list-style-type: disc;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 40px;
+}
+Inherited from body
+html body {
+    font: 12px arial,"宋体";
+    color: #333;
+    background: #EEF0F1;
+}
+Pseudo ::after element
+.clearfix:after {
+    content: '.';
+    height: 0;
+    display: block;
+    clear: both;
+    visibility: hidden;
+}
+.field_form {
+    float: left;
+    margin-right: 10px;
+    width: 145px;
+    text-align: right;
+    line-height: 28px;
+    height: 28px;
+}
+
+
+:hov
+
+
+.txt_from2 {
+    width: 180px;
+}
+.txt_from {
+    height: 26px;
+    line-height: 26px;
+    width: 225px;
+    padding-left: 5px;
+    border: 1px solid #d0d0d0;
+    color: #c3c3c3;
+}
+.fleft, .fl {
+    float: left;
+    _display: inline;
+}
+input, select, textarea {
+    outline: none;
+}
+user agent stylesheet
+input:not([type]), input[type="email" i], input[type="number" i], input[type="password" i], input[type="tel" i], input[type="url" i], input[type="text" i] {
+    padding: 1px 0px;
+}
+user agent stylesheet
+input {
+    -webkit-appearance: textfield;
+    background-color: white;
+    -webkit-rtl-ordering: logical;
+    user-select: text;
+    cursor: auto;
+    padding: 1px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: initial;
+    border-image: initial;
+}
+user agent stylesheet
+input, textarea, keygen, select, button {
+    text-rendering: auto;
+    color: initial;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    margin: 0em 0em 0em 0em;
+    font: 13.3333px Arial;
+}
+user agent stylesheet
+input, textarea, keygen, select, button, meter, progress {
+    -webkit-writing-mode: horizontal-tb;
+}
+Inherited from li#titleLi.clearfix.J_titleLi
+li {
+    list-style: none;
+}
+user agent stylesheet
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+Inherited from ul.feedback_form
+user agent stylesheet
+ul, menu, dir {
+    display: block;
+    list-style-type: disc;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 40px;
+}
+
+
+:hov
+
+
+.form_right {
+    float: left;
+    width: 610px;
+}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+user agent stylesheet
+div {
+    display: block;
+}
+Inherited from li#titleLi.clearfix.J_titleLi
+li {
+    list-style: none;
+}
+user agent stylesheet
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+Inherited from ul.feedback_form
+user agent stylesheet
+ul, menu, dir {
+    display: block;
+    list-style-type: disc;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 40px;
+}
+
+
+
+.form_right {
+    float: left;
+    width: 610px;
+}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+user agent stylesheet
+div {
+    display: block;
+}
+Inherited from li#titleLi.clearfix.J_titleLi
+li {
+    list-style: none;
+}
+user agent stylesheet
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+Inherited from ul.feedback_form
+user agent stylesheet
+ul, menu, dir {
+    display: block;
+    list-style-type: disc;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 40px;
+}
+.msg_warning {
+    background: url(/ho/imgs/ico_wrong16.png) left center no-repeat;
+    margin-top: 2px;
+    padding-left: 18px;
+    color: #ff0000;
+    line-height: 18px;
+    display: block;
+}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+Inherited from li#titleLi.clearfix.J_titleLi
+li {
+    list-style: none;
+}
+user agent stylesheet
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+Inherited from ul.feedback_form
+user agent stylesheet
+ul, menu, dir {
+    display: block;
+    list-style-type: disc;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 40px;
+}
+.feedback_form li {
+    width: 100%;
+    vertical-align: middle;
+    margin-top: 20px;
+}
+.clearfix {
+}
+li {
+    list-style: none;
+}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+user agent stylesheet
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+Inherited from ul.feedback_form
+user agent stylesheet
+ul, menu, dir {
+    display: block;
+    list-style-type: disc;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 40px;
+}
+Inherited from body
+html body {
+    font: 12px arial,"宋体";
+    color: #333;
+    background: #EEF0F1;
+}
+Pseudo ::after element
+.clearfix:after {
+    content: '.';
+    height: 0;
+    display: block;
+    clear: both;
+    visibility: hidden;
+}
+.form_right {
+    float: left;
+    width: 610px;
+}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+user agent stylesheet
+div {
+    display: block;
+}
+Inherited from li#titleLi.clearfix.J_titleLi
+li {
+    list-style: none;
+}
+user agent stylesheet
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+Inherited from ul.feedback_form
+user agent stylesheet
+ul, menu, dir {
+    display: block;
+    list-style-type: disc;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 40px;
+}
+
+
+:hov
+
+.cls
+
+element.style {
+    display: none;
+    margin-left: 155px;
+}
+.msg_warning {
+    background: url(/ho/imgs/ico_wrong16.png) left center no-repeat;
+    margin-top: 2px;
+    padding-left: 18px;
+    color: #ff0000;
+    line-height: 18px;
+    display: block;
+}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+Inherited from li#titleLi.clearfix.J_titleLi
+li {
+    list-style: none;
+}
+user agent stylesheet
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+Inherited from ul.feedback_form
+user agent stylesheet
+ul, menu, dir {
+    display: block;
+    list-style-type: disc;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 40px;
+}
+.feedback_form li {
+    width: 100%;
+    vertical-align: middle;
+    margin-top: 20px;
+}
+.clearfix {
+}
+li {
+    list-style: none;
+}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+user agent stylesheet
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+Inherited from ul.feedback_form
+user agent stylesheet
+ul, menu, dir {
+    display: block;
+    list-style-type: disc;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 40px;
+}
+Inherited from body
+html body {
+    font: 12px arial,"宋体";
+    color: #333;
+    background: #EEF0F1;
+}
+Pseudo ::after element
+.clearfix:after {
+    content: '.';
+    height: 0;
+    display: block;
+    clear: both;
+    visibility: hidden;
+}
+.field_form {
+    float: left;
+    margin-right: 10px;
+    width: 145px;
+    text-align: right;
+    line-height: 28px;
+    height: 28px;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+Inherited from li.clearfix.J_content
+li {
+    list-style: none;
+}
+user agent stylesheet
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+Inherited from ul.feedback_form
+user agent stylesheet
+ul, menu, dir {
+    display: block;
+    list-style-type: disc;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 40px;
+}
+.textarea_box {
+    position: relative;
+    float: left;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+user agent stylesheet
+div {
+    display: block;
+}
+Inherited from li.clearfix.J_content
+li {
+    list-style: none;
+}
+user agent stylesheet
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+Inherited from ul.feedback_form
+user agent stylesheet
+ul, menu, dir {
+    display: block;
+    list-style-type: disc;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 40px;
+}
+Inherited from body
+html body {
+    font: 12px arial,"宋体";
+    color: #333;
+    background: #EEF0F1;
+}
+.textarea_form {
+    width: 488px;
+    line-height: 20px;
+    padding: 5px 15px;
+    resize: none;
+    height: 200px;
+    border: 1px solid #d0d0d0;
+    color: #c3c3c3;
+    margin: 0;
+}
+
+input, select, textarea {
+    outline: none;
+}
+user agent stylesheet
+textarea {
+    font-family: monospace;
+    border-color: rgb(169, 169, 169);
+}
+user agent stylesheet
+textarea {
+    -webkit-appearance: textarea;
+    background-color: white;
+    -webkit-rtl-ordering: logical;
+    user-select: text;
+    flex-direction: column;
+    resize: auto;
+    cursor: auto;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    border-width: 1px;
+    border-style: solid;
+    border-color: initial;
+    border-image: initial;
+    padding: 2px;
+}
+user agent stylesheet
+input, textarea, keygen, select, button {
+    text-rendering: auto;
+    color: initial;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    margin: 0em 0em 0em 0em;
+    font: 13.3333px Arial;
+}
+user agent stylesheet
+input, textarea, keygen, select, button, meter, progress {
+    -webkit-writing-mode: horizontal-tb;
+}
+Inherited from li.clearfix.J_content
+li {
+    list-style: none;
+}
+user agent stylesheet
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+Inherited from ul.feedback_form
+user agent stylesheet
+ul, menu, dir {
+    display: block;
+    list-style-type: disc;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 40px;
+}
+.textarea_box .num {
+    position: absolute;
+    right: 10px;
+    bottom: 5px;
+    color: #333;
+}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+user agent stylesheet
+p {
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+Inherited from li.clearfix.J_content
+li {
+    list-style: none;
+}
+user agent stylesheet
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+Inherited from ul.feedback_form
+user agent stylesheet
+ul, menu, dir {
+    display: block;
+    list-style-type: disc;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 40px;
+}
+.textarea_box .num span {
+    color: #f10180;
+}
+.form_right {
+    float: left;
+    width: 610px;
+}
+element.style {
+    display: none;
+    margin-left: 155px;
+}
+
+.msg_warning {
+    background: url(/ho/imgs/ico_wrong16.png) left center no-repeat;
+    margin-top: 2px;
+    padding-left: 18px;
+    color: #ff0000;
+    line-height: 18px;
+    display: block;
+}
+.feedback_form li {
+    width: 100%;
+    vertical-align: middle;
+    margin-top: 20px;
+}
+.field_form {
+    float: left;
+    margin-right: 10px;
+    width: 145px;
+    text-align: right;
+    line-height: 28px;
+    height: 28px;
+}
+.form_right {
+    float: left;
+    width: 610px;
+}
+.txt_from {
+    height: 26px;
+    line-height: 26px;
+    width: 225px;
+    padding-left: 5px;
+    border: 1px solid #d0d0d0;
+    color: #c3c3c3;
+}
+.form_ts {
+    padding-top: 6px;
+    color: #666;
+}
+.msg_warning {
+    background: url(/ho/imgs/ico_wrong16.png) left center no-repeat;
+    margin-top: 2px;
+    padding-left: 18px;
+    color: #ff0000;
+    line-height: 18px;
+    display: block;
+}
+.feedback_form li {
+    width: 100%;
+    vertical-align: middle;
+    margin-top: 20px;
+}
+.clearfix {
+}
+li {
+    list-style: none;
+}
+
+.field_form {
+    float: left;
+    margin-right: 10px;
+    width: 145px;
+    text-align: right;
+    line-height: 28px;
+    height: 28px;
+}
+.txt_from2 {
+    width: 180px;
+}
+
+.txt_from {
+    height: 26px;
+    line-height: 26px;
+    width: 225px;
+    padding-left: 5px;
+    border: 1px solid #d0d0d0;
+    color: #c3c3c3;
+}
+input, select, textarea {
+    outline: none;
+}
+.feedback_form li img {
+    vertical-align: middle;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+.feedback_form li {
+    width: 100%;
+    vertical-align: middle;
+    margin-top: 20px;
+}
+.clearfix {
+}
+li {
+    list-style: none;
+}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+user agent stylesheet
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+Inherited from ul.feedback_form
+user agent stylesheet
+ul, menu, dir {
+    display: block;
+    list-style-type: disc;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 40px;
+}
+Inherited from body
+html body {
+    font: 12px arial,"宋体";
+    color: #333;
+    background: #EEF0F1;
+}
+Pseudo ::after element
+.clearfix:after {
+    content: '.';
+    height: 0;
+    display: block;
+    clear: both;
+    visibility: hidden;
+}
+.txt_from2 {
+    width: 180px;
+}
+
+.txt_from {
+    height: 26px;
+    line-height: 26px;
+    width: 225px;
+    padding-left: 5px;
+    border: 1px solid #d0d0d0;
+    color: #c3c3c3;
+}
+input, select, textarea {
+    outline: none;
+}
+user agent stylesheet
+input:not([type]), input[type="email" i], input[type="number" i], input[type="password" i], input[type="tel" i], input[type="url" i], input[type="text" i] {
+    padding: 1px 0px;
+}
+user agent stylesheet
+input {
+    -webkit-appearance: textfield;
+    background-color: white;
+    -webkit-rtl-ordering: logical;
+    user-select: text;
+    cursor: auto;
+    padding: 1px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: initial;
+    border-image: initial;
+}
+user agent stylesheet
+input, textarea, keygen, select, button {
+    text-rendering: auto;
+    color: initial;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    margin: 0em 0em 0em 0em;
+    font: 13.3333px Arial;
+}
+user agent stylesheet
+input, textarea, keygen, select, button, meter, progress {
+    -webkit-writing-mode: horizontal-tb;
+}
+element.style {
+    display: none;
+    margin-left: 155px;
+}
+
+.msg_warning {
+    background: url(/ho/imgs/ico_wrong16.png) left center no-repeat;
+    margin-top: 2px;
+    padding-left: 18px;
+    color: #ff0000;
+    line-height: 18px;
+    display: block;
+}
+element.style {
+}
+
+.feedback_form li {
+    width: 100%;
+    vertical-align: middle;
+    margin-top: 20px;
+}
+.clearfix {
+}
+li {
+    list-style: none;
+}
+.clearfix:after {
+    content: '.';
+    height: 0;
+    display: block;
+    clear: both;
+    visibility: hidden;
+}
+element.style {
+}
+.field_form {
+    float: left;
+    margin-right: 10px;
+    width: 145px;
+    text-align: right;
+    line-height: 28px;
+    height: 28px;
+}
+.btn_red {
+    width: 100px;
+    cursor: pointer;
+    height: 32px;
+    display: block;
+    border-radius: 3px;
+    color: #fff;
+    background: #f10180;
+    text-align: center;
+    line-height: 32px;
+    font-size: 14px;
+    font-family: microsoft yahei;
+}
+.mt20 {
+    margin-top: 20px !important;
+}
+.fleft, .fl {
+    float: left;
+    _display: inline;
+}
+a {
+    text-decoration: none;
+}
+.right_module {
+    width: 226px;
+}
+.fright, .fr {
+    float: right;
+    _display: inline;
+}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+user agent stylesheet
+div {
+    display: block;
+}
+.right_modules {
+    border: 1px solid #E5E7E8;
+    background: #FFF;
+    box-shadow: 0 0 5px #e0dfe0;
+}
+.right_title {
+    padding: 0px 15px;
+    height: 34px;
+    line-height: 34px;
+    font-family: microsoft yahei;
+    font-size: 14px;
+    font-weight: bold;
+    border-bottom: 1px solid #D8D9DA;
+    border-top: 1px solid #f10180;
+}
+.help_list {
+    padding: 8px 0;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+user agent stylesheet
+ul, menu, dir {
+    display: block;
+    list-style-type: disc;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 40px;
+}
+div {
+    display: block;
+}
+Inherited from ul.help_list
+user agent stylesheet
+ul, menu, dir {
+    display: block;
+    list-style-type: disc;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 40px;
+}
+.help_list li {
+    padding: 3px 15px;
+    line-height: 20px;
+}
+
+li {
+    list-style: none;
+}
+.help_list li a {
+    color: #666;
+}
+a {
+    text-decoration: none;
+}
+.help_list_more {
+    padding: 0 15px 20px;
+    text-align: right;
+}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+user agent stylesheet
+p {
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+.fleft, .fl {
+    float: left;
+    _display: inline;
+    // margin-left: 200px;
+}
+.fright, .fr {
+    float: right;
+    _display: inline;
+    // margin-right: 140px;
+}
+
+.layout {
+    width: 1000px;
+    margin: 0px auto;
+}
+.not_my_feedback {
+    background: url(/ho/imgs/xiexie.png) 228px 72px no-repeat #fff;
+    font-family: microsoft yahei;
+    box-shadow: 0 0 10px #e0dfe0;
+    font-size: 16px;
+    margin-top: 40px;
+    padding: 152px 112px 132px 480px;
+    height: 78px;
+    width: 408px;
+}
+
+.layout {
+    width: 1000px;
+    margin: 0px auto;
+}
+.my_feedback_top {
+    position: relative;
+}
+.my_feedback_top {
+    height: 120px;
+    background: url(/ho/imgs/myfeedback_bg.jpg) no-repeat;
+}
+.my_feedback_top .grp {
+    position: absolute;
+    left: 35px;
+    top: 54px;
+}
+.my_feedback_top .avatar {
+    border: 3px solid #fff;
+    background: #fff;
+    border-radius: 48px;
+    box-shadow: 0 0 5px #dddddd;
+    float: left;
+    width: 90px;
+    height: 90px;
+}
+.my_feedback_top .avatar img {
+    border-radius: 45px;
+}
+.my_feedback_top .title {
+    float: left;
+    font-size: 18px;
+    color: #fff;
+    font-family: microsoft yahei;
+    padding: 38px 0 0 10px;
+}
+.center_module {
+    padding: 0 20px 40px 80px;
+    margin: 0px auto;
+    border: 1px solid #E5E7E8;
+    background: #FFF;
+    box-shadow: 0 0 10px #e0dfe0;
+}
+.my_feedback {
+    border-left: 3px solid #EEEEEE;
+}
+.my_feedback_ques {
+    position: relative;
+    left: -35px;
+    overflow: hidden;
+    padding: 50px 0 0 0;
+}
+.my_fb_from {
+    padding: 6px 0;
+    width: 70px;
+    text-align: center;
+    float: left;
+    background: #fff;
+}
+.my_fb_from3 .my_fb_from_type {
+    background-position: 0 -120px;
+}
+.my_fb_from .my_fb_from_type {
+    width: 30px;
+    height: 36px;
+    display: block;
+    margin-left: 10px;
+    margin-bottom: 3px;
+    text-indent: -9999px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 18px;
+    padding: 7px 10px;
+    text-align: center;
+}
+.my_fb_from p {
+    text-align: center;
+}
+.my_fb_from p {
+    text-align: center;
+}
+.dispose_box {
+    float: left;
+    margin-left: 35px;
+    width: 732px;
+    position: relative;
+    border: 1px solid #dbdada;
+    border-radius: 3px;
+    padding: 20px 28px;
+    box-shadow: 0 0 3px #dcdcdc;
+}
+.dispose_box .ang {
+    position: absolute;
+    width: 7px;
+    height: 17px;
+    top: 24px;
+    left: -7px;
+    background-position: 0 -380px;
+}
+.my_fb_ques {
+    padding: 10px;
+    line-height: 24px;
+}
+.my_fb_ques h2, .my_fb_ques h2 a {
+    color: #f10180;
+}
+
+.my_fb_ques h2 {
+    font-size: 12px;
+    padding-left: 30px;
+    background: url(/ho/imgs/a.jpg) no-repeat left 2px;
+}
+.my_fb_ques .text {
+    padding-left: 30px;
+}
+.my_fb_ques p.dat {
+    color: #666666;
+    padding-bottom: 5px;
+}
+
+.dispose_box .dat {
+    padding-left: 30px;
+}
+
+
+
+
+

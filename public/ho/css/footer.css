@@ -1,0 +1,132 @@
+.footer {
+    font: 12px/1.5 tahoma,arial,Hiragino Sans GB,WenQuanYi Micro Hei,\5FAE\8F6F\96C5\9ED1,\5B8B\4F53,sans-serif;
+    display: block;
+    clear: both;
+    overflow: hidden;
+    line-height: 22px;
+    padding-top: 0;
+    border-top: 1px solid #ebebeb;
+    background-color: #fcfcfc;
+    color: #4d4d4d;
+}
+.footer-inner {
+    width: 960px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.footer-vip {
+    overflow: hidden;
+}
+
+
+.footer-list {
+    overflow: hidden;
+    zoom: 1;
+    margin: 37px 0 25px;
+    line-height: 20px;
+}
+.footer-vip li {
+    float: left;
+}
+.footer-vip i {
+    display: block;
+    margin-top: 30px;
+    margin-right:45px;
+    margin-left: 10px;
+    width: 82px;
+    height: 96px;
+    font-size: 0;
+    text-indent: -100%;
+}
+.footer-vip-ico01 {
+    background-position: -10px -9px;
+}
+.footer-icon {
+    height: 150px;
+    z-index: 9;
+    background: url(/ho/imgs/banner-footer.png) center center no-repeat;
+}
+.footer-vip-ico01, .footer-vip-ico02, .footer-vip-ico03, .footer-vip-ico04, .footer-vip-ico05, .footer-vip-ico06, .footer-vip-ico07 {
+    background: url(/ho/imgs/common/footer_vip_iconsv_0704.png?1474de38) no-repeat 0 0;
+}
+
+.footer-list dl {
+    float: left;
+    width: 145px;
+    height: 146px;
+    padding-left: 16px;
+    border-right: 1px solid #e0e0e0;
+}
+.footer-list dt {
+    margin-bottom: 4px;
+    color: #4d4d4d;
+}
+.footer-list .tc {
+    padding-left: 0;
+    width: 136px;
+    text-align: center;
+}
+.footer-list .last {
+    border-right: 0;
+    display: block;
+}
+.footer-list dl {
+    float: left;
+    width: 145px;
+    height: 146px;
+    padding-left: 16px;
+    border-right: 1px solid #e0e0e0;
+}
+.footer-list dt {
+    margin-bottom: 4px;
+    color: #4d4d4d;
+}
+img {
+    vertical-align: bottom;
+}
+img[Attributes Style] {
+    width: 100px;
+    height: 100px;
+}
+.footer-infor {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 0;
+}
+.footer-infor-link {
+    background-color: #d7237e;
+    line-height: 30px;
+}
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, form, fieldset, legend, input, button, textarea, p, th, td {
+    margin: 0;
+    padding: 0;
+}
+user agent stylesheet
+p {
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+.footer-infor-link a {
+    margin-left: 2px;
+    margin-right: 2px;
+    color: #fff;
+}
+.footer-infor-txt {
+    color: #999;
+    margin: 14px 0;
+    line-height: 19px;
+}
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+    float: left;
+}
+
+.footer a {
+    color: grey;
+    text-decoration: none;
+}
