@@ -149,7 +149,7 @@ Route::get('/', function () {
 
 
 
-<<<<<<< HEAD
+
 
 
 
@@ -461,4 +461,5 @@ Route::get('/', function () {
 
 
 Route::controller('/admin/user','admin\user\AdminController');
+Route::controller('/admin/member','admin\user\MemberController');
 

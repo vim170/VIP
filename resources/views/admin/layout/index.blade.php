@@ -299,8 +299,8 @@
 					<li class="active">
 					    <a href="#"><i class="icon-users"></i>用户管理</a>
 					    <ul>
-					        <li><a href="/admin/user">会员列表</a></li>
-                            <li><a href="/admin/admin">管理员列表</a></li>
+					        <li><a href="/admin/member">会员列表</a></li>
+                            <li><a href="/admin/user">管理员列表</a></li>
 					    </ul>
 					</li>
 
