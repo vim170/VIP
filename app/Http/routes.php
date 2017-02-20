@@ -153,6 +153,10 @@ Route::get('/', function () {
 
 
 Route::controller('/home/custser','home\CustserController');
+<<<<<<< HEAD
+=======
+Route::controller('/home/fback','home\FbackController');
+>>>>>>> 7472cfe12bad6622c2dc0c3e13cc8e2a8215bdd4
 
 
 
@@ -299,10 +303,13 @@ Route::controller('/home/custser','home\CustserController');
 
 
 
+<<<<<<< HEAD
 Route::controller('/admin/login','admin\user\LoginController');
 Route::get('/code','CodeController@index');
 Route::controller('/admin/ads','admin\ads\AdsController');
 
+=======
+>>>>>>> 7472cfe12bad6622c2dc0c3e13cc8e2a8215bdd4
 
 
 
@@ -467,4 +474,10 @@ Route::controller('/admin/ads','admin\ads\AdsController');
 
 
 Route::controller('/admin/user','admin\user\AdminController');
+<<<<<<< HEAD
+=======
+Route::controller('/admin/member','admin\user\MemberController');
+Route::controller('/admin/brand','admin\brand\IndexController');
+Route::controller('/admin/navcast','admin\navcast\IndexController');
+>>>>>>> 7472cfe12bad6622c2dc0c3e13cc8e2a8215bdd4
 

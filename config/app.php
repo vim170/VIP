@@ -40,6 +40,10 @@ return [
     */
 
     'timezone' => 'PRC',
+<<<<<<< HEAD
+=======
+    'title' => '唯品会',
+>>>>>>> 7472cfe12bad6622c2dc0c3e13cc8e2a8215bdd4
 
     /*
     |--------------------------------------------------------------------------
@@ -144,6 +148,10 @@ return [
         App\Providers\AuthServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+<<<<<<< HEAD
+=======
+        Barryvdh\Debugbar\ServiceProvider::class
+>>>>>>> 7472cfe12bad6622c2dc0c3e13cc8e2a8215bdd4
 
     ],
 

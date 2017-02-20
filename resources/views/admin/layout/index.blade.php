@@ -36,6 +36,10 @@
 <!-- Theme Stylesheet -->
 <link rel="stylesheet" type="text/css" href="/resources/css/mws-theme.css" media="screen">
 <link rel="stylesheet" type="text/css" href="/resources/css/themer.css" media="screen">
+<<<<<<< HEAD
+=======
+
+>>>>>>> 7472cfe12bad6622c2dc0c3e13cc8e2a8215bdd4
 @section('css')
 @show
 <title>
@@ -195,12 +199,21 @@
                 <!-- Username and Functions -->
                 <div id="mws-user-functions">
                     <div id="mws-username">
+<<<<<<< HEAD
                         Hello, {{ session('name') }}
                     </div>
                     <ul>
                     	<li><a href="#">Profile</a></li>
                         <li><a href="/admin/login/changepassword">修改密码</a></li>
                         <li><a href="/admin/login/logout">退出后台</a></li>
+=======
+                        Hello, John Doe
+                    </div>
+                    <ul>
+                    	<li><a href="#">Profile</a></li>
+                        <li><a href="#">Change Password</a></li>
+                        <li><a href="index.html">Logout</a></li>
+>>>>>>> 7472cfe12bad6622c2dc0c3e13cc8e2a8215bdd4
                     </ul>
                 </div>
             </div>
@@ -299,8 +312,13 @@
 					<li class="active">
 					    <a href="#"><i class="icon-users"></i>用户管理</a>
 					    <ul>
+<<<<<<< HEAD
 					        <li><a href="/admin/user">会员列表</a></li>
                             <li><a href="/admin/admin">管理员列表</a></li>
+=======
+					        <li><a href="/admin/member">会员列表</a></li>
+                            <li><a href="/admin/user">管理员列表</a></li>
+>>>>>>> 7472cfe12bad6622c2dc0c3e13cc8e2a8215bdd4
 					    </ul>
 					</li>
 
@@ -309,7 +327,11 @@
 					    <a href="#"><i class="icon-cog"></i>控制面板</a>
 					    <ul>
 					        <li><a href="form_layouts.html">基本信息</a></li>
+<<<<<<< HEAD
                             <li><a href="/admin/ads">广告列表</a></li>
+=======
+                            <li><a href="form_layouts.html">广告列表</a></li>
+>>>>>>> 7472cfe12bad6622c2dc0c3e13cc8e2a8215bdd4
                             <li><a href="form_layouts.html">友情链接</a></li>
 
 					    </ul>
@@ -391,6 +413,10 @@
     <script src="/resources/plugins/cleditor/jquery.cleditor.table.min.js"></script>
     <script src="/resources/plugins/cleditor/jquery.cleditor.xhtml.min.js"></script>
     <script src="/resources/plugins/cleditor/jquery.cleditor.icon.min.js"></script>
+<<<<<<< HEAD
+=======
+    <script src="/ho/js/jquery-1.8.3.min.js"></script>
+>>>>>>> 7472cfe12bad6622c2dc0c3e13cc8e2a8215bdd4
 
     <!-- Core Script -->
     <script src="/resources/bootstrap/js/bootstrap.min.js"></script>
@@ -401,6 +427,11 @@
 
     <!-- Demo Scripts (remove if not needed) -->
     <script src="/resources/js/demo/demo.formelements.js"></script>
+<<<<<<< HEAD
+=======
+    <!--全局js函数-->
+    <script type="text/javascript" src="/global/global.js"></script>
+>>>>>>> 7472cfe12bad6622c2dc0c3e13cc8e2a8215bdd4
 
 </body>
 </html>
