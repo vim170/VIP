@@ -1,0 +1,28 @@
+1.使用前配置
+git config --global user.name ''
+git config --global user.email shanechiu@163.com
+
+
+2.初始化本地库(在你的项目文件下输入命令)
+git init
+
+3.将文件添加到缓存区
+git add a.txt,a.html
+
+4.将文件添加到工作区
+git commit -m '描述性文字'
+
+5.将本地库与远程库相关联
+git remote add origin 你的服务器
+
+6.推送
+git push origin master
+
+7.更新
+git pull origin master
+
+8.查看状态
+git status
+
+9.查看日志
+git log

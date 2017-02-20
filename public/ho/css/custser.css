@@ -1,0 +1,742 @@
+
+.container_bg, .main_container_bg {
+    background-color: #f1f3f4;
+    padding: 48px 0 99px 0;
+}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, form, fieldset, legend, input, button, textarea, p, th, td {
+    margin: 0;
+    padding: 0;
+}
+.main_container_bg .container {
+    width: 1000px;
+    margin: 0 auto;
+    background: none;
+}
+.tips_index_bar {
+    margin: -30px 0 20px;
+    position: relative;
+    padding: 10px;
+    overflow: hidden;
+    border: 1px solid #f8dbb1;
+    background-color: #fffaf3;
+    color: #828181;
+    font-size: 14px;
+}
+.tips_bar_ico {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 6px 0 14px;
+    width: 16px;
+    height: 16px;
+    background: url('//acs.vip.com/views/static/release/img/acs/src_tips.png') no-repeat 0 -18px;
+}
+em, i, address {
+    font-style: normal;
+}
+.tips_index_bar {
+    color: #828181;
+    font-size: 14px;
+}
+.tips_index_bar {
+    color: #828181;
+    font-size: 14px;
+}
+.tips_index_bar a {
+    font-size: 12px;
+    font-family: "宋体";
+    color: #3466aa;
+    text-decoration: underline;
+}
+元素 {
+    float: left;
+    width: 767px;
+}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, form, fieldset, legend, input, button, textarea, p, th, td {
+    margin: 0;
+    padding: 0;
+}
+.delivery_info {
+    width: 715px;
+    float: left;
+    position: relative;
+    font-family: microsoft yahei;
+    background-color: #fff;
+    padding: 20px 25px 30px;
+    overflow: hidden;
+    background: #fff;
+    border: 1px solid #e8e9ea;
+    border-top: none;
+    border-radius: 0 0 3px 3px;
+    box-shadow: 1px 1px 2px #e8e9ea;
+    margin: 0 0 15px;
+}
+.del_title {
+    font-size: 16px;
+}
+.delivery_info {
+    font-family: microsoft yahei;
+}
+.del_btn {
+    text-align: center;
+    margin-top: 25px;
+}
+.abt_btn {
+    display: inline-block;
+    width: 116px;
+    height: 30px;
+    line-height: 30px;
+    background-position: -460px 0;
+    font-size: 14px;
+    color: #fb4892;
+    font-weight: 700;
+    cursor: pointer;
+}
+.questions_list, .cq_vipbao, .am_box, .abt_btn, .am_icon, .i_con_close, .ww_tools_btn, .sw_btn_item {
+    background-image: url(//acs.vip.com/views/static/release/img/acs/index_imgs.png);
+    background-repeat: no-repeat;
+}
+.del_close {
+    position: absolute;
+    cursor: pointer;
+    right: 10px;
+    top: 10px;
+    width: 12px;
+    height: 12px;
+    background: url('//acs.vip.com/views/static/release/img/acs/del_close.png') no-repeat left top;
+}
+.container_left {
+    width: 715px;
+    float: left;
+    min-height: 800px;
+    background-color: #fff;
+    padding: 30px 25px;
+    overflow: hidden;
+    background: #fff url(//acs.vip.com/views/static/release/img/acs/container_left_bg.png) center 300px no-repeat;
+    border: 1px solid #e8e9ea;
+    border-top: none;
+    -webkit-border-radius: 0 0 3px 3px;
+    -moz-border-radius: 0 0 3px 3px;
+    -o-border-radius: 0 0 3px 3px;
+    border-radius: 0 0 3px 3px;
+    box-shadow: 1px 1px 2px #e8e9ea;
+}
+.b_tit {
+    color: #F62F95;
+    font-family: '黑体';
+    font-size: 40px;
+    font-weight: 400;
+    text-align: center;
+    border-bottom: 1px solid #DAE1E3;
+    margin: 0 0 30px;
+    padding: 0 0 20px;
+}
+.title {
+    font-size: 16px;
+    color: #444;
+    padding-bottom: 45px;
+}
+.arrow {
+    display: inline-block;
+    margin-left: 5px;
+    width: 0;
+    height: 0;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #FFFFFF #FFFFFF #FFFFFF #AAAAAA;
+}
+.title {
+    font-size: 16px;
+    color: #444;
+}
+.service_content_wrapper {
+    background-color: #fff;
+}
+.questions {
+    height: 200px;
+    overflow: hidden;
+    border-bottom: 1px solid #fff;
+}
+ul, ol {
+    list-style: none;
+}
+.questions li {
+    text-align: center;
+    float: left;
+    padding-left: 10px;
+    width: 228px;
+    height: 205px;
+    position: relative;
+}
+.questions li {
+    text-align: center;
+    float: left;
+    padding-left: 10px;
+    width: 228px;
+    height: 205px;
+    position: relative;
+}
+.pli_line {
+    overflow: hidden;
+    border-right: 1px dotted #ddd;
+}
+.questions li span {
+    float: left;
+    margin-top: 12px;
+    width: 70px;
+    line-height: 22px;
+    position: relative;
+}
+.questions a {
+    color: #666;
+    font-family: "宋体";
+}
+.questions li span {
+    line-height: 22px;
+}
+i.qa_dd_ico1 {
+    background-position: 0 0;
+}
+.questions i {
+    display: block;
+    width: 32px;
+    height: 32px;
+    margin: 0 auto;
+    background: url(//acs.vip.com/views/static/release/img/acs/service_qa_ico.png) center;
+}
+em, i, address {
+    font-style: normal;
+}
+.questions a {
+    color: #666;
+    font-family: "宋体";
+}
+a {
+    color: #333;
+}
+.questions li span {
+    line-height: 22px;
+}
+.questions li {
+    text-align: center;
+}
+ul, ol {
+    list-style: none;
+}
+.questions li span .btn_loading {
+    display: none;
+    width: 70px;
+    height: 35px;
+    position: absolute;
+    top: -12px;
+    left: 19px;
+    background: url(//acs.vip.com/views/static/release/img/acs/btn_loading.gif) no-repeat;
+    opacity: 0.8;
+}
+.questions li span {
+    float: left;
+    margin-top: 12px;
+    width: 70px;
+    line-height: 22px;
+    position: relative;
+}
+.questions i {
+    display: block;
+    width: 32px;
+    height: 32px;
+    margin: 0 auto;
+    background: url(//acs.vip.com/views/static/release/img/acs/service_qa_ico.png) center;
+}
+
+.questions i {
+    display: block;
+    width: 32px;
+    height: 32px;
+    margin: 0 auto;
+    background: url(//acs.vip.com/views/static/release/img/acs/service_qa_ico.png) center;
+}
+em, i, address {
+    font-style: normal;
+}
+i.qa_dd_ico1 {
+    background-position: 0 0;
+}
+i.qa_dd_ico2 {
+    background-position: -32px 0;
+}
+i.qa_dd_ico3 {
+    background-position: -64px 0;
+}
+i.qa_dd_ico4 {
+    background-position: -96px 0;
+}
+i.qa_dd_ico5 {
+    background-position: -128px 0;
+}
+i.qa_gw_ico1 {
+    background-position: -160px 0;
+}
+i.qa_gw_ico2 {
+    background-position: -192px 0;
+}
+i.qa_gw_ico3 {
+    background-position: -224px 0;
+}
+i.qa_gw_ico4 {
+    background-position: -256px 0;
+}
+i.qa_gw_ico5 {
+    background-position: -288px 0;
+}
+i.qa_ts_ico1 {
+    background-position: -320px 0;
+}
+i.qa_ts_ico2 {
+    background-position: -352px 0;
+}
+i.qa_ts_ico3 {
+    background-position: -480px 0;
+}
+i.qa_ts_ico4 {
+    background-position: -416px 0;
+}
+i.qa_ts_ico5 {
+    background-position: -448px 0;
+}
+.service_content {
+    width: 715px;
+    position: relative;
+}
+.list_swich {
+    width: 715px;
+    float: left;
+}
+.list_swich_order {
+    position: relative;
+    margin-bottom: 20px;
+}
+.hidden {
+    display: none !important;
+}.list_order_title {
+    font-size: 14px;
+    background-position: -436px -492px;
+    border-bottom: 1px dashed #E5E5E5;
+    padding: 0 0 13px 16px;
+}
+
+.list_order_content {
+    height: 171px;
+    overflow: hidden;
+    position: relative;
+}
+.orders table {
+    width: 100%;
+}
+.orders_control_bar {
+    border-top: 1px solid #ddd;
+    height: 30px;
+}
+.hidden {
+    display: none !important;
+}
+.orders_control {
+    background-position: -150px -350px;
+    width: 67px;
+    height: 22px;
+    position: absolute;
+    left: 28px;
+    top: 204px;
+    padding: 9px 0 0 17px;
+}
+.orders_control span {
+    float: left;
+    display: inline;
+    width: 20px;
+    height: 10px;
+    margin-right: 12px;
+    cursor: pointer;
+}
+.orders_control_pre {
+    background-position: -100px -400px;
+}
+.questions_icon01, .questions_icon02, .questions_icon03, .orders .triggers .prev-disable, .sprites-service-sprite, .orders .triggers .next-disable, .orders .triggers .prev-trigger, .orders .triggers .next-trigger, .select-form .current, .select-form .m_dropdown_hd .icon, .orders_control, .orders_control_pre, .orders_control_next, .orders_control span.switchable-last, .orders_control span.switchable-first, .service_pop_btn a, .service_pop_margin02 a, .cnt_icon, .cnt_txt_icon, .solution .answer p, .answer button, .contact .message .btn, .contact .message .btn_special, .contact .chat .btn, .contact .call .btn, .contact .rec, .list_order_title, .urge_tips, .urge_from_submit button, .service_success_top, .service_success_btn a {
+    background: url('//acs.vip.com/views/static/release/img/acs/sprites-service-new.png') no-repeat;
+}
+.orders_control span {
+    float: left;
+    display: inline;
+    width: 20px;
+    height: 10px;
+    margin-right: 12px;
+    cursor: pointer;
+}
+.orders_control_next {
+    background-position: -150px -420px;
+}
+.questions_icon01, .questions_icon02, .questions_icon03, .orders .triggers .prev-disable, .sprites-service-sprite, .orders .triggers .next-disable, .orders .triggers .prev-trigger, .orders .triggers .next-trigger, .select-form .current, .select-form .m_dropdown_hd .icon, .orders_control, .orders_control_pre, .orders_control_next, .orders_control span.switchable-last, .orders_control span.switchable-first, .service_pop_btn a, .service_pop_margin02 a, .cnt_icon, .cnt_txt_icon, .solution .answer p, .answer button, .contact .message .btn, .contact .message .btn_special, .contact .chat .btn, .contact .call .btn, .contact .rec, .list_order_title, .urge_tips, .urge_from_submit button, .service_success_top, .service_success_btn a {
+    background: url('//acs.vip.com/views/static/release/img/acs/sprites-service-new.png') no-repeat;
+}
+.account_detail {
+    padding: 10px 30px 20px;
+    overflow: hidden;
+    zoom: 1;
+}
+.hidden {
+    display: none !important;
+}
+.accd_info {
+    float: left;
+    width: 300px;
+}
+.accd_info h4 {
+    color: #666;
+    font-weight: 700;
+}
+h1, h2, h3, h4, h5, h6, input, select, textarea {
+    font-size: 100%;
+}
+.accd_info p {
+    margin-top: 25px;
+}
+.accd_detail {
+    color: #f10180;
+    padding-left: 20px;
+}
+a {
+    outline: none;
+}
+.accd_ticket {
+    float: left;
+}
+.accd_ticket .accd_ticket_table {
+    width: 340px;
+    height: auto;
+    text-align: center;
+    border-collapse: collapse;
+    border: 1px solid #d9d9d9;
+    margin-top: 10px;
+    display: table;
+}
+.accd_ticket .accd_ticket_table {
+    text-align: center;
+    border-collapse: collapse;
+}
+.accd_ticket .accd_ticket_table {
+    text-align: center;
+    border-collapse: collapse;
+}
+.accd_ticket_table th {
+    height: 26px;
+    line-height: 26px;
+    background-color: #efefef;
+    border: 1px solid #d9d9d9;
+}
+元素 {
+    background-color: rgb(248, 248, 248);
+}
+.accd_ticket .accd_ticket_table {
+    text-align: center;
+    border-collapse: collapse;
+}
+.accd_ticket_table td {
+    height: 26px;
+    line-height: 26px;
+    border-left: 1px solid #d9d9d9;
+}
+.orders td {
+    line-height: 1.8;
+    border-bottom: 1px dashed #e5e5e5;
+}
+.step_02_bg {
+    background: url(//acs.vip.com/views/static/release/img/acs/container_left_bg2.png) center bottom no-repeat;
+    padding-bottom: 250px;
+}
+.step_02 {
+    margin-bottom: 20px;
+    position: relative;
+}
+img {
+    vertical-align: bottom;
+}
+.hidden {
+    display: none !important;
+}
+.sep-title {
+    font-size: 16px;
+    color: #444;
+    padding-bottom: 15px;
+}
+.arrow {
+    display: inline-block;
+    margin-left: 5px;
+    width: 0;
+    height: 0;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #FFFFFF #FFFFFF #FFFFFF #AAAAAA;
+}
+.solution {
+    width: 658px;
+    margin: 20px auto 0;
+    font-family: arial,宋体,sans-serif;
+}
+.solution .cnt {
+    overflow: hidden;
+}
+.solution .cnt_icon {
+    background-position: 0 -450px;
+    width: 79px;
+    height: 79px;
+}
+.questions_icon01, .questions_icon02, .questions_icon03, .orders .triggers .prev-disable, .sprites-service-sprite, .orders .triggers .next-disable, .orders .triggers .prev-trigger, .orders .triggers .next-trigger, .select-form .current, .select-form .m_dropdown_hd .icon, .orders_control, .orders_control_pre, .orders_control_next, .orders_control span.switchable-last, .orders_control span.switchable-first, .service_pop_btn a, .service_pop_margin02 a, .cnt_icon, .cnt_txt_icon, .solution .answer p, .answer button, .contact .message .btn, .contact .message .btn_special, .contact .chat .btn, .contact .call .btn, .contact .rec, .list_order_title, .urge_tips, .urge_from_submit button, .service_success_top, .service_success_btn a {
+    background: url('//acs.vip.com/views/static/release/img/acs/sprites-service-new.png') no-repeat;
+}
+.fl {
+    float: left;
+    display: inline;
+}
+.solution .cnt_txt {
+    background-color: #f8f8f8;
+    border: 2px solid #a1a5a9;
+    border-radius: 3px;
+    color: #333;
+    padding: 18px 19px 34px 15px;
+    line-height: 22px;
+    width: 530px;
+    margin-left: 10px;
+    position: relative;
+}
+.fl {
+    float: left;
+    display: inline;
+}
+.solution .answer {
+    padding: 15px 0 20px 94px;
+    overflow: hidden;
+    height: 75px;
+}
+.answer_list {
+    height: 45px;
+    overflow: hidden;
+    visibility: hidden;
+}
+.solution .answer p {
+    width: 82px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: #5c5c5c;
+    margin: 0 25px 15px 0;
+    float: left;
+    display: inline;
+    cursor: pointer;
+    background-position: -100px -450px;
+}
+.questions_icon01, .questions_icon02, .questions_icon03, .orders .triggers .prev-disable, .sprites-service-sprite, .orders .triggers .next-disable, .orders .triggers .prev-trigger, .orders .triggers .next-trigger, .select-form .current, .select-form .m_dropdown_hd .icon, .orders_control, .orders_control_pre, .orders_control_next, .orders_control span.switchable-last, .orders_control span.switchable-first, .service_pop_btn a, .service_pop_margin02 a, .cnt_icon, .cnt_txt_icon, .solution .answer p, .answer button, .contact .message .btn, .contact .message .btn_special, .contact .chat .btn, .contact .call .btn, .contact .rec, .list_order_title, .urge_tips, .urge_from_submit button, .service_success_top, .service_success_btn a {
+    background: url('//acs.vip.com/views/static/release/img/acs/sprites-service-new.png') no-repeat;
+}
+
+.answer input {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    width: 456px;
+    height: 28px;
+    line-height: 28px;
+    float: left;
+    display: inline;
+    margin-right: 5px;
+    padding-left: 5px;
+}
+
+.answer button {
+    float: left;
+    display: inline;
+    background-position: -250px -450px;
+    border: none;
+    width: 85px;
+    height: 30px;
+    text-indent: -9999px;
+    cursor: pointer;
+}
+.questions_icon01, .questions_icon02, .questions_icon03, .orders .triggers .prev-disable, .sprites-service-sprite, .orders .triggers .next-disable, .orders .triggers .prev-trigger, .orders .triggers .next-trigger, .select-form .current, .select-form .m_dropdown_hd .icon, .orders_control, .orders_control_pre, .orders_control_next, .orders_control span.switchable-last, .orders_control span.switchable-first, .service_pop_btn a, .service_pop_margin02 a, .cnt_icon, .cnt_txt_icon, .solution .answer p, .answer button, .contact .message .btn, .contact .message .btn_special, .contact .chat .btn, .contact .call .btn, .contact .rec, .list_order_title, .urge_tips, .urge_from_submit button, .service_success_top, .service_success_btn a {
+    background: url('//acs.vip.com/views/static/release/img/acs/sprites-service-new.png') no-repeat;
+}
+元素 {
+    position: static;
+}
+.container_right {
+    width: 225px;
+    float: right;
+    font-family: arial,宋体,sans-serif;
+    border: 1px solid #e8e9ea;
+    border-top: none;
+    -webkit-border-radius: 0 0 3px 3px;
+    -moz-border-radius: 0 0 3px 3px;
+    -o-border-radius: 0 0 3px 3px;
+    border-radius: 0 0 3px 3px;
+    box-shadow: 1px 1px 2px #e8e9ea;
+}
+.src_ad {
+    position: relative;
+    width: 221px;
+    height: 131px;
+    padding: 2px;
+    background-color: #fff;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+.src_ad_list {
+    width: 9999px;
+    height: 131px;
+}
+ul, ol {
+    list-style: none;
+}
+a {
+    outline: none;
+}
+a {
+    color: #333;
+    text-decoration: none;
+}
+.src_ad_btn {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 0 110px 3px;
+    width: 205px;
+}
+.src_ad {
+    position: relative;
+    width: 221px;
+    height: 131px;
+    padding: 2px;
+    background-color: #fff;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+.hidden {
+    display: none !important;
+}
+a {
+    outline: none;
+}
+a {
+    color: #333;
+    text-decoration: none;
+}
+img {
+    vertical-align: bottom;
+}
+.src_nav {
+    border-top: 1px solid #f62f95;
+    background-color: #fff;
+}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, form, fieldset, legend, input, button, textarea, p, th, td {
+    margin: 0;
+    padding: 0;
+}
+.src_nav_top {
+    font-size: 18px;
+    text-indent: 68px;
+    padding: 10px 0;
+}
+ul, ol {
+    list-style: none;
+}
+.src_nav_item_tit {
+    height: 30px;
+    line-height: 30px;
+    text-align: left;
+    text-indent: 70px;
+    background-color: #ede4e4;
+    color: #666;
+    font-weight: 700;
+}
+.src_nav_item {
+    height: 30px;
+    line-height: 30px;
+    padding-left: 60px;
+}
+.src_nav_item a {
+    color: #2f3337;
+}
+.sni_item {
+    display: inline-block;
+    height: 17px;
+    line-height: 17px;
+    padding-left: 25px;
+    background-image: url(//acs.vip.com/views/static/release/img/acs/src_nav_dot.png);
+    background-position: 10px center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.src_nav_item_tit {
+    height: 30px;
+    line-height: 30px;
+    text-align: left;
+    text-indent: 70px;
+    background-color: #ede4e4;
+    color: #666;
+    font-weight: 700;
+}
+.src_nav_bt {
+    margin-top: 16px;
+    padding: 10px 0;
+    color: #666;
+    font-size: 14px;
+    font-family: "微软雅黑";
+    text-align: center;
+    position: relative;
+}
+.src_nav {
+    border-top: 1px solid #f62f95;
+    background-color: #fff;
+}
+a {
+    outline: none;
+}
+a {
+    color: #333;
+    text-decoration: none;
+}
+.src_nav_bt .acs_view_num {
+    display: inline-block;
+    padding-left: 4px;
+    height: 21px;
+    width: 21px;
+    color: #fff;
+    vertical-align: top;
+    background: url(//acs.vip.com/views/static/release/img/acs/acs_view_num.png) no-repeat;
+}
+.src_nav_bt .acs_view_tips {
+    position: absolute;
+    text-align: left;
+    left: 4px;
+    top: 52px;
+    width: 214px;
+    height: 32px;
+    line-height: 32px;
+    font-size: 12px;
+    background: #fff;
+    border: 1px solid #dbdada;
+}	
+.tips_bar_ico {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 6px 0 14px;
+    width: 16px;
+    height: 16px;
+    background: url('//acs.vip.com/views/static/release/img/acs/src_tips.png') no-repeat 0 -18px;
+}
+em, i, address {
+    font-style: normal;
+}
+.src_nav_bt .acs_view_tips .acs_view_ang {
+    position: absolute;
+    width: 9px;
+    height: 5px;
+    left: 21px;
+    top: -5px;
+    background: url(//acs.vip.com/views/static/release/img/acs/acs_view_ang.png) no-repeat;
+}
