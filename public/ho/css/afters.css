@@ -1544,3 +1544,13 @@ Inherited from p.help_list_more
     padding: 0 15px 20px;
     text-align: right;
 }
+div {
+    display: block;
+}
+.src_ad_list {
+    width: 9999px;
+    height: 131px;
+}
+ul, ol {
+    list-style: none;
+}
