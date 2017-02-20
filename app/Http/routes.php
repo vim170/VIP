@@ -153,10 +153,6 @@ Route::get('/', function () {
 
 
 Route::controller('/home/custser','home\CustserController');
-=======
-<<<<<<< HEAD
-
->>>>>>> 84bcfad988cbe6125584c6109f20f566dd5407bc
 
 
 

@@ -36,6 +36,7 @@
 <!-- Theme Stylesheet -->
 <link rel="stylesheet" type="text/css" href="/resources/css/mws-theme.css" media="screen">
 <link rel="stylesheet" type="text/css" href="/resources/css/themer.css" media="screen">
+
 @section('css')
 @show
 <title>
@@ -391,6 +392,7 @@
     <script src="/resources/plugins/cleditor/jquery.cleditor.table.min.js"></script>
     <script src="/resources/plugins/cleditor/jquery.cleditor.xhtml.min.js"></script>
     <script src="/resources/plugins/cleditor/jquery.cleditor.icon.min.js"></script>
+    <script src="/ho/js/jquery-1.8.3.min.js"></script>
 
     <!-- Core Script -->
     <script src="/resources/bootstrap/js/bootstrap.min.js"></script>
@@ -401,6 +403,8 @@
 
     <!-- Demo Scripts (remove if not needed) -->
     <script src="/resources/js/demo/demo.formelements.js"></script>
+    <!--全局js函数-->
+    <script type="text/javascript" src="/global/global.js"></script>
 
 </body>
 </html>
