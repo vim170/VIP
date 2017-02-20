@@ -4,9 +4,89 @@
 @endsection
 
 @section('content')
-<script src="/ho/js/jquery-1.11.3.js"></script>
-<!-- 联系客服 -->
-
+<div class="nav-bottom">
+            <div class="nav-bottom-inner">
+                <ul>
+                    <li class="select"><a href="#">首页</a></li>
+                    <li><img src="/ho/imgs/hot.gif"><a class="have-img" href="#">唯品国际</a></li>
+                    <li><a href="#">母婴</a></li>
+                    <li><a href="#">居家</a></li>
+                    <li><a href="#">男士</a></li>
+                    <li><img src="/ho/imgs/hot.gif"><a class="have-img" href="#">秋季美妆节</a></li>
+                    <li><a href="#">唯品金融</a></li>
+                    <li><a href="#">旅行</a></li>
+                    <li class="more"><a class="have-sanjiao" href="#">更多</a><div class="sanjiao"></div>
+                       <div class="channel-item-group">
+                           <div class="channel-item">
+                               <a href="#" class="channel-more-itemlink">
+                                   <img src="/ho/imgs/channel-item-img-1.jpg">
+                                   <div class="shadow"></div>
+                                   <div class="brand-text">
+                                       <p class="brand-name">旅行</p>
+                                   </div>
+                               </a>
+                           </div>
+                           <div class="channel-item">
+                               <a href="#" class="channel-more-itemlink">
+                                   <img src="/ho/imgs/channel-item-img-2.jpg">
+                                   <div class="shadow"></div>
+                                   <div class="brand-text">
+                                       <p class="brand-name">女装</p>
+                                   </div>
+                               </a>
+                           </div>
+                           <div class="channel-item">
+                               <a href="#" class="channel-more-itemlink">
+                                   <img src="/ho/imgs/channel-item-img-3.jpg">
+                                   <div class="shadow"></div>
+                                   <div class="brand-text">
+                                       <p class="brand-name">鞋包</p>
+                                   </div>
+                               </a>
+                           </div>
+                           <div class="channel-item">
+                               <a href="#" class="channel-more-itemlink">
+                                   <img src="/ho/imgs/channel-item-img-4.jpg">
+                                   <div class="shadow"></div>
+                                   <div class="brand-text">
+                                       <p class="brand-name">配饰</p>
+                                   </div>
+                               </a>
+                           </div>
+                           <div class="channel-item">
+                               <a href="#" class="channel-more-itemlink">
+                                   <img src="/ho/imgs/channel-item-img-5.jpg">
+                                   <div class="shadow"></div>
+                                   <div class="brand-text">
+                                       <p class="brand-name">运动</p>
+                                   </div>
+                               </a>
+                           </div>
+                           <div class="channel-item">
+                               <a href="#" class="channel-more-itemlink">
+                                   <img src="/ho/imgs/channel-item-img-6.jpg">
+                                   <div class="shadow"></div>
+                                   <div class="brand-text">
+                                       <p class="brand-name">汽车</p>
+                                   </div>
+                               </a>
+                           </div>
+                           <div class="channel-item">
+                               <a href="#" class="channel-more-itemlink">
+                                   <img src="/ho/imgs/channel-item-img-7.jpg">
+                                   <div class="shadow"></div>
+                                   <div class="brand-text">
+                                       <p class="brand-name">爱丽奢</p>
+                                   </div>
+                               </a>
+                           </div>
+                       </div>
+                    </li>
+                    <li class="fenlei"><img src="/ho/imgs/search.png"><a class="have-img" href="#">分类</a></li>
+                </ul>
+            </div>
+        </div>
+<div class="main_container_bg">
     <div id="main" class="container clearfix">
       <div class="tips_index_bar" id="J_tips_bar" style="display:none">
         <i class="tips_bar_ico"></i>
@@ -196,8 +276,8 @@
                           <th>最小消费金额</th>
                           <th>使用截止日期</th>
                         </tr>
-                        <tr style="background-color: rgb(248, 248, 248);" class="tr2" id="nocard">
-                          <td colspan="3" align="center">无可用代金券</td>
+                        <tr class="tr2" id="nocard" style="background-color: rgb(248, 248, 248);">
+                          <td align="center" colspan="3">无可用代金券</td>
                         </tr>
                       </tbody>
                     </table>
@@ -208,7 +288,7 @@
 
                 <div class="service_loading hidden">
                   <p>
-                    <img src="./views/static/release/img/acs/loading.gif" height="32" width="32">
+                    <img src="./views/static/release/img/acs/loading.gif" width="32" height="32">
                   </p>
                 </div>
                 <!-- 一3解决方案 -->
@@ -290,13 +370,13 @@
                       <a href="#">查询正常发货与配送时效？</a>
                     </li>
                   </ul>
-                  <div style="display: none;" class="cq_vipbao" id="Bvipbao_show">
+                  <div class="cq_vipbao" id="Bvipbao_show" style="display: none;">
                     <a href="javascript:;" onclick="zaixian();" class="cq_vipbao_link" target="_blank">智能客服唯小宝</a>
                   </div>
                 </div>
                 <div class="service_loading hidden">
                   <p>
-                    <img src="./views/static/release/img/acs/loading.gif" height="32" width="32">
+                    <img src="./views/static/release/img/acs/loading.gif" width="32" height="32">
                   </p>
                 </div>
                 <!-- 二3解决方案 -->
@@ -376,13 +456,13 @@
                       <a href="#">查询正常发货与配送时效？</a>
                     </li>
                   </ul>
-                  <div style="display: none;" class="cq_vipbao" id="Cvipbao_show">
+                  <div class="cq_vipbao" id="Cvipbao_show" style="display: none;">
                     <a href="javascript:;" onclick="zaixian();" class="cq_vipbao_link" target="_blank">智能客服唯小宝</a>
                   </div>
                 </div>
                 <div class="service_loading hidden">
                   <p>
-                    <img src="./views/static/release/img/acs/loading.gif" height="32" width="32">
+                    <img src="./views/static/release/img/acs/loading.gif" width="32" height="32">
                   </p>
                 </div>
                 <!-- 三3解决方案 -->
@@ -447,18 +527,18 @@
         </div>
       </div>
       <!-- 右边框  -->
-      <div style="position: absolute; top: 466px;" class="container_right container_right_fix" id="J_container_right">
+      <div class="container_right container_right_fix" id="J_container_right" style="position: absolute; top: 461px;">
         <div class="src_ad J_right_ad">
           
           
           <ul class="src_ad_list J_right_ad_panel">
-          <li class="src_ad_item"><a data-track="done" href="//blog.vip.com/blog.php?act=content&amp;id=3407&amp;adidx=1&amp;f=ad&amp;adp=1216&amp;adid=64064" target="_blank" title=""><img src="//a.vpimg4.com/upload/cmc/2015/01/27/55/f2272eced6e248f3890cdfb118740a62APPguanggao.jpg" alt="" height="131" width="221"></a></li></ul> 
+          <li class="src_ad_item"><a href="//blog.vip.com/blog.php?act=content&amp;id=3407&amp;adidx=1&amp;f=ad&amp;adp=1216&amp;adid=64064" target="_blank" title="" data-track="done"><img src="//a.vpimg4.com/upload/cmc/2015/01/27/55/f2272eced6e248f3890cdfb118740a62APPguanggao.jpg" alt="" width="221" height="131"></a></li></ul> 
           <ul class="src_ad_btn J_right_ad_trigger">
           </ul>
         </div>
         <div class="src_ad am_right hidden" id="J_apmEntrance_imme">
           <a href="/service_apm.html" target="_blank" title="电话预约—皇冠会员专享 立即使用">
-            <img src="./views/static/release/img/acs/apimt_right.jpg" alt="电话预约—皇冠会员专享 无须拨打 按时回电 专享客服" height="131" width="221">
+            <img src="./views/static/release/img/acs/apimt_right.jpg" width="221" height="131" alt="电话预约—皇冠会员专享 无须拨打 按时回电 专享客服">
           </a>
         </div>
         <div class="src_nav">
@@ -482,12 +562,12 @@
               </a>
             </li>
             <li class="src_nav_item">
-              <a data-track="done" class="J_ccps14Onclick" href="service_urge14.html?f=acs_sevice_delivery_link" target="_blank" mars_sead="acs_sevice_delivery_btn">
+              <a class="J_ccps14Onclick" href="service_urge14.html?f=acs_sevice_delivery_link" target="_blank" mars_sead="acs_sevice_delivery_btn" data-track="done">
                 <span class="sni_item type4">催促配送</span>
               </a>
             </li>
             <li class="src_nav_item">
-              <a data-track="done" class="J_qxpsOnclick" href="service_qxps.html?f=acs_sevice_cancel delivery_link" target="_blank" mars_sead="">
+              <a class="J_qxpsOnclick" href="service_qxps.html?f=acs_sevice_cancel delivery_link" target="_blank" mars_sead="" data-track="done">
                 <span class="sni_item type8" target="_blank">取消配送</span>
               </a>
             </li>
@@ -503,17 +583,17 @@
               </a>
             </li>
             <li class="src_nav_item">
-              <a data-track="done" class="J_cctkOnclick" href="service_urge02.html?f=acs_sevice_refund_link" target="_blank" mars_sead="acs_sevice_refund_btn">
+              <a class="J_cctkOnclick" href="service_urge02.html?f=acs_sevice_refund_link" target="_blank" mars_sead="acs_sevice_refund_btn" data-track="done">
                 <span class="sni_item type6">催促退款</span>
               </a>
             </li>
             <li class="src_nav_item">
-              <a data-track="done" class="J_bjfpOnclick" href="service_urge03.html?f=acs_sevice_receipt_link" target="_blank" mars_sead="acs_sevice_receipt_btn">
+              <a class="J_bjfpOnclick" href="service_urge03.html?f=acs_sevice_receipt_link" target="_blank" mars_sead="acs_sevice_receipt_btn" data-track="done">
                 <span class="sni_item type7">补寄发票</span>
               </a>
             </li>
                 <li class="src_nav_item">
-                  <a data-track="done" class="J_txcxOnclick" href="service_txcx.html?f=acs_sevice_cash_link" target="_blank" mars_sead="">
+                  <a class="J_txcxOnclick" href="service_txcx.html?f=acs_sevice_cash_link" target="_blank" mars_sead="" data-track="done">
                     <span class="sni_item type9" target="_blank">提现查询</span>
                   </a>
                 </li> 
@@ -525,7 +605,7 @@
         </div>
       </div>
     </div>
-  
+  </div>
 <script>
     
 

@@ -36,8 +36,12 @@
 <!-- Theme Stylesheet -->
 <link rel="stylesheet" type="text/css" href="/resources/css/mws-theme.css" media="screen">
 <link rel="stylesheet" type="text/css" href="/resources/css/themer.css" media="screen">
-
-<title>MWS Admin - Form Elements</title>
+@section('css')
+@show
+<title>
+	@section('title')
+	@show
+</title>
 
 </head>
 
@@ -185,7 +189,7 @@
             
             	<!-- User Photo -->
             	<div id="mws-user-photo">
-                	<img src="resources/example/profile.jpg" alt="User Photo">
+                	<img src="/resources/example/profile.jpg" alt="User Photo">
                 </div>
                 
                 <!-- Username and Functions -->
@@ -295,8 +299,8 @@
 					<li class="active">
 					    <a href="#"><i class="icon-users"></i>用户管理</a>
 					    <ul>
-					        <li><a href="form_layouts.html">会员列表</a></li>
-                            <li><a href="form_layouts.html">管理员列表</a></li>
+					        <li><a href="/admin/user">会员列表</a></li>
+                            <li><a href="/admin/admin">管理员列表</a></li>
 					    </ul>
 					</li>
 
@@ -312,14 +316,41 @@
 					</li>
                    
                 </ul>
+                <script type="text/javascript">
+                	// 存在bug 暂不启用
+                	// // 选中mws元素
+                	// var mws = document.getElementById('mws-navigation');
+                	// // 选中mws下所有类名为active的li元素
+                	// var li = mws.getElementsByClassName('active');
+                	// for (var i = li.length - 1; i >= 0; i--) {
+                	// 	// 选中li元素下为ul的元素，
+                	// 	var ul = li[i].getElementsByTagName('ul');
+                	// 	ul[0].style.display = 'none';
+                	// 	ul[0].onclick = function(){
+                	// 		this.style.display = 'block';
+
+                	// 	}
+                	// };
+                </script>
             </div>
         </div>
         
         <!-- Main Container Start -->
         <div id="mws-container" class="clearfix">
-        
+        		
+        		
         	<!-- Inner Container Start -->
            	<div class="container">
+           		@if(session('success'))
+	           		<div class="mws-form-message success">
+	                	{{ session('success') }}
+	                </div>
+				@endif
+				@if(session('error'))
+	                <div class="mws-form-message warning">
+						{{ session('error') }}
+	                </div>
+                @endif
            		@section('content')
            		@show
            	</div>
@@ -346,8 +377,8 @@
     <script src="/resources/jui/jquery-ui.custom.min.js"></script>
     <script src="/resources/jui/js/jquery.ui.touch-punch.js"></script>
 
-    <script src="resources/jui/js/globalize/globalize.js"></script>
-    <script src="resources/jui/js/globalize/cultures/globalize.culture.en-US.js"></script>
+    <script src="/resources/jui/js/globalize/globalize.js"></script>
+    <script src="/resources/jui/js/globalize/cultures/globalize.culture.en-US.js"></script>
 
     <!-- Plugin Scripts -->
     <script src="/resources/custom-plugins/picklist/picklist.min.js"></script>

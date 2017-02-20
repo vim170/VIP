@@ -11,6 +11,6 @@ class CustserController extends Controller
 {
     public function getIndex()
     {
-        // return view('home.custser.index');
+        return view('home.custser.index');
     }
 }
