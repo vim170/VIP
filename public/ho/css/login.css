@@ -1,0 +1,114 @@
+html,
+body,
+div,
+p,
+ul,li,
+a,
+input,
+img{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #fdfbfe;
+    font-family: "\5FAE\8F6F\96C5\9ED1", Arial, tahoma, sans-serif;
+    height: 2048px;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.header{
+    padding-top: 40px;
+    margin: 0 auto;
+    width: 1000px;
+    height: 73px;
+    padding-bottom: 44px;
+}
+.header .logo-vip{
+    float: left;
+    width: 315px;
+    height: 73px;
+    background: url("../imgs/normalLogin_sprite.png") no-repeat 0 0;
+}
+.header .some-promise{
+    float: right;
+    width: 445px;
+    height: 28px;
+    margin-top: 25px;
+    background: url("../imgs/passport-bg.png") no-repeat 0 -452px;
+}
+.content{
+    width: 1000px;
+    height: 600px;
+    margin: 0 auto;
+    background: url("../imgs/passport-ad-img.jpg") no-repeat 0 0;
+}
+.login-form{
+    width: 274px;
+    height: 408px;
+    padding: 40px 100px 0 0;
+    float: right;
+}
+.form-top-tip{
+    width: 274px;
+    height: 16px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    line-height: 16px;
+    color: #333;
+}
+.userName,.psw{
+    width: 250px;
+    height: 18px;
+    padding: 8px 10px;
+    border: 1px solid #b2b2b2;
+    background-color: #fff;
+    color: #333;
+    border-radius: 3px;
+    outline: 0;
+}
+.userName-erro,.psw-erro,.loging-erro{
+    width: 274px;
+    height: 25px;
+    line-height: 25px;
+    color: #f20266;
+    font-size: 14px;
+
+}
+.loging{
+    width: 138px;
+    height: 38px;
+    border: 1px solid #f10180;
+    background: url("../imgs/normalLogin_sprite.png") no-repeat -105px -150px;
+    cursor: pointer;
+}
+.content .check{
+    position: relative;
+    padding-left: 24px;
+    margin-top: 40px;
+    height: 32px;
+    line-height: 32px;
+    color: #4c4c4c;
+    font-size:12px;
+}
+.content .check .check-box{
+    position: absolute;
+    left: 0;
+    top: 8px;
+    width: 19px;
+    height: 16px;
+    cursor: pointer;
+    background: url("../imgs/check.png") no-repeat -24px 0;
+}
+.copyright{
+    width: 1000px;
+    height: 12px;
+    margin: 0 auto;
+    font-size: 12px;
+    text-align: center;
+    color: #767074;
+    line-height: 12px;
+}
