@@ -149,9 +149,9 @@ Route::get('/', function () {
 
 
 
-// Route::controller('/index','home\IndexController');
 
-// Route::controller('/home/custser','home\CustserController');
+
+Route::controller('/home/custser','home\CustserController');
 
 Route::controller('/home/fback','home\FbackController');
 
