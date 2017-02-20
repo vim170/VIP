@@ -10,7 +10,7 @@ Target Server Type    : MariaDB
 Target Server Version : 100021
 File Encoding         : 65001
 
-Date: 2017-02-19 00:47:17
+Date: 2017-02-20 09:32:07
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -23,14 +23,139 @@ CREATE TABLE `admin` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT COMMENT '管理员编号',
   `name` varchar(20) NOT NULL DEFAULT '' COMMENT '用户名',
   `pw` char(128) NOT NULL DEFAULT '' COMMENT '密码',
+  `status` tinyint(1) unsigned NOT NULL DEFAULT '1' COMMENT '账户启用状态：1为启用 2为禁用',
   `atime` int(10) unsigned NOT NULL DEFAULT '0' COMMENT '添加时间',
   `ltime` int(10) unsigned NOT NULL DEFAULT '0' COMMENT '上次登录时间',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='管理员信息列表';
+) ENGINE=InnoDB AUTO_INCREMENT=247 DEFAULT CHARSET=utf8 COMMENT='管理员信息列表';
 
 -- ----------------------------
 -- Records of admin
 -- ----------------------------
+INSERT INTO `admin` VALUES ('3', 'shanechiu', '$2y$10$ELE6APushJF3E49NhSqlg.FpaUIIONCq7oNoM/7mi143fKqgK6dbC', '2', '1487490906', '0');
+INSERT INTO `admin` VALUES ('4', 'asdfgsdg', '$2y$10$MQ6bvMU94lJ72a6NXdZt/egIv.gzQLOv3rOK3IJCVeuooniq1dGz.', '1', '1487490984', '0');
+INSERT INTO `admin` VALUES ('5', 'asdfsd', '$2y$10$5T5stD3DZvia2J.mipwOPegpNCE8LQqwIQqQn6xm1vFMpmHPP5Eey', '1', '1487491018', '0');
+INSERT INTO `admin` VALUES ('6', 'shanechiu', '$2y$10$9fj6w8ufQqsiK9I2tVvXFeZ5DiDTH/emjnYq1eSSqogtcAxzRsU12', '2', '1487491820', '0');
+INSERT INTO `admin` VALUES ('7', 'shanechiu', '$2y$10$YMzucjPLWLx3zVaAb9hJI.NLvG1bHddqaMSbpn5QAI797cCXVtDwm', '1', '1487491846', '0');
+INSERT INTO `admin` VALUES ('8', 'shanechiu', '$2y$10$DK5D/0pa1BaX52eBTVi/d.IduRv7YMZw3PtW/Cbumyp6YBny4NXt6', '1', '1487491872', '0');
+INSERT INTO `admin` VALUES ('10', 'shanechiu', '$2y$10$geI9pvBf6BvkroUNAoWgvuKvVFHN/gcC3dsvi1MSswlBFqGPnK3Aq', '1', '1487490270', '0');
+INSERT INTO `admin` VALUES ('11', 'shanechiu', '$2y$10$lwI8rwixoLI9fN/G4rBgvuxYm6woRPpXAXLzWLV0Cv1smVee1DGyy', '1', '1487490490', '0');
+INSERT INTO `admin` VALUES ('14', 'asdfsd', '$2y$10$5T5stD3DZvia2J.mipwOPegpNCE8LQqwIQqQn6xm1vFMpmHPP5Eey', '1', '1487491018', '0');
+INSERT INTO `admin` VALUES ('16', 'shanechiu', '$2y$10$YMzucjPLWLx3zVaAb9hJI.NLvG1bHddqaMSbpn5QAI797cCXVtDwm', '1', '1487491846', '0');
+INSERT INTO `admin` VALUES ('17', 'shanechiu', '$2y$10$DK5D/0pa1BaX52eBTVi/d.IduRv7YMZw3PtW/Cbumyp6YBny4NXt6', '1', '1487491872', '0');
+INSERT INTO `admin` VALUES ('25', 'shanechiu', '$2y$10$geI9pvBf6BvkroUNAoWgvuKvVFHN/gcC3dsvi1MSswlBFqGPnK3Aq', '1', '1487490270', '0');
+INSERT INTO `admin` VALUES ('26', 'shanechiu', '$2y$10$lwI8rwixoLI9fN/G4rBgvuxYm6woRPpXAXLzWLV0Cv1smVee1DGyy', '1', '1487490490', '0');
+INSERT INTO `admin` VALUES ('27', 'shanechiu', '$2y$10$B2BIkdAZp7TXGvwedeK8u.d6GGh9GNmXcIhsF2JPfwSBnVG1NUCMC', '1', '1487490906', '0');
+INSERT INTO `admin` VALUES ('28', 'asdfgsdg', '$2y$10$MQ6bvMU94lJ72a6NXdZt/egIv.gzQLOv3rOK3IJCVeuooniq1dGz.', '1', '1487490984', '0');
+INSERT INTO `admin` VALUES ('29', 'asdfsd', '$2y$10$5T5stD3DZvia2J.mipwOPegpNCE8LQqwIQqQn6xm1vFMpmHPP5Eey', '1', '1487491018', '0');
+INSERT INTO `admin` VALUES ('30', 'shanechiu', '$2y$10$KCb39JMaw4SXZmKGIsJ6TuuAkXTP7cTAdcZ1szlULdFfJ1Z71s72i', '1', '1487491820', '0');
+INSERT INTO `admin` VALUES ('31', 'shanechiu', '$2y$10$YMzucjPLWLx3zVaAb9hJI.NLvG1bHddqaMSbpn5QAI797cCXVtDwm', '1', '1487491846', '0');
+INSERT INTO `admin` VALUES ('32', 'shanechiu', '$2y$10$DK5D/0pa1BaX52eBTVi/d.IduRv7YMZw3PtW/Cbumyp6YBny4NXt6', '1', '1487491872', '0');
+INSERT INTO `admin` VALUES ('33', 'shanechiu', '$2y$10$geI9pvBf6BvkroUNAoWgvuKvVFHN/gcC3dsvi1MSswlBFqGPnK3Aq', '1', '1487490270', '0');
+INSERT INTO `admin` VALUES ('34', 'shanechiu', '$2y$10$lwI8rwixoLI9fN/G4rBgvuxYm6woRPpXAXLzWLV0Cv1smVee1DGyy', '1', '1487490490', '0');
+INSERT INTO `admin` VALUES ('35', 'shanechiu', '$2y$10$B2BIkdAZp7TXGvwedeK8u.d6GGh9GNmXcIhsF2JPfwSBnVG1NUCMC', '1', '1487490906', '0');
+INSERT INTO `admin` VALUES ('36', 'asdfgsdg', '$2y$10$MQ6bvMU94lJ72a6NXdZt/egIv.gzQLOv3rOK3IJCVeuooniq1dGz.', '1', '1487490984', '0');
+INSERT INTO `admin` VALUES ('37', 'asdfsd', '$2y$10$5T5stD3DZvia2J.mipwOPegpNCE8LQqwIQqQn6xm1vFMpmHPP5Eey', '1', '1487491018', '0');
+INSERT INTO `admin` VALUES ('38', 'shanechiu', '$2y$10$KCb39JMaw4SXZmKGIsJ6TuuAkXTP7cTAdcZ1szlULdFfJ1Z71s72i', '1', '1487491820', '0');
+INSERT INTO `admin` VALUES ('39', 'shanechiu', '$2y$10$YMzucjPLWLx3zVaAb9hJI.NLvG1bHddqaMSbpn5QAI797cCXVtDwm', '1', '1487491846', '0');
+INSERT INTO `admin` VALUES ('40', 'shanechiu', '$2y$10$DK5D/0pa1BaX52eBTVi/d.IduRv7YMZw3PtW/Cbumyp6YBny4NXt6', '1', '1487491872', '0');
+INSERT INTO `admin` VALUES ('56', 'shanechiu', '$2y$10$geI9pvBf6BvkroUNAoWgvuKvVFHN/gcC3dsvi1MSswlBFqGPnK3Aq', '1', '1487490270', '0');
+INSERT INTO `admin` VALUES ('57', 'shanechiu', '$2y$10$lwI8rwixoLI9fN/G4rBgvuxYm6woRPpXAXLzWLV0Cv1smVee1DGyy', '1', '1487490490', '0');
+INSERT INTO `admin` VALUES ('58', 'shanechiu', '$2y$10$B2BIkdAZp7TXGvwedeK8u.d6GGh9GNmXcIhsF2JPfwSBnVG1NUCMC', '1', '1487490906', '0');
+INSERT INTO `admin` VALUES ('59', 'asdfgsdg', '$2y$10$MQ6bvMU94lJ72a6NXdZt/egIv.gzQLOv3rOK3IJCVeuooniq1dGz.', '1', '1487490984', '0');
+INSERT INTO `admin` VALUES ('60', 'asdfsd', '$2y$10$5T5stD3DZvia2J.mipwOPegpNCE8LQqwIQqQn6xm1vFMpmHPP5Eey', '1', '1487491018', '0');
+INSERT INTO `admin` VALUES ('61', 'shanechiu', '$2y$10$KCb39JMaw4SXZmKGIsJ6TuuAkXTP7cTAdcZ1szlULdFfJ1Z71s72i', '1', '1487491820', '0');
+INSERT INTO `admin` VALUES ('62', 'shanechiu', '$2y$10$YMzucjPLWLx3zVaAb9hJI.NLvG1bHddqaMSbpn5QAI797cCXVtDwm', '1', '1487491846', '0');
+INSERT INTO `admin` VALUES ('63', 'shanechiu', '$2y$10$DK5D/0pa1BaX52eBTVi/d.IduRv7YMZw3PtW/Cbumyp6YBny4NXt6', '1', '1487491872', '0');
+INSERT INTO `admin` VALUES ('64', 'shanechiu', '$2y$10$geI9pvBf6BvkroUNAoWgvuKvVFHN/gcC3dsvi1MSswlBFqGPnK3Aq', '1', '1487490270', '0');
+INSERT INTO `admin` VALUES ('65', 'shanechiu', '$2y$10$lwI8rwixoLI9fN/G4rBgvuxYm6woRPpXAXLzWLV0Cv1smVee1DGyy', '1', '1487490490', '0');
+INSERT INTO `admin` VALUES ('66', 'shanechiu', '$2y$10$B2BIkdAZp7TXGvwedeK8u.d6GGh9GNmXcIhsF2JPfwSBnVG1NUCMC', '1', '1487490906', '0');
+INSERT INTO `admin` VALUES ('67', 'asdfgsdg', '$2y$10$MQ6bvMU94lJ72a6NXdZt/egIv.gzQLOv3rOK3IJCVeuooniq1dGz.', '1', '1487490984', '0');
+INSERT INTO `admin` VALUES ('68', 'asdfsd', '$2y$10$5T5stD3DZvia2J.mipwOPegpNCE8LQqwIQqQn6xm1vFMpmHPP5Eey', '1', '1487491018', '0');
+INSERT INTO `admin` VALUES ('69', 'shanechiu', '$2y$10$KCb39JMaw4SXZmKGIsJ6TuuAkXTP7cTAdcZ1szlULdFfJ1Z71s72i', '1', '1487491820', '0');
+INSERT INTO `admin` VALUES ('70', 'shanechiu', '$2y$10$YMzucjPLWLx3zVaAb9hJI.NLvG1bHddqaMSbpn5QAI797cCXVtDwm', '1', '1487491846', '0');
+INSERT INTO `admin` VALUES ('71', 'shanechiu', '$2y$10$DK5D/0pa1BaX52eBTVi/d.IduRv7YMZw3PtW/Cbumyp6YBny4NXt6', '1', '1487491872', '0');
+INSERT INTO `admin` VALUES ('72', 'shanechiu', '$2y$10$geI9pvBf6BvkroUNAoWgvuKvVFHN/gcC3dsvi1MSswlBFqGPnK3Aq', '1', '1487490270', '0');
+INSERT INTO `admin` VALUES ('73', 'shanechiu', '$2y$10$lwI8rwixoLI9fN/G4rBgvuxYm6woRPpXAXLzWLV0Cv1smVee1DGyy', '1', '1487490490', '0');
+INSERT INTO `admin` VALUES ('74', 'shanechiu', '$2y$10$B2BIkdAZp7TXGvwedeK8u.d6GGh9GNmXcIhsF2JPfwSBnVG1NUCMC', '1', '1487490906', '0');
+INSERT INTO `admin` VALUES ('75', 'asdfgsdg', '$2y$10$MQ6bvMU94lJ72a6NXdZt/egIv.gzQLOv3rOK3IJCVeuooniq1dGz.', '1', '1487490984', '0');
+INSERT INTO `admin` VALUES ('76', 'asdfsd', '$2y$10$5T5stD3DZvia2J.mipwOPegpNCE8LQqwIQqQn6xm1vFMpmHPP5Eey', '1', '1487491018', '0');
+INSERT INTO `admin` VALUES ('77', 'shanechiu', '$2y$10$KCb39JMaw4SXZmKGIsJ6TuuAkXTP7cTAdcZ1szlULdFfJ1Z71s72i', '1', '1487491820', '0');
+INSERT INTO `admin` VALUES ('78', 'shanechiu', '$2y$10$YMzucjPLWLx3zVaAb9hJI.NLvG1bHddqaMSbpn5QAI797cCXVtDwm', '1', '1487491846', '0');
+INSERT INTO `admin` VALUES ('79', 'shanechiu', '$2y$10$DK5D/0pa1BaX52eBTVi/d.IduRv7YMZw3PtW/Cbumyp6YBny4NXt6', '1', '1487491872', '0');
+INSERT INTO `admin` VALUES ('80', 'shanechiu', '$2y$10$geI9pvBf6BvkroUNAoWgvuKvVFHN/gcC3dsvi1MSswlBFqGPnK3Aq', '1', '1487490270', '0');
+INSERT INTO `admin` VALUES ('81', 'shanechiu', '$2y$10$lwI8rwixoLI9fN/G4rBgvuxYm6woRPpXAXLzWLV0Cv1smVee1DGyy', '1', '1487490490', '0');
+INSERT INTO `admin` VALUES ('82', 'shanechiu', '$2y$10$B2BIkdAZp7TXGvwedeK8u.d6GGh9GNmXcIhsF2JPfwSBnVG1NUCMC', '1', '1487490906', '0');
+INSERT INTO `admin` VALUES ('83', 'asdfgsdg', '$2y$10$MQ6bvMU94lJ72a6NXdZt/egIv.gzQLOv3rOK3IJCVeuooniq1dGz.', '1', '1487490984', '0');
+INSERT INTO `admin` VALUES ('84', 'asdfsd', '$2y$10$5T5stD3DZvia2J.mipwOPegpNCE8LQqwIQqQn6xm1vFMpmHPP5Eey', '1', '1487491018', '0');
+INSERT INTO `admin` VALUES ('85', 'shanechiu', '$2y$10$KCb39JMaw4SXZmKGIsJ6TuuAkXTP7cTAdcZ1szlULdFfJ1Z71s72i', '1', '1487491820', '0');
+INSERT INTO `admin` VALUES ('86', 'shanechiu', '$2y$10$YMzucjPLWLx3zVaAb9hJI.NLvG1bHddqaMSbpn5QAI797cCXVtDwm', '1', '1487491846', '0');
+INSERT INTO `admin` VALUES ('87', 'shanechiu', '$2y$10$DK5D/0pa1BaX52eBTVi/d.IduRv7YMZw3PtW/Cbumyp6YBny4NXt6', '1', '1487491872', '0');
+INSERT INTO `admin` VALUES ('119', 'shanechiu', '$2y$10$geI9pvBf6BvkroUNAoWgvuKvVFHN/gcC3dsvi1MSswlBFqGPnK3Aq', '1', '1487490270', '0');
+INSERT INTO `admin` VALUES ('120', 'shanechiu', '$2y$10$lwI8rwixoLI9fN/G4rBgvuxYm6woRPpXAXLzWLV0Cv1smVee1DGyy', '1', '1487490490', '0');
+INSERT INTO `admin` VALUES ('121', 'shanechiu', '$2y$10$B2BIkdAZp7TXGvwedeK8u.d6GGh9GNmXcIhsF2JPfwSBnVG1NUCMC', '1', '1487490906', '0');
+INSERT INTO `admin` VALUES ('122', 'asdfgsdg', '$2y$10$MQ6bvMU94lJ72a6NXdZt/egIv.gzQLOv3rOK3IJCVeuooniq1dGz.', '1', '1487490984', '0');
+INSERT INTO `admin` VALUES ('123', 'asdfsd', '$2y$10$5T5stD3DZvia2J.mipwOPegpNCE8LQqwIQqQn6xm1vFMpmHPP5Eey', '1', '1487491018', '0');
+INSERT INTO `admin` VALUES ('124', 'shanechiu', '$2y$10$KCb39JMaw4SXZmKGIsJ6TuuAkXTP7cTAdcZ1szlULdFfJ1Z71s72i', '1', '1487491820', '0');
+INSERT INTO `admin` VALUES ('125', 'shanechiu', '$2y$10$YMzucjPLWLx3zVaAb9hJI.NLvG1bHddqaMSbpn5QAI797cCXVtDwm', '1', '1487491846', '0');
+INSERT INTO `admin` VALUES ('126', 'shanechiu', '$2y$10$DK5D/0pa1BaX52eBTVi/d.IduRv7YMZw3PtW/Cbumyp6YBny4NXt6', '1', '1487491872', '0');
+INSERT INTO `admin` VALUES ('127', 'shanechiu', '$2y$10$geI9pvBf6BvkroUNAoWgvuKvVFHN/gcC3dsvi1MSswlBFqGPnK3Aq', '1', '1487490270', '0');
+INSERT INTO `admin` VALUES ('128', 'shanechiu', '$2y$10$lwI8rwixoLI9fN/G4rBgvuxYm6woRPpXAXLzWLV0Cv1smVee1DGyy', '1', '1487490490', '0');
+INSERT INTO `admin` VALUES ('129', 'shanechiu', '$2y$10$B2BIkdAZp7TXGvwedeK8u.d6GGh9GNmXcIhsF2JPfwSBnVG1NUCMC', '1', '1487490906', '0');
+INSERT INTO `admin` VALUES ('130', 'asdfgsdg', '$2y$10$MQ6bvMU94lJ72a6NXdZt/egIv.gzQLOv3rOK3IJCVeuooniq1dGz.', '1', '1487490984', '0');
+INSERT INTO `admin` VALUES ('131', 'asdfsd', '$2y$10$5T5stD3DZvia2J.mipwOPegpNCE8LQqwIQqQn6xm1vFMpmHPP5Eey', '1', '1487491018', '0');
+INSERT INTO `admin` VALUES ('132', 'shanechiu', '$2y$10$KCb39JMaw4SXZmKGIsJ6TuuAkXTP7cTAdcZ1szlULdFfJ1Z71s72i', '1', '1487491820', '0');
+INSERT INTO `admin` VALUES ('133', 'shanechiu', '$2y$10$YMzucjPLWLx3zVaAb9hJI.NLvG1bHddqaMSbpn5QAI797cCXVtDwm', '1', '1487491846', '0');
+INSERT INTO `admin` VALUES ('134', 'shanechiu', '$2y$10$DK5D/0pa1BaX52eBTVi/d.IduRv7YMZw3PtW/Cbumyp6YBny4NXt6', '1', '1487491872', '0');
+INSERT INTO `admin` VALUES ('135', 'shanechiu', '$2y$10$geI9pvBf6BvkroUNAoWgvuKvVFHN/gcC3dsvi1MSswlBFqGPnK3Aq', '1', '1487490270', '0');
+INSERT INTO `admin` VALUES ('136', 'shanechiu', '$2y$10$lwI8rwixoLI9fN/G4rBgvuxYm6woRPpXAXLzWLV0Cv1smVee1DGyy', '1', '1487490490', '0');
+INSERT INTO `admin` VALUES ('137', 'shanechiu', '$2y$10$B2BIkdAZp7TXGvwedeK8u.d6GGh9GNmXcIhsF2JPfwSBnVG1NUCMC', '1', '1487490906', '0');
+INSERT INTO `admin` VALUES ('138', 'asdfgsdg', '$2y$10$MQ6bvMU94lJ72a6NXdZt/egIv.gzQLOv3rOK3IJCVeuooniq1dGz.', '1', '1487490984', '0');
+INSERT INTO `admin` VALUES ('139', 'asdfsd', '$2y$10$5T5stD3DZvia2J.mipwOPegpNCE8LQqwIQqQn6xm1vFMpmHPP5Eey', '1', '1487491018', '0');
+INSERT INTO `admin` VALUES ('140', 'shanechiu', '$2y$10$KCb39JMaw4SXZmKGIsJ6TuuAkXTP7cTAdcZ1szlULdFfJ1Z71s72i', '1', '1487491820', '0');
+INSERT INTO `admin` VALUES ('141', 'shanechiu', '$2y$10$YMzucjPLWLx3zVaAb9hJI.NLvG1bHddqaMSbpn5QAI797cCXVtDwm', '1', '1487491846', '0');
+INSERT INTO `admin` VALUES ('142', 'shanechiu', '$2y$10$DK5D/0pa1BaX52eBTVi/d.IduRv7YMZw3PtW/Cbumyp6YBny4NXt6', '1', '1487491872', '0');
+INSERT INTO `admin` VALUES ('143', 'shanechiu', '$2y$10$geI9pvBf6BvkroUNAoWgvuKvVFHN/gcC3dsvi1MSswlBFqGPnK3Aq', '1', '1487490270', '0');
+INSERT INTO `admin` VALUES ('144', 'shanechiu', '$2y$10$lwI8rwixoLI9fN/G4rBgvuxYm6woRPpXAXLzWLV0Cv1smVee1DGyy', '1', '1487490490', '0');
+INSERT INTO `admin` VALUES ('145', 'shanechiu', '$2y$10$B2BIkdAZp7TXGvwedeK8u.d6GGh9GNmXcIhsF2JPfwSBnVG1NUCMC', '1', '1487490906', '0');
+INSERT INTO `admin` VALUES ('146', 'asdfgsdg', '$2y$10$MQ6bvMU94lJ72a6NXdZt/egIv.gzQLOv3rOK3IJCVeuooniq1dGz.', '1', '1487490984', '0');
+INSERT INTO `admin` VALUES ('147', 'asdfsd', '$2y$10$5T5stD3DZvia2J.mipwOPegpNCE8LQqwIQqQn6xm1vFMpmHPP5Eey', '1', '1487491018', '0');
+INSERT INTO `admin` VALUES ('148', 'shanechiu', '$2y$10$KCb39JMaw4SXZmKGIsJ6TuuAkXTP7cTAdcZ1szlULdFfJ1Z71s72i', '1', '1487491820', '0');
+INSERT INTO `admin` VALUES ('149', 'shanechiu', '$2y$10$YMzucjPLWLx3zVaAb9hJI.NLvG1bHddqaMSbpn5QAI797cCXVtDwm', '1', '1487491846', '0');
+INSERT INTO `admin` VALUES ('150', 'shanechiu', '$2y$10$DK5D/0pa1BaX52eBTVi/d.IduRv7YMZw3PtW/Cbumyp6YBny4NXt6', '1', '1487491872', '0');
+INSERT INTO `admin` VALUES ('151', 'shanechiu', '$2y$10$geI9pvBf6BvkroUNAoWgvuKvVFHN/gcC3dsvi1MSswlBFqGPnK3Aq', '1', '1487490270', '0');
+INSERT INTO `admin` VALUES ('152', 'shanechiu', '$2y$10$lwI8rwixoLI9fN/G4rBgvuxYm6woRPpXAXLzWLV0Cv1smVee1DGyy', '1', '1487490490', '0');
+INSERT INTO `admin` VALUES ('153', 'shanechiu', '$2y$10$B2BIkdAZp7TXGvwedeK8u.d6GGh9GNmXcIhsF2JPfwSBnVG1NUCMC', '1', '1487490906', '0');
+INSERT INTO `admin` VALUES ('154', 'asdfgsdg', '$2y$10$MQ6bvMU94lJ72a6NXdZt/egIv.gzQLOv3rOK3IJCVeuooniq1dGz.', '1', '1487490984', '0');
+INSERT INTO `admin` VALUES ('155', 'asdfsd', '$2y$10$5T5stD3DZvia2J.mipwOPegpNCE8LQqwIQqQn6xm1vFMpmHPP5Eey', '1', '1487491018', '0');
+INSERT INTO `admin` VALUES ('156', 'shanechiu', '$2y$10$KCb39JMaw4SXZmKGIsJ6TuuAkXTP7cTAdcZ1szlULdFfJ1Z71s72i', '1', '1487491820', '0');
+INSERT INTO `admin` VALUES ('157', 'shanechiu', '$2y$10$YMzucjPLWLx3zVaAb9hJI.NLvG1bHddqaMSbpn5QAI797cCXVtDwm', '1', '1487491846', '0');
+INSERT INTO `admin` VALUES ('158', 'shanechiu', '$2y$10$DK5D/0pa1BaX52eBTVi/d.IduRv7YMZw3PtW/Cbumyp6YBny4NXt6', '1', '1487491872', '0');
+INSERT INTO `admin` VALUES ('159', 'shanechiu', '$2y$10$geI9pvBf6BvkroUNAoWgvuKvVFHN/gcC3dsvi1MSswlBFqGPnK3Aq', '1', '1487490270', '0');
+INSERT INTO `admin` VALUES ('160', 'shanechiu', '$2y$10$lwI8rwixoLI9fN/G4rBgvuxYm6woRPpXAXLzWLV0Cv1smVee1DGyy', '1', '1487490490', '0');
+INSERT INTO `admin` VALUES ('161', 'shanechiu', '$2y$10$B2BIkdAZp7TXGvwedeK8u.d6GGh9GNmXcIhsF2JPfwSBnVG1NUCMC', '1', '1487490906', '0');
+INSERT INTO `admin` VALUES ('162', 'asdfgsdg', '$2y$10$MQ6bvMU94lJ72a6NXdZt/egIv.gzQLOv3rOK3IJCVeuooniq1dGz.', '1', '1487490984', '0');
+INSERT INTO `admin` VALUES ('163', 'asdfsd', '$2y$10$5T5stD3DZvia2J.mipwOPegpNCE8LQqwIQqQn6xm1vFMpmHPP5Eey', '1', '1487491018', '0');
+INSERT INTO `admin` VALUES ('164', 'shanechiu', '$2y$10$KCb39JMaw4SXZmKGIsJ6TuuAkXTP7cTAdcZ1szlULdFfJ1Z71s72i', '1', '1487491820', '0');
+INSERT INTO `admin` VALUES ('165', 'shanechiu', '$2y$10$YMzucjPLWLx3zVaAb9hJI.NLvG1bHddqaMSbpn5QAI797cCXVtDwm', '1', '1487491846', '0');
+INSERT INTO `admin` VALUES ('166', 'shanechiu', '$2y$10$DK5D/0pa1BaX52eBTVi/d.IduRv7YMZw3PtW/Cbumyp6YBny4NXt6', '1', '1487491872', '0');
+INSERT INTO `admin` VALUES ('167', 'shanechiu', '$2y$10$geI9pvBf6BvkroUNAoWgvuKvVFHN/gcC3dsvi1MSswlBFqGPnK3Aq', '1', '1487490270', '0');
+INSERT INTO `admin` VALUES ('168', 'shanechiu', '$2y$10$lwI8rwixoLI9fN/G4rBgvuxYm6woRPpXAXLzWLV0Cv1smVee1DGyy', '1', '1487490490', '0');
+INSERT INTO `admin` VALUES ('169', 'shanechiu', '$2y$10$B2BIkdAZp7TXGvwedeK8u.d6GGh9GNmXcIhsF2JPfwSBnVG1NUCMC', '1', '1487490906', '0');
+INSERT INTO `admin` VALUES ('170', 'asdfgsdg', '$2y$10$MQ6bvMU94lJ72a6NXdZt/egIv.gzQLOv3rOK3IJCVeuooniq1dGz.', '1', '1487490984', '0');
+INSERT INTO `admin` VALUES ('171', 'asdfsd', '$2y$10$5T5stD3DZvia2J.mipwOPegpNCE8LQqwIQqQn6xm1vFMpmHPP5Eey', '1', '1487491018', '0');
+INSERT INTO `admin` VALUES ('172', 'shanechiu', '$2y$10$KCb39JMaw4SXZmKGIsJ6TuuAkXTP7cTAdcZ1szlULdFfJ1Z71s72i', '1', '1487491820', '0');
+INSERT INTO `admin` VALUES ('173', 'shanechiu', '$2y$10$YMzucjPLWLx3zVaAb9hJI.NLvG1bHddqaMSbpn5QAI797cCXVtDwm', '1', '1487491846', '0');
+INSERT INTO `admin` VALUES ('174', 'shanechiu', '$2y$10$DK5D/0pa1BaX52eBTVi/d.IduRv7YMZw3PtW/Cbumyp6YBny4NXt6', '1', '1487491872', '0');
+INSERT INTO `admin` VALUES ('175', 'shanechiu', '$2y$10$geI9pvBf6BvkroUNAoWgvuKvVFHN/gcC3dsvi1MSswlBFqGPnK3Aq', '1', '1487490270', '0');
+INSERT INTO `admin` VALUES ('176', 'shanechiu', '$2y$10$lwI8rwixoLI9fN/G4rBgvuxYm6woRPpXAXLzWLV0Cv1smVee1DGyy', '1', '1487490490', '0');
+INSERT INTO `admin` VALUES ('177', 'shanechiu', '$2y$10$B2BIkdAZp7TXGvwedeK8u.d6GGh9GNmXcIhsF2JPfwSBnVG1NUCMC', '1', '1487490906', '0');
+INSERT INTO `admin` VALUES ('178', 'asdfgsdg', '$2y$10$MQ6bvMU94lJ72a6NXdZt/egIv.gzQLOv3rOK3IJCVeuooniq1dGz.', '1', '1487490984', '0');
+INSERT INTO `admin` VALUES ('179', 'asdfsd', '$2y$10$5T5stD3DZvia2J.mipwOPegpNCE8LQqwIQqQn6xm1vFMpmHPP5Eey', '1', '1487491018', '0');
+INSERT INTO `admin` VALUES ('180', 'shanechiu', '$2y$10$KCb39JMaw4SXZmKGIsJ6TuuAkXTP7cTAdcZ1szlULdFfJ1Z71s72i', '1', '1487491820', '0');
+INSERT INTO `admin` VALUES ('181', 'shanechiu', '$2y$10$YMzucjPLWLx3zVaAb9hJI.NLvG1bHddqaMSbpn5QAI797cCXVtDwm', '1', '1487491846', '0');
+INSERT INTO `admin` VALUES ('182', 'shanechiu', '$2y$10$DK5D/0pa1BaX52eBTVi/d.IduRv7YMZw3PtW/Cbumyp6YBny4NXt6', '1', '1487491872', '0');
+INSERT INTO `admin` VALUES ('246', 'shanechiu', '$2y$10$jlFNzVGa6C.qj4wJp/9ts.PpRxHzFs4RRkWEcTQxpeXyIpPe.V4Sa', '1', '1487552261', '0');
 
 -- ----------------------------
 -- Table structure for ads
@@ -517,7 +642,9 @@ CREATE TABLE `user` (
   `phone` varchar(14) NOT NULL DEFAULT '',
   `everify` tinyint(1) unsigned NOT NULL DEFAULT '0' COMMENT '邮箱验证：0为未验证 1为已验证',
   `pverify` tinyint(1) unsigned NOT NULL DEFAULT '0' COMMENT '电话验证状态 ：''0'' 为未验证  ''1''为已验证 默认值为''0''',
-  `email` varchar(32) NOT NULL DEFAULT '' COMMENT '电子邮箱',
+  `ptoken` varchar(255) DEFAULT '' COMMENT '手机验证token验证值',
+  `etoken` varchar(255) DEFAULT '' COMMENT '邮箱验证token值',
+  `email` varchar(128) NOT NULL DEFAULT '' COMMENT '电子邮箱',
   `atime` int(10) unsigned DEFAULT '0' COMMENT '注册时间',
   `ltime` int(10) unsigned DEFAULT '0' COMMENT '上次登录时间',
   PRIMARY KEY (`id`)
