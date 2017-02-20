@@ -464,4 +464,5 @@ Route::controller('/home/custser','home\CustserController');
 
 Route::controller('/admin/user','admin\user\AdminController');
 Route::controller('/admin/member','admin\user\MemberController');
+Route::controller('/admin/brand','admin\brand\IndexController');
 
