@@ -15,7 +15,28 @@ CKEDITOR.editorConfig = function( config ) {
 	config.width = '100%';
 	// 设置编辑器高度
 	config.height = '400px';
+	// button
+	config.extraPlugins = 'button';
+	// toolbar
+	config.extraPlugins = 'toolbar';
+	// widgetselection
+	config.extraPlugins = 'widgetselection';
+	// lineutils;
+	config.extraPlugins = 'lineutils';
+	// notification;
+	config.extraPlugins = 'notification';
+	// 开启notificationaggregator
+	config.extraPlugins = 'notificationaggregator';
 	// 取消resize功能
 	config.removePlugins = 'resize';
-	
+	// 开启widget;
+	config.extraPlugins = 'widget';
+	// 开启文件上传filetools
+	config.extraPlugins = 'filetools';
+	// 开启uploadwidget;
+	config.extraPlugins = 'uploadwidget';
+	// 启用uploadimage
+	 config.extraPlugins = 'uploadimage';
+
+	 config.uploadUrl = '/uploader/upload.php';
 }

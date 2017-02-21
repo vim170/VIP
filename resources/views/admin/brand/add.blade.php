@@ -102,7 +102,6 @@
 		               CKEDITOR.replace( 'editor1',{
 		               		customConfig: 'ckeditor_config.js'
 		               } );
-		               
 		           </script>
     			</div>
     		</div>
