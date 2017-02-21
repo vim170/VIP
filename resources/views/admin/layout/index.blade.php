@@ -205,11 +205,6 @@
                         <li><a href="/admin/login/changepassword">修改密码</a></li>
                         <li><a href="/admin/login/logout">退出后台</a></li>
                         Hello, John Doe
-                    </div>
-                    <ul>
-                    	<li><a href="#">Profile</a></li>
-                        <li><a href="#">Change Password</a></li>
-                        <li><a href="index.html">Logout</a></li>
                     </ul>
                 </div>
             </div>
@@ -308,8 +303,6 @@
 					<li class="active">
 					    <a href="#"><i class="icon-users"></i>用户管理</a>
 					    <ul>
-					        <li><a href="/admin/user">会员列表</a></li>
-                            <li><a href="/admin/admin">管理员列表</a></li>
 					        <li><a href="/admin/member">会员列表</a></li>
                             <li><a href="/admin/user">管理员列表</a></li>
 					    </ul>
@@ -321,7 +314,6 @@
 					    <ul>
 					        <li><a href="form_layouts.html">基本信息</a></li>
                             <li><a href="/admin/ads">广告列表</a></li>
-                            <li><a href="form_layouts.html">广告列表</a></li>
                             <li><a href="form_layouts.html">友情链接</a></li>
 
 					    </ul>

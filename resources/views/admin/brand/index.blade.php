@@ -5,3 +5,6 @@
 @section('title')
 	{{ Config::get('app.title') }}
 @endsection
+@section('content')
+	
+@endsection
