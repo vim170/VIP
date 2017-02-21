@@ -13,4 +13,16 @@ class IndexController extends Controller
    {
         return view('admin.brand.index');
    }
+
+
+   public function getAdd()
+   {
+   	return view('admin.brand.add');
+   }
+   public function postInsert()
+   {
+   		var_dump($_POST);
+   		$time = strtotime($_POST['countdown']);
+   		var_dump($time);
+   }
 }
