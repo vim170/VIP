@@ -136,9 +136,9 @@ class AdminController extends Controller
     {
         $res = DB::table('admin') -> where('id',$id) -> delete();
         if($res){
-            return redirect('admin/admin/index') -> with('success','删除成功');
+            return redirect('admin/user/index') -> with('success','删除成功');
         } else {
-            return back() -> with('error','删除失败');
+            return back() -> withInput() -> with('error','删除失败');
         }
     }
     

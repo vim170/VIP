@@ -41,7 +41,6 @@ return [
 
     'timezone' => 'PRC',
     'title' => '唯品会',
-
     /*
     |--------------------------------------------------------------------------
     | Application Locale Configuration

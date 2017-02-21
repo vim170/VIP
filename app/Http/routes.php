@@ -300,8 +300,9 @@ Route::controller('/home/fback','home\FbackController');
 
 
 
-
-
+Route::controller('/admin/login','admin\user\LoginController');
+Route::get('/code','CodeController@index');
+Route::controller('/admin/ads','admin\ads\AdsController');
 
 
 

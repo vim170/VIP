@@ -198,6 +198,12 @@
                 <!-- Username and Functions -->
                 <div id="mws-user-functions">
                     <div id="mws-username">
+                        Hello, {{ session('name') }}
+                    </div>
+                    <ul>
+                    	<li><a href="#">Profile</a></li>
+                        <li><a href="/admin/login/changepassword">修改密码</a></li>
+                        <li><a href="/admin/login/logout">退出后台</a></li>
                         Hello, John Doe
                     </div>
                     <ul>
@@ -302,6 +308,8 @@
 					<li class="active">
 					    <a href="#"><i class="icon-users"></i>用户管理</a>
 					    <ul>
+					        <li><a href="/admin/user">会员列表</a></li>
+                            <li><a href="/admin/admin">管理员列表</a></li>
 					        <li><a href="/admin/member">会员列表</a></li>
                             <li><a href="/admin/user">管理员列表</a></li>
 					    </ul>
@@ -312,6 +320,7 @@
 					    <a href="#"><i class="icon-cog"></i>控制面板</a>
 					    <ul>
 					        <li><a href="form_layouts.html">基本信息</a></li>
+                            <li><a href="/admin/ads">广告列表</a></li>
                             <li><a href="form_layouts.html">广告列表</a></li>
                             <li><a href="form_layouts.html">友情链接</a></li>
 
@@ -394,6 +403,7 @@
     <script src="/resources/plugins/cleditor/jquery.cleditor.table.min.js"></script>
     <script src="/resources/plugins/cleditor/jquery.cleditor.xhtml.min.js"></script>
     <script src="/resources/plugins/cleditor/jquery.cleditor.icon.min.js"></script>
+    <script src="/ho/js/jquery-1.8.3.min.js"></script>
 
     <!-- Core Script -->
     <script src="/resources/bootstrap/js/bootstrap.min.js"></script>
@@ -406,6 +416,5 @@
     <script src="/resources/js/demo/demo.formelements.js"></script>
     <!--全局js函数-->
     <script type="text/javascript" src="/global/global.js"></script>
-
 </body>
 </html>
