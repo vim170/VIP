@@ -17,13 +17,13 @@
                             <label>
                             <form action="/admin/member/index" method="get">
                             显示 
-                                <select size="1" name="count" aria-controls="DataTables_Table_1">
+                                <select size="1" name="count" aria-controls="DataTables_Table_1" id="foo">
                                 <option value="10" @if(!empty($request['count']) && $request['count'] == 10) selected @endif>10</option>
                                 <option value="25" @if(!empty($request['count']) && $request['count'] == 25) selected @endif>25</option>
                                 <option value="50" @if(!empty($request['count']) && $request['count'] == 50) selected @endif>50</option>
                                 <option value="100" @if(!empty($request['count']) && $request['count'] == 100) selected @endif>100</option>
                             </select> 条</label>
-
+                            
                         </div>
                         <div class="dataTables_filter" id="DataTables_Table_1_filter">
                                 <label>Search: <input type="text" aria-controls="DataTables_Table_1" name="search" value="{{ $request['search'] or ''}}"></label>
@@ -101,12 +101,24 @@
                         </div>
                         </form>
                         <script type="text/javascript">
-                            var pagination = document.getElementsByClassName('pagination');
-                            // alert(pagination);
+                        // $(document).ready(function(){
+                        //     $("select#foo").change(function(){
+                        //         var v = $( "select#foo option:checked" ).val()
+                        //         $.ajax({
+                        //            type: "GET",
+                        //            url: "/admin/member/count",
+                        //            data: {'count':v},
+                        //            dataType: 'json',
+                        //            success: function($data){
 
+
+                        //            }
+                        //         });
+                        //     })
+
+                        // })
+                            
                         </script>
-                        
-                        
                         </div>
                     </div>
                 </div>

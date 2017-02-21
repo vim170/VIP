@@ -24,6 +24,9 @@ class MemberController extends Controller
         // paginate 可以查询数据并且分页
         $count = $request -> input('count',10);
         $search = $request -> input('search','');
+        // if ($request -> ajax()) {
+        //    return view('admin.member.index', ['data' => $data,'request' => $request -> all()])->render(); 
+        // }
 
         $data = DB::table('user') -> where('name','like','%'.$search.'%') -> paginate($count);
         return view('admin.member.index',['data' => $data,'request' => $request -> all()]);
@@ -84,5 +87,12 @@ class MemberController extends Controller
         } else {
             return back() -> with('error','修改失败');
         } 
+    }
+
+
+    public function getCount(Request $request)
+    {
+        // $data = DB::table('user')  -> paginate($count);
+        // return response()->view('admin.member.index',['data' => $data,'request' => $request -> all()]);    
     }
 }

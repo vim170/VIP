@@ -32,6 +32,8 @@
 <!-- jQuery-UI Stylesheet -->
 <link rel="stylesheet" type="text/css" href="/resources/jui/css/jquery.ui.all.css" media="screen">
 <link rel="stylesheet" type="text/css" href="/resources/jui/jquery-ui.custom.css" media="screen">
+<script src="/ho/js/jquery-1.8.3.min.js"></script>
+
 
 <!-- Theme Stylesheet -->
 <link rel="stylesheet" type="text/css" href="/resources/css/mws-theme.css" media="screen">
@@ -392,7 +394,6 @@
     <script src="/resources/plugins/cleditor/jquery.cleditor.table.min.js"></script>
     <script src="/resources/plugins/cleditor/jquery.cleditor.xhtml.min.js"></script>
     <script src="/resources/plugins/cleditor/jquery.cleditor.icon.min.js"></script>
-    <script src="/ho/js/jquery-1.8.3.min.js"></script>
 
     <!-- Core Script -->
     <script src="/resources/bootstrap/js/bootstrap.min.js"></script>
