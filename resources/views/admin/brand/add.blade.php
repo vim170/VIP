@@ -17,17 +17,22 @@
 @section('content')
 
 <div class="mws-panel grid_8">
+
+
+
+
+
 	<div class="mws-panel-header">
     	<span>品牌列表</span>
     </div>
-    <div class="mws-panel-body no-padding" >
-    	<form class="mws-form" action="/admin/brand/insert" method="post">
+    <div class="mws-panel-body no-padding">
+    	<form class="mws-form" action="/admin/brand/insert" method="post" enctype="multipart/form-data">
     		{{ csrf_field() }}
     		<div class="mws-form-inline">
     			<div class="mws-form-row">
     				<label class="mws-form-label">品牌名称</label>
     				<div class="mws-form-item">
-    					<input type="text" class="small" style="width: 430px;">
+    					<input type="text" class="small" style="width: 430px;" name="brandname">
     				</div>
     			</div>
 				<script type="text/javascript">
@@ -37,23 +42,75 @@
     			<div class="mws-form-row">
     				<label class="mws-form-label">频道列表</label>
     				<div class="mws-form-item">
-    					<select class="large" name="navs" style="width: 430px;">
+    					<select class="large" name="navid" style="width: 430px;">
     						<option value="0">请选择</option>
     					</select>
     				</div>
     			</div>
+
+    			<script type="text/javascript">
+    				//下面用于图片上传预览功能
+    				function setImagePreview(avalue) {
+    				var docObj=document.getElementById("doc");
+    				 
+    				var imgObjPreview=document.getElementById("preview");
+    				if(docObj.files &&docObj.files[0])
+    				{
+    				//火狐下，直接设img属性
+    				imgObjPreview.style.display = 'block';
+    				imgObjPreview.style.width = '270px';
+    				imgObjPreview.style.height = '200px'; 
+    				//imgObjPreview.src = docObj.files[0].getAsDataURL();
+    				 
+    				//火狐7以上版本不能用上面的getAsDataURL()方式获取，需要一下方式
+    				imgObjPreview.src = window.URL.createObjectURL(docObj.files[0]);
+    				}
+    				else
+    				{
+    				//IE下，使用滤镜
+    				docObj.select();
+    				var imgSrc = document.selection.createRange().text;
+    				var localImagId = document.getElementById("localImag");
+    				//必须设置初始大小
+    				localImagId.style.width = "270px";
+    				localImagId.style.height = "200px";
+    				//图片异常的捕捉，防止用户修改后缀来伪造图片
+    				try{
+    				localImagId.style.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=scale)";
+    				localImagId.filters.item("DXImageTransform.Microsoft.AlphaImageLoader").src = imgSrc;
+    				}
+    				catch(e)
+    				{
+    				alert("您上传的图片格式不正确，请重新选择!");
+    				return false;
+    				}
+    				imgObjPreview.style.display = 'none';
+    				document.selection.empty();
+    				}
+    				return true;
+    				}
+    				 
+    			</script>
 				
-    			
+			    <div class="mws-form-row">
+					<label class="mws-form-label" style="text-align">品牌logo</label>
+					<div class="mws-form-item clearfix">
+						<img id="preview" src="" width="270" height="200" style="display: block;border:1px solid #ddd; width: 160px; height: 170px;">
+						<p class="mat5">
+						<input type="file" name="brandlogo" id="doc" style="width:160px;" onchange="javascript:setImagePreview();">
+						</p>
+					</div>
+				</div>
     			<div class="mws-form-row" style="text-align: left;">
 					<label class="mws-form-label" style="text-align: left">参加&nbsp;&nbsp;&nbsp;</label>
 					<div class="mws-form-item">
 	                	<ul class="mws-form-list inline">
 	                    	<li>
-		                    	<input id="gender_male" type="radio" name="isnew" class="required" checked> 
+		                    	<input id="gender_male" type="radio" name="state" class="required" value="1" checked> 
 		                    	<label for="gender_male" style="text-align: left">特卖会</label>
 	                    	</li>
 	                    	<li>
-	                    		<input id="gender_female" type="radio" name="isnew"> 
+	                    		<input id="gender_female" type="radio" name="state" value="2"> 
 	                    		<label for="gender_female">预售</label>
 	                    	</li>
 	                    </ul>
@@ -68,6 +125,9 @@
     					</ul>
     				</div>
     			</div>
+
+
+
     			<div class="mws-form-row">
 					<label class="mws-form-label">状态</label>
 					<div class="mws-form-item">
@@ -95,7 +155,7 @@
 
     			<div class="mws-form-row">
     				<!-- 加载编辑器的容器 -->
-    				    <script id="container" name="content" type="text/plain">
+    				    <script id="container" name="brandcontent" type="text/plain">
 
     				    </script>
     				    <!-- 配置文件 -->
@@ -113,6 +173,12 @@
     			<input type="reset" value="重置" class="btn ">
     		</div>
     	</form>
+    	<script type="text/javascript">
+    		$('input[type=file]').blur(function(){
+    			// alert(1);
+    		})
+    	</script>
+
     </div>    	
 </div>
 @endsection
