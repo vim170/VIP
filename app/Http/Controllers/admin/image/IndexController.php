@@ -9,8 +9,8 @@ use App\Http\Controllers\Controller;
 
 class IndexController extends Controller
 {
-    public function postIndex()
+    public function postIndex(Request $request)
     {
-        var_dump($_POST);
+
     }
 }

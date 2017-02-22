@@ -14,7 +14,7 @@ CKEDITOR.editorConfig = function( config ) {
 	// 设置编辑器宽度
 	config.width = '100%';
 	// 设置编辑器高度
-	config.height = '400px';
+	config.height = '600px';
 	// button
 	config.extraPlugins = 'button';
 	// toolbar
@@ -37,6 +37,10 @@ CKEDITOR.editorConfig = function( config ) {
 	config.extraPlugins = 'uploadwidget';
 	// 启用uploadimage
 	config.extraPlugins = 'uploadimage';
+	// filebrowser
+	config.extraPlugins = 'filebrowser';
+	// popup
+	config.extraPlugins = 'popup';
 	
 	 
 }

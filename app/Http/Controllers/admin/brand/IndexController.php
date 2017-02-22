@@ -19,9 +19,12 @@ class IndexController extends Controller
    {
    	return view('admin.brand.add');
    }
-   public function postInsert()
+   public function postInsert(Request $request)
    {
-   		var_dump($_POST);
+   		// var_dump($_FILES('upload'));
+   		// dd($request -> file('upload'));
+   		// print_r($_FILES('upload'));
+   		var_dump($request -> all());
    		$time = strtotime($_POST['countdown']);
    		var_dump($time);
    }

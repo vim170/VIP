@@ -27,7 +27,7 @@
     			<div class="mws-form-row">
     				<label class="mws-form-label">品牌名称</label>
     				<div class="mws-form-item">
-    					<input type="text" class="small">
+    					<input type="text" class="small" style="width: 430px;">
     				</div>
     			</div>
 				<script type="text/javascript">
@@ -49,7 +49,7 @@
 					<div class="mws-form-item">
 	                	<ul class="mws-form-list inline">
 	                    	<li>
-		                    	<input id="gender_male" type="radio" name="isnew" class="required"> 
+		                    	<input id="gender_male" type="radio" name="isnew" class="required" checked> 
 		                    	<label for="gender_male" style="text-align: left">特卖会</label>
 	                    	</li>
 	                    	<li>
@@ -72,43 +72,45 @@
 					<label class="mws-form-label">状态</label>
 					<div class="mws-form-item">
 	                	<ul class="mws-form-list inline">
-	                    	<li><input id="gender_male" type="radio" name="enabled" value="1" class="required"> <label for="gender_male">出售</label></li>
+	                    	<li><input id="gender_male" type="radio" name="enabled" value="1" class="required" checked> <label for="gender_male">出售</label></li>
 	                    	<li><input id="gender_female" type="radio" name="enabled" value="2"> <label for="gender_female">下架</label></li>
 	                    </ul>
 	                    <label for="gender" class="error plain" generated="true" style="display:none"></label>
 					</div>
 				</div>
-
-
     			<div class="mws-form-row">
     				<label class="mws-form-label">截至日期</label>
     				<div class="mws-form-item">
     				<input type="text"  id="daterange" name="countdown" value="{{ date('Y-m-d') .' 17:00' }}" /><span style="color:gray;margin-left:5px;">17:00之前</span>
     			</div>
     			<script type="text/javascript">
-				    $("#daterange").datepicker();
+				    $("#daterange").datepicker({
+				    	showAnim: "fadeIn",
+  						showOptions: { direction: "up" }
+					});
 				    $('#daterange').change(function(){
 				        $(this).attr('value', $('#daterange').val());
 				    });
     			</script>
 
     			<div class="mws-form-row">
-    				<textarea  name="content" id="editor1" rows="10" cols="80">
+    				<!-- 加载编辑器的容器 -->
+    				    <script id="container" name="content" type="text/plain">
 
-		           </textarea>
-		           <script>
-		               // Replace the <textarea id="editor1"> with a CKEditor
-		               // instance, using default configuration.
-		               CKEDITOR.replace( 'editor1',{
-		                customConfig: 'ckeditor_config.js'
-		               		
-		               });
-		           </script>
+    				    </script>
+    				    <!-- 配置文件 -->
+    				    <script type="text/javascript" src="/resources/ueditor/ueditor.config.js"></script>
+    				    <!-- 编辑器源码文件 -->
+    				    <script type="text/javascript" src="/resources/ueditor/ueditor.all.js"></script>
+    				    <!-- 实例化编辑器 -->
+    				    <script type="text/javascript">
+    				        var ue = UE.getEditor('container');
+    				    </script>
     			</div>
     		</div>
     		<div class="mws-button-row">
-    			<input type="submit" value="Submit" class="btn btn-danger">
-    			<input type="reset" value="Reset" class="btn ">
+    			<input type="submit" value="提交" class="btn btn-danger">
+    			<input type="reset" value="重置" class="btn ">
     		</div>
     	</form>
     </div>    	
