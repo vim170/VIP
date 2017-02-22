@@ -36,7 +36,7 @@ CKEDITOR.editorConfig = function( config ) {
 	// 开启uploadwidget;
 	config.extraPlugins = 'uploadwidget';
 	// 启用uploadimage
-	 config.extraPlugins = 'uploadimage';
-
-	 config.uploadUrl = '/uploader/upload.php';
+	config.extraPlugins = 'uploadimage';
+	
+	 
 }
