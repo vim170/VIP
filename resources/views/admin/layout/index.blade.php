@@ -26,6 +26,8 @@
 <link rel="stylesheet" type="text/css" href="/resources/css/icons/icol16.css" media="screen">
 <link rel="stylesheet" type="text/css" href="/resources/css/icons/icol32.css" media="screen">
 
+
+
 <!-- Demo Stylesheet -->
 <link rel="stylesheet" type="text/css" href="/resources/css/demo.css" media="screen">
 
@@ -33,16 +35,39 @@
 <link rel="stylesheet" type="text/css" href="/resources/jui/css/jquery.ui.all.css" media="screen">
 <link rel="stylesheet" type="text/css" href="/resources/jui/jquery-ui.custom.css" media="screen">
 
+
 <!-- Theme Stylesheet -->
 <link rel="stylesheet" type="text/css" href="/resources/css/mws-theme.css" media="screen">
 <link rel="stylesheet" type="text/css" href="/resources/css/themer.css" media="screen">
+<script type="text/javascript" src="/ho/js/jquery-1.8.3.min.js"></script>
+<!-- Include Required Prerequisites -->
+<!-- <script type="text/javascript" src="//cdn.jsdelivr.net/jquery/1/jquery.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/bootstrap/3/css/bootstrap.css" />
+ 
+Include Date Range Picker
+<script type="text/javascript" src="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.js"></script>
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.css" /> -->
+<!-- <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"> -->
+<!-- <link rel="stylesheet" href="/resources/demos/style.css"> -->
+
+<!-- <script src="https://code.jquery.com/jquery-1.12.4.js"></script> -->
+<!-- <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> -->
+<!--start 自己添加-->
+@section('js')
+
+@show
+
+<!--end 自己添加-->
+>>>>>>> b8fe41da44a271c2b890f6800d5a62b7196e8454
 @section('css')
 @show
 <title>
 	@section('title')
 	@show
 </title>
-
+@section('datepicker')
+@show
 </head>
 
 <body>
@@ -201,6 +226,7 @@
                     	<li><a href="#">Profile</a></li>
                         <li><a href="/admin/login/changepassword">修改密码</a></li>
                         <li><a href="/admin/login/logout">退出后台</a></li>
+                        Hello, John Doe
                     </ul>
                 </div>
             </div>
@@ -311,6 +337,9 @@
 					        <li><a href="/admin/setting">基本信息</a></li>
                             <li><a href="/admin/ads">广告列表</a></li>
                             <li><a href="/admin/frilinks">友情链接</a></li>
+					        <li><a href="form_layouts.html">基本信息</a></li>
+                            <li><a href="/admin/ads">广告列表</a></li>
+                            <li><a href="form_layouts.html">友情链接</a></li>
 					    </ul>
 					</li>
                    
@@ -391,18 +420,15 @@
     <script src="/resources/plugins/cleditor/jquery.cleditor.xhtml.min.js"></script>
     <script src="/resources/plugins/cleditor/jquery.cleditor.icon.min.js"></script>
     <script src="/ho/js/jquery-1.8.3.min.js"></script>
-
     <!-- Core Script -->
     <script src="/resources/bootstrap/js/bootstrap.min.js"></script>
     <script src="/resources/js/core/mws.js"></script>
 
-    <!-- Themer Script (Remove if not needed) -->
-    <script src="/resources/js/core/themer.js"></script>
+    
 
     <!-- Demo Scripts (remove if not needed) -->
     <script src="/resources/js/demo/demo.formelements.js"></script>
     <!--全局js函数-->
     <script type="text/javascript" src="/global/global.js"></script>
-
 </body>
 </html>

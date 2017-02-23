@@ -319,6 +319,8 @@ Route::controller('/home/regist','home\RegistController');
 
 
 
+=======
+>>>>>>> b8fe41da44a271c2b890f6800d5a62b7196e8454
 
 
 
@@ -477,8 +479,10 @@ Route::controller('/home/regist','home\RegistController');
 
 
 Route::controller('/admin/user','admin\user\AdminController');
-
 Route::controller('/admin/member','admin\user\MemberController');
 Route::controller('/admin/brand','admin\brand\IndexController');
 Route::controller('/admin/navcast','admin\navcast\IndexController');
-
+Route::controller('/admin/member','admin\user\MemberController');
+Route::controller('/admin/brand','admin\brand\IndexController');
+Route::controller('/admin/navcast','admin\navcast\IndexController');
+Route::controller('/admin/image','admin\image\IndexController');

@@ -140,7 +140,8 @@ class AdminController extends Controller
         }else{
             return back() -> withInput() -> with('error','删除失败');
             return redirect('admin/admin/index') -> with('success','删除成功');
-        
+        }
     }
+    
 }
 }

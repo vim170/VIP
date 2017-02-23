@@ -41,7 +41,6 @@ return [
 
     'timezone' => 'PRC',
     'title' => '唯品会',
-
     /*
     |--------------------------------------------------------------------------
     | Application Locale Configuration
@@ -146,7 +145,6 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
         Barryvdh\Debugbar\ServiceProvider::class,
-
     ],
 
     /*
