@@ -39,9 +39,7 @@
 <!-- Theme Stylesheet -->
 <link rel="stylesheet" type="text/css" href="/resources/css/mws-theme.css" media="screen">
 <link rel="stylesheet" type="text/css" href="/resources/css/themer.css" media="screen">
-<!-- <script type="text/javascript" src="/ho/js/jquery-1.8.3.min.js"></script> -->
-<!-- Themer Script (Remove if not needed) -->
-<script src="/resources/js/core/themer.js"></script>
+<script type="text/javascript" src="/ho/js/jquery-1.8.3.min.js"></script>
 <!-- Include Required Prerequisites -->
 <!-- <script type="text/javascript" src="//cdn.jsdelivr.net/jquery/1/jquery.min.js"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
@@ -419,7 +417,7 @@ Include Date Range Picker
     <script src="/resources/plugins/cleditor/jquery.cleditor.xhtml.min.js"></script>
     <script src="/resources/plugins/cleditor/jquery.cleditor.icon.min.js"></script>
     <script src="/ho/js/jquery-1.8.3.min.js"></script>
-
+    
     <!-- Core Script -->
     <script src="/resources/bootstrap/js/bootstrap.min.js"></script>
     <script src="/resources/js/core/mws.js"></script>

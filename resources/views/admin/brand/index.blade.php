@@ -11,16 +11,13 @@
 <script src="/resources/calendar/jquery-1.12.4.js"></script>
 <script src="/resources/calendar/jquery-ui.js"></script>
 <script type="text/javascript" src="/resources/ckeditor/ckeditor.js"></script>
-<script type="text/javascript">
-    
-</script>
 @endsection
 @section('content')
 	
     <div class="mws-panel grid_8">
 	<div class="mws-panel-header">
-    	<span style="float:left;"><i class="icon-table"></i> Data Table with Numbered Pagination</span>
-        <button type="button" class="btn btn-success" style="float:right;">新增用户</button>
+    	<span style="float:left;"><i class="icon-table"></i>品牌列表</span>
+        <button type="button" class="btn btn-success" style="float:right;">新增品牌</button>
     </div>
     <script type="text/javascript">
         var btn = document.getElementsByClassName('btn-success');
@@ -63,7 +60,7 @@
                         品牌logo
                     </th>
                     <th class="sorting_asc"  rowspan="1" colspan="1" aria-sort="ascending" aria-label="Rendering engine: activate to sort column descending" style="width: 146px;">
-                        倒计时
+                        截止日期
                     </th>
                     <th class="sorting_asc"  rowspan="1" colspan="1" aria-sort="ascending" aria-label="Rendering engine: activate to sort column descending" style="width: 146px;">
                         参加预售会
@@ -83,25 +80,33 @@
             
         <tbody role="alert" aria-live="polite" aria-relevant="all">
         @foreach($data as $k => $v)
-                <tr class="even" style="text-align: center;">
-                        <td class="">{{ $data[$k]['id'] }}</td>
-                        <td class="  sorting_1">{{ $data[$k]['brandname'] }}</td>
-                        <td class=" ">{{ $data[0]['brandname'] }} 1.0</td>
+                <tr style="text-align: center;">
+                        <td class="">{{ $v['id'] }}</td>
+                        <td class="  sorting_1">{{ $v['brandname'] }}</td>
+                        <td class=" ">{{ $data[0]['navname'] }}</td>
                         <td class=" "><img src="{{ $data[$k]['brandlogo'] }}" alt="{{ $data[0]['brandname'] }}" style="width: 200px;height: 60px;" /></td>
-                        <td class=" ">{{ $data[$k]['countdown'] }}</td>
-                        <td class=" ">{{ $data[$k]['state'] }}</td>
-                        <td class=" ">{{ $data[$k]['isnew'] }}</td>
-                        <td class=" ">{{ $data[$k]['enabled'] }}</td>
+                        <td class=" ">{{ date('Y-m-d H:i:s',$v['countdown']) }}</td>
+                        <td class=" ">@if($v['state'] == 1) 特卖会@elseif($v['state'] == 2) 预售 @else @endif</td>
+                        <td class=" ">@if($v['isnew'] == 1) 参加@elseif($v['isnew'] == 0) 不参加 @else @endif</td>
+                        <td class=" ">@if($v['enabled'] == 1) 在售@elseif($v['enabled'] == 2) 下架 @else @endif</td>
                         <td class=" ">
-                            <a href="admin/brand/edit" title="修改" style="color: black;padding-left: 15px;font-size: 17px;"><i class="icon-feather"></i></a>
+                            <a href="/admin/brand/edit/{{ $data[$k]['id'] }}" title="修改" style="color: black;padding-left: 15px;font-size: 17px;"><i class="icon-feather"></i></a>
                             <a href="javascript:;" id="{{ $data[$k]['id'] }}" title="删除" style="color: black;padding-left: 15px;font-size: 17px;" class="del"><i class="icon-trash"></i></a>
                         </td>
                 </tr>
+
+            
         @endforeach
         <script type="text/javascript">
+            // 隔行换色
+            $('tr:odd').attr('class','odd')
+            $('tr:even').attr('class','even')
+            // 遍历所有class为.del的元素，并且为每个元素执行一个函数
            $('.del').each(function(){
                 $(this).click(function(){
                     var id = $(this).attr('id')
+                    // 闭包，对于函数内部来说，父函数的变量可见
+                    var tr = $(this).parent().parent()
                     $.ajax({
                         headers: {
 
@@ -111,16 +116,31 @@
                         url:'/admin/brand/delete',
                         type:'post',
                         data: {id:id},
+                        // 服务器返回值得类型
                         dataType: "text",
+                        async:false,
                         success:function(msg){
-                            alert(msg);
-                        }
+                            // 如果不能够删除
+                            if(msg == 0) {
+                                 // 并不能在此使用$(this)
+                                tr.css('border','red')
+                            }
+                            if(msg == 1) {
+                                // 并不能在这里使用$(this)
+                                tr.fadeOut()
+                                tr.remove()
+                            }
+                            
 
+                        },
+                       
                     })
                 })
                 
             })
+            
         </script>
+
         </tbody></table><div class="dataTables_info" id="DataTables_Table_1_info">Showing 1 to 10 of 57 entries</div><div class="dataTables_paginate paging_full_numbers" id="DataTables_Table_1_paginate"><a tabindex="0" class="first paginate_button paginate_button_disabled" id="DataTables_Table_1_first">First</a><a tabindex="0" class="previous paginate_button paginate_button_disabled" id="DataTables_Table_1_previous">Previous</a><span><a tabindex="0" class="paginate_active">1</a><a tabindex="0" class="paginate_button">2</a><a tabindex="0" class="paginate_button">3</a><a tabindex="0" class="paginate_button">4</a><a tabindex="0" class="paginate_button">5</a></span><a tabindex="0" class="next paginate_button" id="DataTables_Table_1_next">Next</a><a tabindex="0" class="last paginate_button" id="DataTables_Table_1_last">Last</a></div></div>
     </div>
 </div>
