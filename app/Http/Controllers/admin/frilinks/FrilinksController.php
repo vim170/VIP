@@ -94,7 +94,9 @@ class FrilinksController extends Controller
         $request->file('logo')->move('./upload/frilinks/logo', $fileName);
         $insert['logo'] = '/upload/frilinks/logo/'.$fileName;
     }else{
-        return back();
+        //如果 没有接收到文件,则查询数据库 提取原有的logo数据
+            $logo = DB::table('frilinks') -> where('id',$insert['id']) -> first();
+            $arr['logo'] = $logo;
     }
     $res3 = DB::table('frilinks') ->where('id',$insert['id']) -> update($insert);
     if($res3){

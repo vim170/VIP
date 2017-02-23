@@ -90,7 +90,9 @@ class AdsController extends Controller
             $request->file('logo')->move('./upload/ads/logo', $fileName);
             $data['logo'] = '/upload/ads/logo/'.$fileName;
         }else{
-            return back();
+            //如果 没有接收到文件,则查询数据库 提取原有的logo数据
+            $logo = DB::table('ads') -> where('id',$id) -> first();
+            $arr['logo'] = $logo;
         }
         $res = DB::table('ads')->where('id',$id)->update($data);
         if($res>0){

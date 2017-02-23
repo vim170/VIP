@@ -14,7 +14,7 @@
             {{ csrf_field() }}
             <fieldset class="wizard-step mws-form-inline" data-wzd-id="wzd_1b93l7c9q11v71i3r1bue_0" style="display: block;">
                 <legend class="wizard-label" style="display: none;"><i class="icol-accept"></i> Member Profile</legend>
-                <div id="" class="mws-form-row">
+                <div id="" class="mws-form-row" style="width:600px;">
                 <!-- 遍历所查询的数据 在默认值出显示值 -->
                    @foreach($edit as $k=>$v)
                    <input type="hidden" name="id" value="{{$v['id']}}">
@@ -24,7 +24,7 @@
                         <input type="text" name="name" value="{{$v['name']}}" class="required large">
                     </div>
                 </div>
-                <div class="mws-form-row">
+                <div class="mws-form-row" style="width:600px;">
                     <label class="mws-form-label"><font style="font-size:15px;font-weight:bold;">友情URL：</font> <span class="required">*</span></label>
                     <div class="mws-form-item">
                         <input type="text" name="url" value="{{$v['url']}}"  class="required email large">
@@ -32,10 +32,11 @@
                 </div>
 
                    <hr>   
-                    <div style="width:120px; height:100px;float:right;margin-right:200px;" id="imgPreview">
+                    <div style="width:120px; height:100px;float:right;margin-right:200px;margin-bottom:2px;" id="imgPreview">
+                    <img src="{{$v['logo']}}" alt="" class="logoimg" @if($v['logo']=='') style="display:none;" @endif>
                     </div>
                     <div class="mws-form-row" style="width:610px;">
-                        <label class="mws-form-label" for="pw">广告Logo</label>
+                        <label class="mws-form-label" for="pw" style="font-size:15px;font-weight:bold;">友情Logo</label>
                         <div class="mws-form-item">
                             <input type="file" class="small" name="logo" onchange="PreviewImage(this)">
                         </div>
@@ -69,7 +70,7 @@
                         }
                     </script>
 
-                <div class="mws-form-row">
+                <div class="mws-form-row" style="width:600px;">
                     <label class="mws-form-label"><font style="font-size:15px;font-weight:bold;">描述 </font><span class="required">*</span></label>
                     <div class="mws-form-item">
                         <textarea name="title"  rows="" cols="" class="required large">{{$v['title']}}</textarea>
@@ -77,11 +78,11 @@
                 </div>
                  <div class="mws-form-row">
                     <label class="mws-form-label"><font style="font-size:15px;font-weight:bold;">友情开关：</font> <span class="required">*</span></label>
-                    <div class="mws-form-item">
+                    <div class="">
                       <input type="radio" name="status"  value="1" class="required email large" @if(!empty($v['status']) && $v['status'] == 1) checked @endif>
-                        <font style="font-size:20px;font-family:华文行楷">启用</font>
+                        <font style="font-size:15px;">启用</font>
                       <input type="radio" name="status" value="2"  class="required email large" @if(!empty($v['status'])  && $v['status'] == 2) checked @endif>
-                        <font style="font-size:20px;font-family:华文行楷">禁止</font>
+                        <font style="font-size:15px;">禁止</font>
                     </div>
                 </div>
                   @endforeach

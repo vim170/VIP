@@ -90,7 +90,7 @@
                         <label class="mws-form-label">广告状态</label>
                         <div class="mws-form-item clearfix">
                             <ul class="mws-form-list inline">
-                                <li><input type="radio" name="enabled" value="1"> <label>启用</label></li>
+                                <li><input type="radio" name="enabled" value="1" checked> <label>启用</label></li>
                                 <li><input type="radio" name="enabled" value="2"> <label>禁用</label></li>
                             </ul>
                         </div>
