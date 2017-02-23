@@ -29,21 +29,22 @@
     <div class="mws-panel-body no-padding">
         <div id="DataTables_Table_1_wrapper" class="dataTables_wrapper" role="grid">
         <div id="DataTables_Table_1_length" class="dataTables_length">
-        <label>Show 
-            <select size="1" name="DataTables_Table_1_length" aria-controls="DataTables_Table_1">
-                <option value="10" selected="selected">10</option>
-                <option value="25">25</option>
-                <option value="50">50</option>
-                <option value="100">100</option>
-            </select>
-            entries
-        </label>
-            </div>
-            <div class="dataTables_filter" id="DataTables_Table_1_filter">
-                <label>Search: 
-                <input type="text" aria-controls="DataTables_Table_1">
-                </label>
-            </div>
+        <label>
+       <form action="/admin/brand/index" method="get">
+               显示 
+                   <select size="1" name="count" aria-controls="DataTables_Table_1">
+                   <option value="10" @if(!empty($request['count']) && $request['count'] == 10) selected @endif>10</option>
+                   <option value="25" @if(!empty($request['count']) && $request['count'] == 25) selected @endif>25</option>
+                   <option value="50" @if(!empty($request['count']) && $request['count'] == 50) selected @endif>50</option>
+                   <option value="100" @if(!empty($request['count']) && $request['count'] == 100) selected @endif>100</option>
+               </select> 条</label>
+
+           </div>
+           <div class="dataTables_filter" id="DataTables_Table_1_filter">
+                   <label>Search: <input type="text" aria-controls="DataTables_Table_1" name="search" value="{{ $request['search'] or ''}}"></label>
+                   <input type="submit" value="提交">
+           </div>
+           </form>
             <table class="mws-datatable-fn mws-table dataTable" id="DataTables_Table_1" aria-describedby="DataTables_Table_1_info">
             <thead>
                 <tr role="row" style="text-align: center;">
@@ -123,11 +124,11 @@
                             // 如果不能够删除
                             if(msg == 0) {
                                  // 并不能在此使用$(this)
-                                tr.css('border','red')
+                               tr.fadeOut(300).fadeIn(300);
                             }
                             if(msg == 1) {
                                 // 并不能在这里使用$(this)
-                                tr.fadeOut()
+                                tr.fadeOut(200)
                                 tr.remove()
                             }
                             
@@ -141,7 +142,11 @@
             
         </script>
 
-        </tbody></table><div class="dataTables_info" id="DataTables_Table_1_info">Showing 1 to 10 of 57 entries</div><div class="dataTables_paginate paging_full_numbers" id="DataTables_Table_1_paginate"><a tabindex="0" class="first paginate_button paginate_button_disabled" id="DataTables_Table_1_first">First</a><a tabindex="0" class="previous paginate_button paginate_button_disabled" id="DataTables_Table_1_previous">Previous</a><span><a tabindex="0" class="paginate_active">1</a><a tabindex="0" class="paginate_button">2</a><a tabindex="0" class="paginate_button">3</a><a tabindex="0" class="paginate_button">4</a><a tabindex="0" class="paginate_button">5</a></span><a tabindex="0" class="next paginate_button" id="DataTables_Table_1_next">Next</a><a tabindex="0" class="last paginate_button" id="DataTables_Table_1_last">Last</a></div></div>
+        </tbody>
+        </table>
+        <div class="pageinate">
+           {!! $data[0] ->render() !!}
+        </div>
     </div>
 </div>
 @endsection

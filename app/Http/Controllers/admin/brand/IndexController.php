@@ -16,15 +16,18 @@ class IndexController extends Controller
 	 *
 	 * @return    跳转到品牌列表
 	 */
-   public function getIndex()
+   public function getIndex(Request $request)
    {
+   		// paginate 可以查询数据并且分页
+   		$count = $request -> input('count',10);
+   		$search = $request -> input('search','');
+   		// 以频道表为主表，请默认为每个品牌选择一个频道，去除空的数据(品牌下可能没有品牌，去除这些数据)
    		$data = DB::table('navs')
    		            ->leftJoin('brand', 'navs.id', '=', 'brand.navid')
    		            ->whereNotNull('brand.id')
+   		            ->where('brandname','like','%'.$search.'%')
    		            ->get();
-   		// dd($data);
-   		// $data = DB::table('navs') -> where()
-        return view('admin.brand.index',['data' => $data]);
+        return view('admin.brand.index',['data' => $data,'request' => $request -> all()]);
    }
 
 
