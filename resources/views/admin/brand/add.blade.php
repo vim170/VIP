@@ -35,9 +35,7 @@
     					<input type="text" class="small" style="width: 430px;" name="brandname">
     				</div>
     			</div>
-				<script type="text/javascript">
-					
-				</script>
+
 
     			<div class="mws-form-row">
     				<label class="mws-form-label">频道列表</label>
@@ -51,6 +49,7 @@
     					</select>
     				</div>
     			</div>
+               
 
     			<script type="text/javascript">
     				//下面用于图片上传预览功能
@@ -174,15 +173,18 @@
     			</div>
     		</div>
     		<div class="mws-button-row">
-    			<input type="submit" value="提交" class="btn btn-danger">
+    			<input type="submit" value="提交" class="btn btn-danger" id="sub">
     			<input type="reset" value="重置" class="btn ">
     		</div>
     	</form>
-    	<script type="text/javascript">
-    		$('input[type=file]').blur(function(){
-    			// alert(1);
-    		})
-    	</script>
+        <!--表单验证，代写-->
+      <!--   <script type="text/javascript">
+          $('#sub').click(function(){
+              console.log($('.large').nextAll().val());
+          })
+          
+      </script> -->
+
 
     </div>    	
 </div>

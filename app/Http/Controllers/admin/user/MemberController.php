@@ -65,11 +65,25 @@ class MemberController extends Controller
             return back() -> with('error','批量删除失败');
         }
     }
+    /**
+     * 编辑页面
+     *
+     * @param      int $id  需要编辑的页面
+     *
+     * @return    跳转至编辑页面
+     */
     public function getEdit($id)
     {
         $data = DB::table('user') -> where('id',$id)-> get();
         return view('admin.member.edit',['data' => $data]);
     }
+    /**
+     * 修改项目
+     *
+     * @param      使用request对象接受前台ＵＲＩ穿的参数
+     *
+     * @return    若修改成功，则返回首页，否则留在当前页
+     */
     public function postUpdate(Request $request)
     {
         // 如果用户不输入密码，则使用以前的密码
@@ -89,7 +103,11 @@ class MemberController extends Controller
         } 
     }
 
-
+    /**
+     * 自己分页测试
+     *
+     * @param      使用Request对象接受前台传值
+     */
     public function getCount(Request $request)
     {
         // $data = DB::table('user')  -> paginate($count);

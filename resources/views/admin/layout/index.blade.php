@@ -266,6 +266,7 @@ Include Date Range Picker
                         <ul>
                             <li><a href="form_layouts.html">商品列表</a></li>
                             <li><a href="form_elements.html">商品分类</a></li>
+                            <li><a href="form_elements.html">商品规格</a></li>
                             <li><a href="">商品咨询</a></li>
                         	<li><a href="">待回复评论</a></li>
                         	<li><a href="">已回复评论</a></li>
@@ -288,9 +289,9 @@ Include Date Range Picker
                     </li>
 					
                     <li class="active">
-					    <a href="#"><i class="icon-lemon"></i>频道管理</a>
+					    <a href="/admin/navcast"><i class="icon-lemon"></i>频道管理</a>
 					    <ul>
-					        <li><a href="form_layouts.html">频道列表</a></li>
+					        <li><a href="/admin/navcast">频道列表</a></li>
 					    </ul>
 					</li>
 

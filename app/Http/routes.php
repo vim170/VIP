@@ -466,4 +466,7 @@ Route::controller('/admin/member','admin\user\MemberController');
 Route::controller('/admin/brand','admin\brand\IndexController');
 Route::controller('/admin/navcast','admin\navcast\IndexController');
 Route::controller('/admin/image','admin\image\IndexController');
+Route::controller('/admin/product/quali','admin\product\QualiController');
+Route::controller('/admin/product/cate','admin\product\CateController');
+Route::controller('/admin/product','admin\product\IndexController');
 

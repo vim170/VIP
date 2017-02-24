@@ -26,7 +26,8 @@ class IndexController extends Controller
    		            ->leftJoin('brand', 'navs.id', '=', 'brand.navid')
    		            ->whereNotNull('brand.id')
    		            ->where('brandname','like','%'.$search.'%')
-   		            ->get();
+   		            ->paginate($count);
+   		// dd($data);
         return view('admin.brand.index',['data' => $data,'request' => $request -> all()]);
    }
 
@@ -143,8 +144,10 @@ class IndexController extends Controller
    		// 先查询该品牌下是否有相关商品，如果有则提示不能删除，如果没有就删除
    		$del = DB::table('product') -> where('brandid',$id) -> first();
    		if($del) {
+   			// 若品牌商存在商品，则不能进行该操作
    			return 0;
    		} else {
+   			// 若品牌下不在商品，则可以进行删除操作
    			$res = DB::table('brand') -> where('id',$id) -> delete();
    			if($res) {
    				return $msg = 1;

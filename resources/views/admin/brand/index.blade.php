@@ -142,9 +142,10 @@
             
         </script>
 
-        </tbody></table>
+        </tbody>
+        </table>
         <div class="pageinate">
-           
+         {!! $data -> appends($request)->render() !!}
         </div>
     </div>
 </div>
