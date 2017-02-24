@@ -22,7 +22,7 @@ class IndexController extends Controller
       $quali = DB::table('product_qualifi') -> get();
       // 获取品牌数据
       $brand = DB::table('brand') -> get();
-      // dd($cate);
+      dd($brand);
       return view('admin.product.add',['cate' => self::getCate('product_cate','cname'),'quali' => self::getCate('product_qualifi','qname'),'brand' => $brand]);
    }
    public function postInsert(Request $request)

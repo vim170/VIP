@@ -17,7 +17,7 @@
     @endif
     <div class="mws-panel grid_8">
         <div class="mws-panel-header">
-            <span>新增广告</span>
+            <span>修改广告</span>
         </div>
         <div class="mws-panel-body no-padding">
             <form class="mws-form" action="/admin/ads/update/{{$data['id']}}" method="post" enctype="multipart/form-data">
@@ -37,6 +37,7 @@
                         </div>
                     </div>
                     <div style="width:120px; height:100px;float:right;margin-right:200px;" id="imgPreview">
+                    <img src="{{$data['logo']}}" alt="" class="logoimg" @if($data['logo']=='') style="display:none;" @endif>
                     </div>
                     <div class="mws-form-row" style="width:610px;">
                         <label class="mws-form-label" for="pw">广告Logo</label>
@@ -44,7 +45,7 @@
                             <input type="file" class="small" name="logo" onchange="PreviewImage(this)">
                         </div>
                     </div>
-
+                    
                     <script type="text/javascript">
                         function PreviewImage(imgFile) {
                             var filextension = imgFile.value.substring(imgFile.value.lastIndexOf("."), imgFile.value.length);
@@ -97,7 +98,7 @@
                     </div>
                 </div>
                 <div class="mws-button-row">
-                    <input type="submit" value="添加" class="btn btn-danger">
+                    <input type="submit" value="修改" class="btn btn-danger">
                     <input type="reset" value="重置" class="btn ">
                 </div>
             </form>

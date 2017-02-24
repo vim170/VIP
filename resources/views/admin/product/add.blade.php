@@ -66,8 +66,11 @@
         			<label for="brandname">商品品牌</label>
         		</td>
         		<td>
-        			<select name="brandname" style="width: 160px;" id="brandname">
-        				<option value="">请选择</option>
+        			<select name="brandid" style="width: 160px;" id="brandname">
+        				<option value="0">请选择</option>
+        				@foreach($brand as $k => $v)
+        				<option value="{{ $v['brandid'] }}">{{ $v['brandname'] }}</option>
+        				@endforeach
         			</select>
         		</td>
         		

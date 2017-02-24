@@ -1,0 +1,321 @@
+	.banner-box{height:392px;width:100%;background:url(../img/index/banner-bg.jpg) no-repeat center center;position: relative;top:40px;display: block;}
+	.banner{width:976px;height:380px;position:relative;overflow: hidden;margin:0 auto;box-shadow:0 1px 3px rgba(167,167,167,.4);padding: 12px;padding-bottom: 0; background: rgba(255,255,255,.86);}
+	.banner .slider{width: 976px;height:340px;background:deepskyblue;position: absolute;}
+	.slider .slider-list{float:left;width: 976px;height:340px;position: absolute;top: 0;left: 0;}
+	.slider-list img{width: 976px;height:340px;display: block;}
+	.slider-btn {
+				    background: #ccc;
+				    background: rgba(0,0,0,.2);
+				    border-radius: 2px;
+				    position: absolute;
+				    width: 33px;
+				    height: 66px;
+				    line-height: 66px;
+				    font-size: 24px;
+				    cursor: pointer;
+				    top: 50%;
+				    margin-top: -53px;
+				    z-index: 2;
+				    text-align: center;
+				    -webkit-transition: all .3s ease-in;
+		   			 }
+	.prev,.next {width:30px; height:60px; opacity:0.5;position:absolute; top:0; bottom:0; margin:auto 0; background:black; cursor: pointer; font:50px/50px "宋体"; color:white; text-align: center;}
+	.next {right:-65px;}
+	.prev{left: -65px;}
+	.slider-bottom{
+				    text-align: center;
+				    width: 976px;
+				    left: 50%;
+				    margin-left: -488px;
+				    height: 40px;
+				    position: absolute;
+				    /*z-index: 2;*/
+				    bottom: 2px;
+				    background: #fff;
+				    cursor: pointer;
+				}
+	.slider-bottom-list{width: 100%;height:40px;text-align: center;}
+	.slider-bottom-list li{float: left;width: 195px;height:40px;line-height: 40px;padding-left: 40px;}
+	.active{border-bottom: #e6057d 3px solid;}
+		
+	/*楼梯*/
+		#loutiNav{
+			width: 68px;
+			position: fixed;
+			left: 40px;
+			top: 25%;
+			border: 1px solid #ccc;
+			background: #fff;
+		}
+		#loutiNav ul li{
+			width: 68px;
+			height: 40px;
+			position: relative;
+			list-style: none;
+			text-align: center;
+			line-height: 40px;
+			font-size: 12px;
+			border-bottom: 1px dotted #aaa;
+			cursor: pointer;
+		}
+		#loutiNav ul li span{
+			width: 65px;
+			height: 35px;
+			position: absolute;
+			top: 2px;
+			left: 1px;
+			color:#676767;
+			background: #fff;
+			display: none;
+		}
+		#loutiNav ul li:hover span{
+			display: block;
+			color: #F10180;
+			background:#fff;
+			
+		}
+		#loutiNav ul li span.active{
+			width:65px;
+			border-radius:3px ;
+			display: block;
+			color: #fff;
+			background:#F10180;
+		}
+		/*一楼*/
+		#first, #main, #last{
+			width: 1000px;
+			margin:0 auto;
+			text-align: center;
+			font-size: 40px;
+			font-weight: bold;
+			
+		}
+		#first{
+				height: 80px;
+				line-height: 80px;
+				background:#fff;
+				margin-top: 30px;
+			}
+		 #last{
+			height: 80px;
+			line-height: 80px;
+			/*background: darkcyan;*/
+			margin-top: 60px;
+			margin-bottom: 1px;
+		}
+		 .louti{
+			height:3570px;
+			line-height: 3570px;
+			margin-top:40px;
+			
+		}
+		 #first img{width: 1000px;height: 80px;}
+		  #last img{width: 1000px;height: 80px;}
+		 #main .floor1{height: 1280px;border-bottom: 0 none;}
+		.floor1-inner{float: left;
+			text-align: center;
+			position: relative;
+			overflow: hidden;
+			width:480px;
+			height:300px;
+			margin-right:10px;
+			margin-left:10px;
+			margin-bottom: 20px;
+			background: #fff;
+			
+		}
+		.floor1-inner .floor1-img{width: 490px;height: 300px;}
+		.floor1-inner:hover .floor1-img{-webkit-filter: blur(15px);}
+		.floor1-inner .floor1-brand {
+		    position: absolute;
+		    bottom: 20px;
+		    width: 320px;
+		    height: 100px;
+		    left: 50%;
+		    margin-left: -160px;
+		    background: #fff;
+		    background: rgba(255,255,255,.9);
+		    border-radius: 4px;
+		    line-height: 1.2;
+		}
+		.floor1-brand-img{width: 100px;height:50px;margin:6px 0 3px;display: inline;}
+		.floor1-brand-name1{
+		    font-size: 14px;
+		    color: #333;
+		    font-weight: 700;
+		    margin: 0 55px;
+		    overflow: hidden;
+		    text-overflow: ellipsis;
+		    white-space: nowrap;
+		   }
+		.floor1-brand-name2{
+		    margin: 0 55px;
+		    overflow: hidden;
+		    text-overflow: ellipsis;
+		    white-space: nowrap;
+		    font-size: 12px;
+		    width: 210px;
+		    height: 14px;
+		    color: #333;
+		    }
+		.floor1-inner:hover .floor1-brand{display:none;}
+		.floor1-inner:hover .floor1-inner-hover{display:block;visibility: visible;opacity: 1;pointer-events: auto;}
+		.floor1-inner-hover{
+		   		width: 450px;
+			   	height: 260px;
+				position: absolute;
+				top:20px;
+				left: 20px;
+				background-color:#FFF;
+				background-position: center 100px;
+				border-radius: 4PX;
+				overflow: hidden;
+				display: none;
+			
+						   }
+		.floor1-inner-hover .inner-hover-list{background-color:#fff;margin-top: 14px;padding-left: 30px;height: 184px;border-bottom: 1px dotted #333;}
+		.inner-hover-list .list-item{float: left;margin-right:16px;width: 121px;height: 83px;}
+		.inner-hover-list .list-item .inner-hover-img{height: 153px;width: 121px;opacity: 1;}
+		.floor1-price{line-height:30px;font-weight:700;font-size:14px;color:#333;}
+		.floor1-inner-hover-logo{float:left;width: 100px;height:50px;margin: 6px 0 3px;}
+		.love{float:left;width:85px;height:22px;margin-top: 20px;line-height: 22px;margin-right:40px;cursor: pointer;}
+		.ground{margin-top: 18px;position: absolute;right: 30px;bottom: 20px;width: 117px;height: 22px;border: 1px solid #333;color:#333;text-align: center;line-height: 22px;background:#fff;border-radius: 2px;font-size:12px;cursor:pointer;}
+		.ground:hover{background-color: #000000;color: #fff;}
+		/*一楼--end*/
+		.louti-name{
+			height: 44px;
+		    border-bottom: 1px #1a1a1a solid;
+		    position: relative;
+		 
+		    }
+		.louti-inner{height:3570px;}
+		.shop-all-btn{
+			    position: absolute;
+			    right: 0;
+			    bottom: 0px;
+			    font-size: 14px;
+			    color: #333;
+			    height: 24px;
+			    line-height: 24px;
+			    }
+		.louti-title{width:273px;height: 43px;position: absolute;top: 0;left: 0;}
+		.brand-item{
+				width: 490px;
+			    height: 275px;
+			    float: left;
+			    position: relative;
+			    margin-bottom: 20px;
+			    margin-right: 5px;
+			    margin-left: 5px;
+			    background: #fff;
+			    
+			    }	
+		.brand-img{width: 490px;height: 235px;opacity: 1;}
+		.brand-img:hover{
+			-webkit-mask-image: -webkit-radial-gradient(50% 50%,rgba(0,0,0,0),rgba(0,0,0,1));
+    		-webkit-mask-position: -150px 65px;
+    		}
+		.brand-item-bottom{
+			    position: absolute;
+			    top: 205px;
+			    left: 0;
+			    background: rgba(0,0,0,.6);
+			    height: 30px;
+			    line-height: 30px;
+			    width: 365px;
+			    padding: 0 100px 0 25px;
+			    overflow: hidden;
+			    text-overflow: ellipsis;
+			    white-space: nowrap;
+			    color: #fff;
+			    font-size: 12px;
+			    }
+		.item-bottom-tip{
+				width: 193px;
+				height: 16px;
+				position: absolute;
+			    top: 10px;
+			    left: 15px;
+			    line-height: 16px;
+			}
+		.brand-item-bottom .item-icon{
+				   background-image:url(../img/index/brand-ico.png);
+				    background-position:0 0;
+				    width: 15px;
+				    height: 16px;
+				    margin-right: 5px;
+				    position: absolute;
+				    top: 15px;
+				    left: 0;
+				    display: inline-block;
+			}
+		.brand-info{
+				    height: 40px;
+				    line-height: 40px;
+				    background-color: #fff;
+				    padding: 0 120px 0 10px;
+				    position:absolute;
+				    top: 235px;
+				    display: block;
+				    }
+		.brand-item .brand-discount {
+				    color: #4d4d4d;
+				    margin-right: 10px;
+				    overflow: hidden;
+				    text-overflow: ellipsis;
+				    white-space: nowrap;
+				    max-width: 100px;
+				   display: inline-block;
+				   font-size: 14px;
+				}
+		.brand-item .brand-discount .salebg2 {
+				    font-size: 24px;
+				    color: #f10582;
+				    margin-right: 3px;
+				    font-weight: 700;
+				}
+		.brand-info-name{
+			    cursor: pointer;
+			    font-size: 14px;
+			    color: #4d4d4d;
+			    overflow: hidden;
+			    text-overflow: ellipsis;
+			    white-space: nowrap;
+			    width: 230px;
+			    display: inline-block;
+			    }
+		.brand-item .brand-time {
+			    color: #4d4d4d;
+			    position: absolute;
+			    bottom: -3px;
+			    right: -45px;
+			    }
+		.brand-item .brand-time .time-icon {
+				    background-image:url(../img/index/brand-ico.png);
+				    background-position: -50px 0;
+				    width: 16px;
+				    height: 16px;
+				    margin-right: 5px;
+				    position: relative;
+				    top: 4px;
+				    display: inline-block;
+				}
+		.time-day{font-size: 13px;color: #333}
+		.shop-sort-ft{
+   			 border-top: 1px solid #e8e8e8;
+   			 margin-top: -40px;
+				}
+		.shop-more-btn {
+		    width: 324px;
+		    display: block;
+		    color: #fff;
+		    height: 44px;
+		    background-color: #f10180;
+		    border-bottom-left-radius: 4px;
+		    border-bottom-right-radius: 4px;
+		    font-size: 16px;
+		    text-align: center;
+		    line-height: 25px;
+		    margin: -1px auto 20px;
+		}
+	

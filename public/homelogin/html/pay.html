@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>购物车结算</title>
+	<link rel="icon" href="http://s16.mogucdn.com/new1/v1/bmisc/3ce382db3c8aaca5d07bd36711e77134/171169993508.ico" type="image/x-icon" />
+	<link rel="stylesheet" href="../css/common/common.css" />
+	<link rel="stylesheet" href="../css/pay.css" />
+	<link rel="stylesheet" href="../css/shopCar.css" />
+	<link rel="stylesheet" href="../css/common/footer.css" />
+	
+</head>
+	<body>
+		
+		<!--头部-->
+		<div class="sp-header">
+			<div class="sp-header-inner">
+				<div class="sp-header-logo">
+					<a href="javascript:void(0)" class="logo-link">唯品会--一家专门做特卖的网站</a>
+				</div>
+				<ul class="sp-header-list">
+					<li class="sp-list-item welcom">
+						<span class="item-welcom">你好
+							<a href="###" target="_blank">AomizeMia</a>
+							<a href="###" target="_blank" class="welcom-brand"></a>
+						</span>
+						<a href="login.html" class="out">[退出]</a>
+						<a href="###" target="_blank" class="order">订单管理</a>
+						<a class="line">|</a>
+					</li>
+					<li class="sp-list-item">
+						<a href="###" target="_blank" class="tel">400-100-888</a>
+						<a class="line">|</a>
+					</li>
+					<li class="sp-list-item">
+						<a href="###" target="_blank" class="online">在线客服</a>
+						<a class="line">|</a>
+					</li>
+					<li class="sp-list-item">
+						<a href="###" target="_blank" class="sever">会员服务</a>
+						<a class="line">|</a>
+					</li>
+				</ul>
+				<ul class="sp-helper-small">
+					<li class="help-small-item">
+						<span class="helper-small-text">100% 正品保证</span>
+					</li>
+					<li class="help-small-item">
+						<span class="helper-small-text">100% 正品保证</span>
+					</li>
+					<li class="help-small-item">
+						<span class="helper-small-text">100% 正品保证</span>
+					</li>
+
+				</ul>
+			</div>
+		</div>
+		<!--内容-->
+		<div class="sp-content">
+			<div class="sp-content-box">
+				<div class="sp-content-box-one">
+						<h2 class="one-title1">确认订单信息</h2>
+						<p class="one-title2">又超时了。立即结算抢回还有货的商品吧~</p>
+					</div>
+				<div class="pay-admsg">
+					<a class="ad" href="###">新增收货地址</a>
+					<h2 class="box-title">收货信息</h2>
+				</div>
+				<div class="pay-address-box">
+					<div class="pay-adress-load">
+						<div class="loading">
+							<span class="ii-loading-pink-32x32"></span>
+						</div>
+					</div>
+					<div class="pay-address-content">
+						<div class="address-tip">
+							<p class="tips-content" id="J_cross_tips_text">你选的商品在北京仓，支持发货至：<b>河北</b>、<b>辽宁</b>、<b>黑龙江</b>、<b>吉林</b>、<b>北京</b>、<b>内蒙古</b>、<b>天津</b>、<b>山西</b>，
+								<span class="spe">若你的收货地址不在该范围内，请切换地区重新选购。</span>
+							<p></p></p>
+						</div>
+						<div class="goods-list">
+							<div class="list-title">
+								<a class="gd-info" href="shopCar.html" target="_blank">返回购物袋修改商品</a>
+								<h2 class="box-title">商品清单</h2>
+							</div>
+							<div class="list-inner">
+								<div class="list-inner-wrapper">
+									<table>
+										<thead>
+											<tr>
+												<th class="product-item">
+													<div class="product-item-inner">
+				                                        <div class="f-left">
+				                                            <em title="唯品会">唯品会</em>发货商品
+				                                        </div>
+			                                    	</div>
+												</th>
+												<th class="size-item">尺码</th>
+												<th class="price-item">单价</th>
+												<th class="quantity-item">数量</th>
+											</tr>
+										</thead>
+										<!--从购物车加进来的-->
+										<tbody>
+											<!--<tr>
+												<td class="tb-product">
+														<div class="product-datail">
+															<img src="../img/shopCar/sp-dt.jpg">
+															<h3 class="product-title">
+																<a rel="external, noopener" href="http://www.vip.com/detail.php?bid=921954&amp;mid=135870277" title="PEINAXI女装专场 - 大红欧美时尚简约毛呢外套大衣" target="_blank" data-track="done">歌中歌Song of Song女装专场 - 深灰色气质淑女长袖大衣</a>
+															</h3>
+														</div>
+												</td>
+												<td class="tb-size">S</td>
+												<td class="tb-price">
+													<span class="price-num2">
+														<span class="u-yan">￥</span>
+														<span class="u-price">788</span>
+													</span>
+												</td>
+												<td class="tb-quanity">1</td>
+											</tr>-->
+										</tbody>
+										<tfoot>
+											<tr>
+												<td colspan="4">
+													<div class="inner">
+														<div class=" shipping-costs J_sum_items" data-toggle="tooltip" data-hover="shipping-costs-hover" data-touch="z-touch">
+				                                            <span class="tooltips-trigger-text">
+				                                               	 运费：    
+				                                                <span class="free-shipping-label">免运费</span>
+                                                            </span>
+														<span class="subtotal J_sum_items">
+                                            					本组商品金额：
+				                                            <span class="m-price">
+				                                                <span class="u-yen">¥</span><span class="u-price J_amount_0">8890</span>
+				                                            </span>
+			                                        	</span>
+                                                        </div>
+													</div>
+												</td>
+											</tr>
+										</tfoot>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--支付方式-->
+				<div class="pay-way-box">
+					<div class="pay-way-title">
+						<h2 class="box-title">支付方式</h2>
+					</div>
+					<div class="pay-way-content">
+						<div class="pay-way-select">
+							<div class="select-money payment-vip-item  is-payment-vip-item-checked">
+								<div class="select-money-actions">
+									<span class="ui-checkbox">
+										<input type="checkbox" id="invoice-checkbox-uncheck-disabled" class="ui-checkbox-normal J_invoice_checkbox_simulate" simulate="done">
+										<label for="invoice-checkbox-uncheck-disabled" class="ui-checkbox-simulation"></label>
+									</span>
+									<label class="ui-label" for>唯品币支付</label>
+								</div>
+							</div>
+							<div class="select-money">
+								<div class="select-money-actions">
+									<span class="ui-checkbox">
+										<input type="checkbox" id="invoice-checkbox-uncheck-disabled" class="ui-checkbox-normal J_invoice_checkbox_simulate" simulate="done">
+										<label for="invoice-checkbox-uncheck-disabled" class="ui-checkbox-simulation"></label>
+									</span>
+									<label class="ui-label" for>唯品卡支付</label>
+								</div>
+							</div>
+							<div class="select-money">
+								<div class="select-money-actions">
+									<span class="ui-checkbox">
+										<input type="checkbox" id="invoice-checkbox-uncheck-disabled" class="ui-checkbox-normal J_invoice_checkbox_simulate" simulate="done">
+										<label for="invoice-checkbox-uncheck-disabled" class="ui-checkbox-simulation"></label>
+									</span>
+									<label class="ui-label" for>唯品钱包支付</label>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="pay-other-payment">
+						<div class="m-payment-method-box" id="J_payment_method_box">
+				            <div class="m-other-payment-price">
+				                <p>你还需支付<span class="u-highlight J_other_need2pay">589</span>元，请选择：</p>
+				            </div>
+       					</div>
+						<p class="default-online-type">
+				            <strong>在线支付</strong><!--
+				         --><a class="J_fake_a" id="J_change_others" href="###" mars_sead="payment_other_btn">改用其他</a>
+        				</p>
+						<div class="payment-type">
+							<div class="payment-type-tip">
+								<p class="payment-type-tip-text">【惠】使用唯品金融，实付满99减8元！（提交订单后选择唯品金融，8元封顶）</p>
+							</div>
+						</div>
+						<!--在线支付-->
+						<div class="pay-online-box">
+							<div class="radio-item">
+								<div class="radio-wrapper">
+									<span class="ui-radio">
+		                                <input class="ui-radio-normal" id="J_online_method_radio" type="radio" name="pay_type_radio" data-pay_id="0" data-pay_type="0" data-pay_name="在线支付" simulate="done"><!--
+		                             --><label class="ui-radio-simulation" for="J_online_method_radio"></label>
+                            		</span>
+									<label class="ui-label" for="J_online_method_radio">货到付款</label>
+								</div>
+								<p class="payment-desc J_ad_ADADSFIY1S">支持绝大多数银行卡、微信支付等，支持使用唯品金融支付，请在提交订单后选择。</p>
+							</div>
+							<div class="payment-recommend-ad J_ad_ADADSK33YW">如唯品金融、中国建设银行、中国工商银行、中国农业银行、中国银行、微信支付等</div>
+						</div>
+						<!--货到付款-->
+						<div class="pay-delay-box">
+							<div class="radio-item">
+								<div class="radio-wrapper">
+									<span class="ui-radio">
+		                                <input class="ui-radio-normal" id="J_online_method_radio" type="radio" name="pay_type_radio" data-pay_id="0" data-pay_type="0" data-pay_name="在线支付" simulate="done"><!--
+		                             --><label class="ui-radio-simulation" for="J_online_method_radio"></label>
+                            		</span>
+									<label class="ui-label" for="J_online_method_radio">在线支付</label>
+								</div>
+								<p class="payment-desc J_ad_ADADSFIY1S">收货地址不支持此支付方式。</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--提交订单-->
+				<div class="pay-order">
+					<div class="pay-order-content">
+						<div class="pay-order-content-one">
+							<div class="review-item">
+								<div class="invoice-checkboc-wrapper">
+									<span class="ui-checkbox">
+										<input type="checkbox" id="invoice-checkbox-uncheck-disabled" class="ui-checkbox-normal J_invoice_checkbox_simulate" simulate="done">
+										<label for="invoice-checkbox-uncheck-disabled" class="ui-checkbox-simulation"></label>
+									</span>
+									<label for="invoice-checkbox-uncheck-disabled" class="ui-label">开具发票</label>
+								</div>
+								<div class="invoice-bd">
+							        <p class="invoice-bd-initialize-tips">*&nbsp;请先保存收货信息</p>
+							    </div>
+							</div>
+							<div class="review-price-wrapper">
+								<div class="review-price">
+									<ul class="review-price-list">
+										<li class="review-price-item">
+											<em class="review-price-item-title">商品金额</em>
+											<span class="m-price">
+	                                			<span class="u-yen">¥</span>
+	                                			<span class="u-price">119</span>
+                           					 </span>
+										</li>
+										<li class="review-price-item">
+											<em class="review-price-item-title">运费</em>
+											<span class="m-price">
+	                                			<span class="u-yen">¥</span>
+	                                			<span class="J_goods_amount">10</span>
+                           					 </span>
+										</li>
+									</ul>
+									<div class="review-total-price f-clearfix J_sum_items">
+										<em class="review-total-price-title">
+                                                    	待支付：
+                                         </em>
+										<strong class="m-price">
+			                            	<span class="u-yen">¥</span><span class="J_pay_amount">129</span>
+			                        	</strong>
+
+                    				</div>
+								</div>
+							</div>
+						</div>
+						<!--提交订单按钮-->
+						<div class="pay-order-content-two">
+							<div class="order-btn-text">
+								<p class="ordr-btn-tip">又逛超时了。立即结算抢回还有货的商品吧~</p>
+								<a href="###"class="order-submit ui-btn-primary">
+									<span class="ui-btn-largr">提交订单</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="sp-content-box-four">
+					<div class="promises-item  authentic-promises-item">
+				        <div class="promises-pic"></div>
+				        <h3 class="promises-title">100% 正品保证</h3>
+				        <div class="promises-explain">
+				            <p>唯品会所售品牌均经过授权；中国太平洋保险为您购买的每一件商品进行承保。</p>
+				        </div>
+   				 	</div>
+					<div class="promises-item  return-promises-item">
+				        <div class="promises-pic"></div>
+				        <h3 class="promises-title">7 天无理由退货</h3>
+				        <div class="promises-explain">
+				            <p>无论何种原因，签收后 7 天内都可无理由退货，完善售后，退货无忧。</p>
+				        </div>
+   					</div>
+					<div class="promises-item  courier-charge-promises-item">
+				        <div class="promises-pic"></div>
+				        <h3 class="promises-title">退货返运费</h3>
+				        <div class="promises-explain">
+				            <p>善变无罪！退货成功后，您将获得 1000 个唯品币（价值 10 元）作为回寄运费补贴。</p>
+				        </div>
+				    </div>
+				</div>
+			</div>
+		</div>
+		<!--尾部-->
+		<footer id="footer" class="footer">
+			<div class="footer-inner">
+					<div class="footer-infor">
+							<p class="footer-infor-link">
+								<a target="_blank" rel="nofollow" href="http://support.vip.com/contact/" title="关于我们">关于我们</a>|
+								<a target="_blank" rel="nofollow" href="http://support.vip.com/contact/" title="About us">About us</a>|
+								<a target="_blank" rel="nofollow" href="http://support.vip.com/contact/" title="About us">About us</a>|
+								<a target="_blank" rel="nofollow" href="http://support.vip.com/contact/" title="关于我们">关于我们</a>|
+								<a target="_blank" rel="nofollow" href="http://support.vip.com/contact/" title="About us">About us</a>|
+								<a target="_blank" rel="nofollow" href="http://support.vip.com/contact/" title="About us">About us</a>|
+								<a target="_blank" rel="nofollow" href="http://support.vip.com/contact/" title="关于我们">关于我们</a>|
+								<a target="_blank" rel="nofollow" href="http://support.vip.com/contact/" title="About us">About us</a>|
+								<a target="_blank" rel="nofollow" href="http://support.vip.com/contact/" title="About us">About us</a>|
+								<a target="_blank" rel="nofollow" href="http://support.vip.com/contact/" title="关于我们">关于我们</a>|
+								<a target="_blank" rel="nofollow" href="http://support.vip.com/contact/" title="About us">About us</a>|
+								<a target="_blank" rel="nofollow" href="http://support.vip.com/contact/" title="About us">About us</a>|
+								<a target="_blank" rel="nofollow" href="http://support.vip.com/contact/" title="About us">About us</a>|
+							</p>
+							<p class="footer-infor-txt">
+								Copyright @ 2008-2016 vip,All Right Reserved
+								<a rel="nofollow" href="http://www.miibeian.gov.cn/publish/query/indexFirst.action">粤ICP备08114786号</a>
+								<a rel="nofollow" href="http://www.miibeian.gov.cn">IC经营许可证：粤B2-20080329</a>
+								<a rel="nofollow" href="http://sq.ccm.gov.cn/ccnt/sczr/service/business/emark/toDetail/61e6abe320e7462baf61aab32a67f256">网络文化经营许可证：粤网文(2015)1525-229</a><br>
+								<a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44010302111111" target="_blank">
+									<img src="../img/index/fpolice.png" "width="14&quot;" "height="14&quot;" "style="margin:2px" 3px="" 0="" 0;"="">
+									粤公网安备44010302111111号
+								</a>
+								&nbsp;使用本网站表示接受
+								<a rel="nofollow" href="http://support.vip.com/clause/">唯品用户协议</a>
+								。版权所有
+								<a rel="nofollow" href="http://www.vip.com/">广州唯品会信息科技有限公司</a>
+							</p>
+					</div>
+					<div class="footer-ft">
+						<p class="footer-pic">
+							<a rel="nofollow" target="_blank" href="https://www.95516.com/static/union/pages/index/index.html">
+								<i class="footer-pic-ico01" title="银联特约商户"></i>
+							</a>
+							<a rel="nofollow" target="_blank" href="http://weiquan.vip.com/">
+								<i class="footer-pic-ico04" title="消费维权服务站"></i>
+							</a>
+							<a rel="nofollow" target="_blank" href="http://netadreg.gzaic.gov.cn/ntmm/WebSear/WebLogoPub.aspx?logo=440103103022008082200055">
+								<i class="footer-pic-ico05" title="红盾电子链接标识"></i>
+							</a>
+							<a rel="nofollow" target="_blank" href="http://www.gzjd.gov.cn/">
+								<i class="footer-pic-ico06" title="网络警察报警平台"></i>
+							</a>
+								
+							<a rel="nofollow" target="_blank" href="#">
+								<i class="footer-pic-ico07" title="公安局网络警察支队"></i>
+							</a>
+							<a rel="nofollow" target="_blank" href="https://credit.cecdc.com/CX20160725023666090470.html">
+								<i class="footer-pic-ico09" title="诚信网站"></i>
+							</a>
+							<a rel="nofollow" target="_blank" href="https://ss.knet.cn/verifyseal.dll?sn=2011022400100006603&amp;ct=df&amp;a=1&amp;pa=0.801643806276843">
+								<i class="footer-pic-ico10" title="可信网站"></i>
+							</a>
+					    </p>
+					</div>
+			</div>
+		</footer>
+		<script type="text/javascript" src="../js/common/jquery-1.12.3.js" ></script>
+		<script type="text/javascript" src="../js/common/jquery.cookie.js" ></script>
+		<script type="text/javascript" src="../js/pay.js" ></script>
+	</body>
+</html>

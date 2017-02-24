@@ -1,9 +1,9 @@
 
 <!DOCTYPE html>
-<!--[if lt IE 7]> <html class="lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-<!--[if IE 7]>    <html class="lt-ie9 lt-ie8" lang="en"> <![endif]-->
-<!--[if IE 8]>    <html class="lt-ie9" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!--><html lang="en"><!--<![endif]-->
+<html class="lt-ie9 lt-ie8 lt-ie7" lang="en">
+<html class="lt-ie9 lt-ie8" lang="en">
+<html class="lt-ie9" lang="en">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 
@@ -59,6 +59,7 @@ Include Date Range Picker
 @show
 
 <!--end 自己添加-->
+>>>>>>> b8fe41da44a271c2b890f6800d5a62b7196e8454
 @section('css')
 @show
 <title>
@@ -334,10 +335,12 @@ Include Date Range Picker
 					<li class="active">
 					    <a href="#"><i class="icon-cog"></i>控制面板</a>
 					    <ul>
+					        <li><a href="/admin/setting">基本信息</a></li>
+                            <li><a href="/admin/ads">广告列表</a></li>
+                            <li><a href="/admin/frilinks">友情链接</a></li>
 					        <li><a href="form_layouts.html">基本信息</a></li>
                             <li><a href="/admin/ads">广告列表</a></li>
                             <li><a href="form_layouts.html">友情链接</a></li>
-
 					    </ul>
 					</li>
                    
@@ -418,7 +421,6 @@ Include Date Range Picker
     <script src="/resources/plugins/cleditor/jquery.cleditor.xhtml.min.js"></script>
     <script src="/resources/plugins/cleditor/jquery.cleditor.icon.min.js"></script>
     <script src="/ho/js/jquery-1.8.3.min.js"></script>
-    
     <!-- Core Script -->
     <script src="/resources/bootstrap/js/bootstrap.min.js"></script>
     <script src="/resources/js/core/mws.js"></script>
@@ -429,6 +431,5 @@ Include Date Range Picker
     <script src="/resources/js/demo/demo.formelements.js"></script>
     <!--全局js函数-->
     <script type="text/javascript" src="/global/global.js"></script>
-   
 </body>
 </html>

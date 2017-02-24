@@ -14,6 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::controller('admin/frilinks','admin\frilinks\FrilinksController');
 
 
 
@@ -153,6 +154,7 @@ Route::get('/', function () {
 
 
 Route::controller('/home/custser','home\CustserController');
+
 Route::controller('/home/fback','home\FbackController');
 
 
@@ -304,6 +306,21 @@ Route::controller('/admin/login','admin\user\LoginController');
 Route::get('/code','CodeController@index');
 Route::controller('/admin/ads','admin\ads\AdsController');
 
+
+
+
+Route::controller('/admin/setting','SettingController');
+//登陆
+Route::controller('/home/login','home\LoginController');
+//注册
+Route::controller('/home/regist','home\RegistController');
+
+
+
+
+
+=======
+>>>>>>> b8fe41da44a271c2b890f6800d5a62b7196e8454
 
 
 
@@ -465,8 +482,14 @@ Route::controller('/admin/user','admin\user\AdminController');
 Route::controller('/admin/member','admin\user\MemberController');
 Route::controller('/admin/brand','admin\brand\IndexController');
 Route::controller('/admin/navcast','admin\navcast\IndexController');
+Route::controller('/admin/member','admin\user\MemberController');
+Route::controller('/admin/brand','admin\brand\IndexController');
+Route::controller('/admin/navcast','admin\navcast\IndexController');
 Route::controller('/admin/image','admin\image\IndexController');
+<<<<<<< HEAD
 Route::controller('/admin/product/quali','admin\product\QualiController');
 Route::controller('/admin/product/cate','admin\product\CateController');
 Route::controller('/admin/product','admin\product\IndexController');
 
+=======
+>>>>>>> 7ed6740cf9a121eab1cdf59e7293e2f01ee866a8

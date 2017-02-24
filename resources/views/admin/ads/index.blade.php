@@ -66,7 +66,8 @@
                                 <td class="sorting_1"><img src="{{$v['logo']}}" alt="" style="width:70px;"></td>
                                 <td class="sorting_1">{{ $v['url'] }}</td>
                                 <td class="sorting_1">{{ $v['ord'] }}</td>
-                                <td class="sorting_1">{{ $v['enabled'] }}</td>
+                                <td class="sorting_1">@if($v['enabled'] == 1) 开启 @endif
+                                @if($v['enabled'] == 2) 关闭 @endif</td>
                                 <td class="sorting_1" style="text-align:center;">
                                     <a href="/admin/ads/edit/{{ $v['id'] }}" title="修改" style="color: black;padding-left: 5px;font-size: 17px;"><i class="icon-feather"></i></a>
                                     <a href="/admin/ads/delete/{{ $v['id'] }}" title="删除" style="color: black;padding-left: 20px;font-size: 17px;"><i class="icon-trash"></i></a>
