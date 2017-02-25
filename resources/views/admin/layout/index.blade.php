@@ -59,7 +59,6 @@ Include Date Range Picker
 @show
 
 <!--end 自己添加-->
->>>>>>> b8fe41da44a271c2b890f6800d5a62b7196e8454
 @section('css')
 @show
 <title>

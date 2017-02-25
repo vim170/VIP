@@ -319,9 +319,6 @@ Route::controller('/home/regist','home\RegistController');
 
 
 
-=======
->>>>>>> b8fe41da44a271c2b890f6800d5a62b7196e8454
-
 
 
 
@@ -486,10 +483,7 @@ Route::controller('/admin/member','admin\user\MemberController');
 Route::controller('/admin/brand','admin\brand\IndexController');
 Route::controller('/admin/navcast','admin\navcast\IndexController');
 Route::controller('/admin/image','admin\image\IndexController');
-<<<<<<< HEAD
 Route::controller('/admin/product/quali','admin\product\QualiController');
 Route::controller('/admin/product/cate','admin\product\CateController');
 Route::controller('/admin/product','admin\product\IndexController');
 
-=======
->>>>>>> 7ed6740cf9a121eab1cdf59e7293e2f01ee866a8

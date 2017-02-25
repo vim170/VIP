@@ -1,5 +1,6 @@
 @extends('admin.layout.index')
 @section('css')
+<meta name="_token" content="{{ csrf_token() }}"/>
 <style type="text/css">
 	table{
 		border-spacing: 10px 10px;
@@ -19,14 +20,20 @@
 	table tr td input {
 		width: 160px;
 	}
+	table tr td:first-child{
+		width:400px;
+		/*text-align: center;*/
+	}
 	
 </style>
 <!--引入CSS-->
 <link rel="stylesheet" type="text/css" href="/resources/webuploader-0.1.5/webuploader.css">
-
-<!--引入JS-->
-<script type="text/javascript" src="/resources/webuploader-0.1.5/webuploader.js"></script>
-
+@section('js')
+	<!--引入JS-->
+	<script type="text/javascript" src="/resources/webuploader-0.1.5/webuploader.js"></script>
+	<script type="text/javascript" src="/resources/verify.js"></script>
+	
+@endsection
 @endsection
 @section('content')
 	<form action="/admin/product/insert" method="post" enctype="multipart/form-data">
@@ -41,8 +48,22 @@
         			<label for="name">商品名称</label>
         		</td>
         		<td >
-        			<input type="text" id="name" value="" name="name">
+        			<input type="text" id="name" value="" name="name" class="name">
         		</td>
+        		<script type="text/javascript">
+        			$('#name').on('blur',function(){
+        				if($(this).val() == ''){
+        					// $(this).focus(function(){alert(1)})
+        					$(this).attr('value','请输入商品名称').fadeIn()
+        					$(this).text('请输入商品名称').fadeIn()
+
+        					return false
+        				} else {
+        					return true
+        				}	
+        			})
+        				
+        		</script>
         		<td>
         			<label for="cname">商品分类</label>
         		</td>
@@ -53,6 +74,28 @@
         					<option value="{{ $v['id'] }}">{{ $v['cname'] }}</option>
         				@endforeach
         			</select>
+        			<script type="text/javascript">
+        					$('#cname').on('change',function(){
+        						var cname = $(this)
+        						var id = $(this).val()
+        						$.ajax({
+        							headers: {
+        								'X-CSRF-TOKEN': $('meta[name="_token"]').attr('content')
+        							},
+        							type:"post",
+        							url:"/admin/product/verify",
+        							data:{'id':id},
+        							async:false,
+        							success:function(flag){
+        								if(flag == 1) {
+        									cname.parent().find('p').remove()
+        									cname.parent().append("<p style='color:red; font-size:14px;'>该分类下有子类</p>")
+        								}
+        							}
+        						})
+        					})
+        				
+        			</script>
         		</td>
         		<td>
         			<label for="goodsmark">商品货号</label>
@@ -69,9 +112,19 @@
         			<select name="brandid" style="width: 160px;" id="brandname">
         				<option value="0">请选择</option>
         				@foreach($brand as $k => $v)
-        				<option value="{{ $v['brandid'] }}">{{ $v['brandname'] }}</option>
+        				<option value="{{ $v['id'] }}">{{ $v['brandname'] }}</option>
         				@endforeach
         			</select>
+        			<script type="text/javascript">
+        				$('#brandname').on('change',function(){
+        					if($(this).val() == 0){
+        						$(this).parent().append('<p>请选择一个品牌</p>')
+        						return false
+        					} else {
+        						return true
+        					}
+        				})
+        			</script>
         		</td>
         		
         		<td>
@@ -97,19 +150,20 @@
 
 
         		<td>
-        			<label for="punit">商品单位</label>
-        		</td>
-        		<td>
-        			<select name="punit" style="width: 160px;" id="punit">
-        				<option value="">请选择</option>
-        			</select>
-        		</td>
+					<label for="wlmoney">物流运费</label>
+				</td>
+				<td>
+					<input id="wlmoney" type="text" name="wlmoney" placeholder="0元为免运费" value="0">
+				</td>
         		<td>
         			<label for="quali">商品规格</label>
         		</td>
         		<td>
-        			<select name="qname" style="width: 160px;" id="quali">
-        				<option value="">请选择</option>
+        			<select name="qid" style="width: 160px;" id="quali">
+        				<option value="0">请选择</option>
+        				@foreach($quali as $k => $v)
+        					<option value="{{ $v['id'] }}">{{ $v['qname'] }}</option>
+        				@endforeach
         			</select>
         		</td>
         	</tr>
@@ -141,14 +195,14 @@
 			<!--上传图片-->
 			<tr>
 				<td>
-					<label for="wlmoney">物流运费</label>
+					<label for="goodsreper">商品库存</label>
+				</td>
+				<td colspan="2">
+
+					<input style="text-align: center;" type="text" id="goodsreper" value="" name="goodsreper">
 				</td>
 				<td>
-					<input id="wlmoney" type="text" name="wlmoney" placeholder="0元为免运费" value="0">
-				</td>
-				<td colspan="1"></td>
-				<td>
-					<label or="logo">商品logo</label>
+					<label for="logo">商品logo</label>
 				</td>
 				<td colspan="2">
 
@@ -160,10 +214,10 @@
 			</tr>
 			<tr>
 				<td>
-					<label for="descr">描述</label>
+					<label for="productdesc">描述</label>
 				</td>
 				<td colspan="5">
-					<textarea name="descr" id="descr" cols="80" rows="10" style="resize: none;"></textarea>
+					<textarea name="productdesc" id="productdesc" cols="80" rows="10" style="resize: none;"></textarea>
 				</td>
 			</tr>
 			<tr>
@@ -171,19 +225,19 @@
 					<label for="descr">商品详情图片</label>
 				</td>
 				<td>
-					<input type="file" value="第一张图片" name="logo1">
+					<input type="file" value="第一张图片" name="detlogo1">
 				</td>
 				<td>
-					<input type="file" value="第二张图片" name="logo2">
+					<input type="file" value="第二张图片" name="detlogo2">
 				</td>
 				<td>
-					<input type="file" value="第二张图片" name="logo3">
+					<input type="file" value="第二张图片" name="detlogo3">
 				</td>
 				<td>
-					<input type="file" value="第二张图片" name="logo4">
+					<input type="file" value="第二张图片" name="detlogo4">
 				</td>
 				<td>
-					<input type="file" value="第五张图片" name="logo5">
+					<input type="file" value="第五张图片" name="detlogo5">
 				</td>
 			</tr>
         </table>
@@ -193,7 +247,7 @@
 
 		<div class="mws-form-row">
 			<!-- 加载编辑器的容器 -->
-			    <script id="brandcontent" name="brandcontent" type="text/plain">
+			    <script id="productcontent" name="productcontent" type="text/plain">
 					
 			    </script>
 			    <!-- 配置文件 -->
@@ -202,7 +256,7 @@
 			    <script type="text/javascript" src="/resources/ueditor/ueditor.all.js"></script>
 			    <!-- 实例化编辑器 -->
 			    <script type="text/javascript">
-			        var ue = UE.getEditor('brandcontent');
+			        var ue = UE.getEditor('productcontent');
 			    </script>
 		</div>
     </div>
@@ -254,5 +308,4 @@
 		}
 		 
 	</script>
-	<script type="text/javascript" src="/resources/getting-started.js"></script>
 @endsection
