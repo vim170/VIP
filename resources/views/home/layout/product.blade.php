@@ -6,6 +6,12 @@
     <title>唯品会（原Vipshop.com）特卖会：一家专门做特卖的网站_确保正品_确保低价_货到付款</title>
     <link rel="stylesheet" href="/ho/css/homePage.css">
     <link rel="stylesheet" href="/ho/css/footer.css">
+     <!-- <link rel="icon" href="http://s16.mogucdn.com/new1/v1/bmisc/3ce382db3c8aaca5d07bd36711e77134/171169993508.ico" type="image/x-icon" /> -->
+    <link rel="stylesheet" href="/shane/index/css/common/common.css" />
+    <link rel="stylesheet" href="/shane/index/css/common/header.css" />
+    <link rel="stylesheet" href="/shane/index/css/common/footer.css" />
+    <link rel="stylesheet" href="/shane/index/css/index.css"/>
+    <link rel="stylesheet" href="/shane/index/css/common/sidenav.css" />
     
     @section('css')
 
@@ -14,6 +20,8 @@
 <body>
     <!--头部-->
     <div class="header">
+        @section('header_ads')
+        @show
         <div class="top-nav-outer">
             <div class="top-nav-inner">
                 <div class="self-area">
@@ -133,9 +141,192 @@
                 </div>
 
             </div>
+
+            <!--首页导航栏 start-->
+              <div class="nav-bottom">
+                  <div class="nav-bottom-inner">
+                      <ul>
+                          <li class="select"><a href="#">首页</a></li>
+                          <li><img src="/shane/imgs/hot.gif"><a class="have-img" href="#">唯品国际</a></li>
+                          <li><a href="#">母婴</a></li>
+                          <li><a href="#">居家</a></li>
+                          <li><a href="#">男士</a></li>
+                          <li><img src="/shane/imgs/hot.gif"><a class="have-img" href="#">秋季美妆节</a></li>
+                          <li><a href="#">唯品金融</a></li>
+                          <li><a href="#">旅行</a></li>
+                          <li class="more"><a class="have-sanjiao" href="#">更多</a><div class="sanjiao"></div>
+                             <div class="channel-item-group">
+                                 <div class="channel-item">
+                                     <a href="#" class="channel-more-itemlink">
+                                         <img src="/shane/imgs/channel-item-img-1.jpg">
+                                         <div class="shadow"></div>
+                                         <div class="brand-text">
+                                             <p class="brand-name">旅行</p>
+                                         </div>
+                                     </a>
+                                 </div>
+                                 <div class="channel-item">
+                                     <a href="#" class="channel-more-itemlink">
+                                         <img src="/shane/imgs/channel-item-img-2.jpg">
+                                         <div class="shadow"></div>
+                                         <div class="brand-text">
+                                             <p class="brand-name">女装</p>
+                                         </div>
+                                     </a>
+                                 </div>
+                                 <div class="channel-item">
+                                     <a href="#" class="channel-more-itemlink">
+                                         <img src="/shane/imgs/channel-item-img-3.jpg">
+                                         <div class="shadow"></div>
+                                         <div class="brand-text">
+                                             <p class="brand-name">鞋包</p>
+                                         </div>
+                                     </a>
+                                 </div>
+                                 <div class="channel-item">
+                                     <a href="#" class="channel-more-itemlink">
+                                         <img src="/shane/imgs/channel-item-img-4.jpg">
+                                         <div class="shadow"></div>
+                                         <div class="brand-text">
+                                             <p class="brand-name">配饰</p>
+                                         </div>
+                                     </a>
+                                 </div>
+                                 <div class="channel-item">
+                                     <a href="#" class="channel-more-itemlink">
+                                         <img src="/shane/imgs/channel-item-img-5.jpg">
+                                         <div class="shadow"></div>
+                                         <div class="brand-text">
+                                             <p class="brand-name">运动</p>
+                                         </div>
+                                     </a>
+                                 </div>
+                                 <div class="channel-item">
+                                     <a href="#" class="channel-more-itemlink">
+                                         <img src="/shane/imgs/channel-item-img-6.jpg">
+                                         <div class="shadow"></div>
+                                         <div class="brand-text">
+                                             <p class="brand-name">汽车</p>
+                                         </div>
+                                     </a>
+                                 </div>
+                                 <div class="channel-item">
+                                     <a href="#" class="channel-more-itemlink">
+                                         <img src="/shane/imgs/channel-item-img-7.jpg">
+                                         <div class="shadow"></div>
+                                         <div class="brand-text">
+                                             <p class="brand-name">爱丽奢</p>
+                                         </div>
+                                     </a>
+                                 </div>
+                             </div>
+                          </li>
+                          <li><img src="/shane/imgs/pocket.png"><a class="have-img" href="#">预告</a></li>
+                          <li class="fenlei"><img src="/shane/imgs/search.png"><a class="have-img" href="#">分类</a></li>
+                      </ul>
+                  </div>
+              </div>    
+            <!--首页导航栏 end-->
+
     @section('content')
 
     @show
+
+    <!--楼梯-->
+    <div id="sidebar">
+                <div id="sidebar">
+                <div class="sidebar-nav">
+                    <div class="sidebar-nav-top">
+                        <ul class="sidebar-nav-list">
+                            <li class="count">
+                                <div class="count-box">
+                                    <i class="i-count"></i>
+                                    <div id="count-tip" style="font-size: 12px;">
+                                        <i class="i-side-dm"></i>
+                                            <a href="" target="_blank">
+                                                <img class="count-tip-img" src="/shane/index/img/common/sidebar-cont.jpg"/>
+                                            </a>
+                                            <P class="count-tip-title">你好
+                                                <a class="count-tip-login" href="login.html">登录</a>
+                                                <a class="count-tip-reg" href="regist.html">注册</a>
+                                            </P>
+                                            <P class="count-tip-title hidden">
+                                                你好
+                                                <span id="count-tip-username">Aomize</span>
+                                                请
+                                                    <a class="count-tip-login" href="login.html">登录</a>
+                                            </P>
+                                            <div id="count-tip-bottom">
+                                                <P class="myorder">
+                                                    <i class="myorder-count"></i>
+                                                    <a href="" target="_blank"><i class="myorder-logo"></i>
+                                                        我的订单
+                                                    </a>
+                                                </P>
+                                                <P class="mymsg">
+                                                    <i class="mymsg-count">0</i>
+                                                    <a href="javascript:void(0)" target="_blank">
+                                                        <i class="mymsg-logo"></i>
+                                                        我的消息
+                                                    </a>
+                                                </P>
+                                        
+                                            </div>
+                                        <div class="vipclub">
+                                                <a class="vipclub-cloor" href="#" >会员俱乐部</a>
+                                            </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="asset">
+                                <div class="asset-box">
+                                    <i class="i-asset"></i>
+                                    <p class="sidebar-inner">我的优惠券</p>
+                                </div>
+                            </li>
+                            <li class="brand">
+                                <div class="brand-box">
+                                    <i class="i-brand"></i>
+                                    <p class="sidebar-inner">我收藏的品牌</p>
+                                </div>
+                            </li>
+                            <li class="goods">
+                                <div class="goods-box">
+                                    <i class="i-goods"></i>
+                                    <p class="goods-inner">我收藏的商店</p>
+                                </div>
+                            </li>
+                            <li class="shop-cart">
+                                <a href="shopCar.html" target="_blank">
+                                    <div class="shop-cart-box">
+                                        <i class="i-shop-cart" id="end"></i>
+                                        <p class="shop-cart-text">
+                                        购物袋
+                                        </p>
+                                        <i id="cart-count" class="cart-num"></i>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                        
+                    </div>
+                    <div class="sidebar-nav-bottom">
+                        <div class="vip-words">
+                            <a  href="http://feedback.vip.com/feedback!hotFeedback.do" target="_blank">
+                                <i class="i-logo"></i>
+                             </a>
+                                <P class="sidebar-inner vip-inner">会员反馈</P>
+                        </div>
+                        <!--返回顶部-->
+                        <div class="return-top">
+                             <i class="i-lreturn"></i>
+                            <P id="return" class="sidebar-inner return-inner">返回顶部</P>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    </div>
 
 <footer id="footer" class="footer">
   <div class="footer-inner">
@@ -260,3 +451,8 @@
 <script src="/ho/js/jquery-1.11.3.js"></script>
 <script src="/ho/js/jquery.cookie.js"></script>
 <script src="/ho/js/homePage.js"></script>
+<!--js-->
+<script src="/shane/index/js/login.js"></script>
+<script type="text/javascript" src="/shane/index/js/common/common.js" ></script>
+<script type="text/javascript" src="/shane/index/js/common/move.js" ></script>
+<script type="text/javascript" src="/shane/index/js/index.js" ></script>

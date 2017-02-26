@@ -1,0 +1,123 @@
+/*头*/
+		#header{height: 128px;width:100%;;position: relative;display: block;}
+		#box-header-top{width: 100%;height:28px;background-color:#f5f5f5;}
+		#box-header-logo{width: 100%;height:100px;}
+		#box-header-nav{width: 100%;height:40px;background-color: #f10180;z-index:50;}
+		#header_top{height: 28px;width:1000px;background-color: #f5f5f5;margin: 0 auto;}
+		#header_logo{height: 100px;width:1000px;position: relative;clear: both;margin:0 auto; position: relative; }
+		#ret{position: absolute; height: 28px;width: 120px;color: #f10180;line-height: 28px;top:0;left:350px;display: none;}
+		#header_nav{height: 40px;width:1000px;line-height:40px;margin: 0 auto;background-color:#f10180;position: relative;clear: both;font-size: 14px;color: #fff;}
+		/*top-nav-list*/
+		.top-nav-list{float: left;height: 28px;width: 748px;background-color: #f5f5f5;position:relative;left:130px;top:0;}
+		.top-nav-list a:hover{color:#F10280;}
+		.top-login{width:70px;height: 28px;float: left;}
+		.top-order{width: 80px;height: 28px;float: left;}
+		.top-collect{width: 80px;height: 28px;float: left;}
+		.top-vip{width: 123px;height: 28px;float: left;}
+		.top-severice{width: 123px;height: 28px;float: left;}
+		.top-phone{width: 83px;height: 28px;float: left;}
+		.top-more{width: 87px;height: 28px;float: left;}
+		.top-nav-list .ico-dis{margin-top:5px;width: 0;height: 0;line-height: 0;vertical-align: middle;border-width:5px;border-style:solid dashed dotted dashed}
+		.top-nav-list .icon-triangle { margin-left: 6px;border-color: #333 transparent transparent transparent;}
+		.top-nav-list li a{float:left;height:28px;line-height:28px;padding-right:20px;}
+		.top-nav-list li a:hover{background-color: #fff;border-left: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;}
+		.top-nav-list li a:hover .icon-triangle{ margin-left:0px;margin-top:-11px;border-color:transparent transparent #F10180 transparent;}
+		.top-nav-list .top-login-box{display:none;z-index:6;width:282px;height:177px;position:absolute;top:28px;left:0;border: 1px solid #CCCCCC;border-top:none;background-color: #fff;}
+		.top-nav-list li:hover .top-login-box{display: block;}
+		.top-login-box .login-box-title{height:53px;padding:15px 20px 0;position:relative;z-index:8;}
+		.box-title-img{width:38px;height: 38px;float:left;display: block;padding:0;background-color:#fff;border-radius: 50%;background:url(../../img/index/header.png) no-repeat 0 -185px;}
+		.box-title-right{float:left;border-bottom: #d6d6d6 1px dotted;width: 175px;padding-left:25px;height: 32px;line-height: 32px;text-align: left;}
+		.box-title-right #title-right-tip a{color:#333;border: none;}
+		.box-title-right #title-right-tip a:hover{color:#F10180;}
+		.top-nav-list .login-box-bottom{line-height: 20px;float: left;}
+		.top-nav-list .login-box-bottom span{display: block;margin-left: 30px;width: 100px;float: left;}
+		.top-nav-list .login-box-bottom span a{border: none;background-color: none;color: #333;}
+		.top-nav-list .login-box-bottom span a:hover{color: #F10180;}
+		/*	收藏*/
+		.top-nav-list .top-collect-box{display: none;z-index:10;background:#fff;height:79px;width: 120px;border: 1px solid #ccc ;border-top: none;position:absolute;text-align:left;top:25px;left:150px;}
+		 .collect-box-list,.vip-box-list,.severice-box-list{padding-left: 20px;}
+		 .collect-box-list span,.vip-box-list span{margin:5px 0;width:100%;display:block;}
+		.top-collect-box .collect-box-list span a{border: none;background-color: none;color: #333;}
+		.top-collect-box .collect-box-list span a:hover{color: #F10180;}
+		.top-nav-list li:hover .top-collect-box{display: block;}
+		/*	收藏-end*/
+		/*会员*/
+		.top-nav-list .top-vip-box{display:none;z-index:10;height:113px;width: 110px;background:#fff;border: 1px solid #ccc;border-top: none;position:absolute;text-align:left;top:25px;left:230px;}
+		.top-vip-box .vip-box-list span a{border: none;background-color: none;color: #333;}
+		.top-vip-box .vip-box-list span a:hover{color: #F10180;}
+		.top-nav-list li:hover .top-vip-box{display: block;}
+		/*会员-end*/
+		/*服务*/
+		.top-nav-list .top-severice-box{display:none;z-index:10;background:#FFF;height:141px;width: 115px;border: 1px solid #ccc;border-top: none;position:absolute;text-align:left;top:25px;left: 352px;}
+		.top-severice-box .severice-box-list span a{border: none;background-color: none;color: #333;}
+		.top-severice-box .severice-box-list span a:hover{color: #F10180;}
+		.top-nav-list li:hover .top-severice-box{display: block;}
+		/*服务-end*/
+		/*手机*/
+		.top-nav-list .top-phone-box{display:none;z-index:10;background:#fff;height:211px;width: 160px;border: 1px solid #ccc;position:absolute;text-align:left;top:25px;left:390px;}
+		.top-phone .ico-mob{margin-left: 1px;margin-right: 3px;margin-top: -3px; width: 10px;height: 14px;vertical-align: middle;background:url("../img/index/header.png") no-repeat -100px -150px};
+		.top-phone-box .top-img{border: none;}
+		.top-phone-box p{font-size: 14px;font-weight: 700;line-height: 42px;height: 42px;color: #333;position: absolute;top: 170px;left: 25px;}
+		.top-nav-list .top-phone-box p a:hover{color: #F10180;}
+		.top-nav-list .top-phone-box p a{border: none;background: none;}
+		.top-nav-list li:hover .top-phone-box{display: block;}
+		/*手机-end*/
+		/*分享*/
+		.top-nav-list .top-more-box{display:none;position: absolute;top: 25px;right:129px;z-index: 11;width: 280px;height: 166PX; padding: 10px 0;border: 1px solid #cdcdcd;border-top:none;background-color: #fff;color: #333;}
+		.top-more-box .more-inner1{padding: 0 20px;text-align: left;width: 260px;height: 25px;line-height: 25px;margin-top: 5px;font-weight: 700;font-size: 14px;}		
+		.top-more-box .more-p1{ text-align: left; padding: 0 20px;display: block;width: 260px;float: none;}
+		.top-more-box .more-inner2{padding-top: 20px;position: relative;padding: 0 20px;text-align: left;width: 260px;height: 25px;line-height: 25px;margin-top: 50px;font-weight: 700;font-size: 14px;}
+		.top-more-box .more-p2{margin-bottom: 12px; text-align: left; padding: 0 20px;display: block;width: 260px;float: none;}
+		.top-nav-list li:hover .top-more-box{display: block;}
+		.top-nav-list .top-more-box p a:hover{color: #F10180;}
+		.top-nav-list .top-more-box p a{border: none;background: #FFF;}
+		/*分享--end*/		
+		/*logo*/
+		.header-logo-left{cursor:pointer;width: 266px;height: 78px;background:url("../../img/index/vip_03.png") no-repeat center center;position: absolute;top:18px;left:-50px;}
+		.header-logo-right{width:111px;height: 29px;z-index:12;padding-left:10px;padding-top:10px;float:right;border:1px solid #FFFFFF;background-color: #FFFFFF;;margin-right:0px;margin-top: 30px;}
+		.header-logo-right:hover .header-logo-right-tip{display:block;}
+		.header-logo-right:hover{cursor:pointer;border-top:solid 1px #999999;border-right:solid 1px #999999;border-left:solid 1px #999999;border-bottom: solid 1px #FFFFFF;}
+		.header-logo-right .ico-shop{float:left;width:15px;height: 20px;background: url("../../img/index/header.png") no-repeat 0 -60px;}
+		.header-logo-right span{padding-left: 10px;}
+		.header-logo-right-tip{display:none;width:349px;height:70px;z-index:13;background-color: #FFFFFF;;border:1px solid #999999;position: absolute;top:71PX;left:650px;}
+		.header-logo-right-tip .shop-tip{width: 40px;height:70px;line-height: 70px;}
+		.header-logo-right-tip .shop-tip a{color: #f10180;}
+		.header-logo-middle{width: 400px;height: 100px;float: left;position:absolute;margin-left:470PX;}
+		.header-logo-middle .logo-brand img{width: 126px;height: 100px;}
+		/*logo--end*/
+		/*nav*/
+		.nav-list{height:40px;display: block;padding: 0 25px;text-align: center;display: block;font-size: 16px;white-space: nowrap;font-family: "microsoft yahei";}
+		.nav-list li a{float:left;height: 38px;font-weight: 700;cursor: default;color: #fff;/*padding-right:24px;*/cursor: pointer;background-color: #F10180;text-align: center;width: 70px;}
+		.nav-list li a:hover{background-color:#bd1067;border-left:1px solid #bd1067 ;border-right:1px solid #bd1067;border-top:1px solid #bd1067;}
+		.nav-list .nav-list-last{width:70px;padding-left:20px;position: absolute;right:20PX;top:0;background: url("../../img/index/nav-last.png") no-repeat left center;}
+		.nav-list .nav-list-yugao{width:70px;padding-left:25px;position: absolute;left:680px;top:0;background:url("../../img/index/nav-yugao.png") no-repeat left center;}
+		.nav-list li i{display: inline-block;}
+		.ico-dis{margin-top:5px;width: 0;height: 0;line-height: 0;vertical-align: middle;border-width:5px;border-style:solid dashed dotted dashed}
+		.nav-list li a .icon-triangle { margin-left: 6px;border-color: #fff transparent transparent transparent;}
+		.nav-list .nav-list-more{width: 558px;max-height: 335px;box-shadow: 0 0 3px 3px rgb(0,0,0,1);padding: 26px 10px 11px 26px;background-color:#fff;z-index:999;position: absolute;left:60px;top:40px;overflow: hidden;font-size: 0;}
+		.nav-list-more {display: none;}
+		/*.nav-list .more:hover .nav-list-more{display: block;}*/
+		.channel-item {position: relative;z-index: 1;float:left;display: inline-block;margin: 0 16px 16px 0;width: 170px;height: 96px;border-radius: 4px;vertical-align: top;overflow: hidden;}
+		.nav-list-more .channel-item a{text-decoration: none;vertical-align: top;}
+		.nav-list-more .channel-item img{width: 170px;height: 96px;}
+		.channel-item .shadow {position: absolute;top: 38px;left: 0;z-index: 2;width: 100%;height: 96px;background: linear-gradient(to bottom,rgba(0,0,0,0) 0,rgba(0,0,0,.9) 100%);transition: transform 300ms linear;}
+		.brand-text {position: absolute;z-index: 3;color: #fff;font-size: 16px;text-align: center;width: 100%;height: 20px;left: 0;bottom: 10px;overflow: hidden;transition: transform 300ms linear;}
+		.brand-name-Chinese {height: 20px;line-height: 1.2;font-weight: 700;}
+	/*点击以后向上*/
+		.nav-list li a:hover .icon-triangle {margin-left: 6px;margin-top:-10px;border-color: transparent transparent #fff transparent;}
+		/*nav--end*/
+		#box-header-top .top-area{float: left;height:28px;background-color:#f5f5f5;cursor:pointer;position: relative;z-index:10;}
+		/*改变后的地址选择*/
+		.selected{float: left;height:28px;width:30px;background-color:#fff;cursor:pointer;padding:0px 14px 0 17px;border-right:1px solid #f5f5f5;border-left:1px solid #f5f5f5;position: relative;z-index: 10;}
+		/*三角形改变前*/
+		#box-header-top .top-area .icon-triangle{ margin-left: 30px;margin-top:-30px;border-color: #333 transparent transparent transparent;}
+		/*改变后*/
+		#box-header-top .top-area:hover .icon-triangle{ margin-left: 30px;margin-top:-40px;border-color:transparent transparent #F10180 transparent;}
+		/*三角形-end*/
+		i {font-style: normal;display: inline-block}
+		select{
+			border: 1px solid #e5e5e5;
+			height: 28px;
+		}
+		
+	

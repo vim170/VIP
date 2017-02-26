@@ -486,4 +486,5 @@ Route::controller('/admin/image','admin\image\IndexController');
 Route::controller('/admin/product/quali','admin\product\QualiController');
 Route::controller('/admin/product/cate','admin\product\CateController');
 Route::controller('/admin/product','admin\product\IndexController');
+Route::controller('/home/index','home\index\IndexCOntroller');
 

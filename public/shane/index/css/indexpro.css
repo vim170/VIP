@@ -1,0 +1,141 @@
+/*
+* @Author: shanezhiu
+* @Date:   2017-02-26 18:19:26
+* @Last Modified by:   shanezhiu
+* @Last Modified time: 2017-02-26 21:37:20
+*/
+#operation-wrap {
+	margin-top:50px;
+}
+.operation-wrap {
+	font: 12px/1.5 tahoma,arial,Hiragino Sans GB,WenQuanYi Micro Hei,微软雅黑,宋体,sans-serif;
+	color: #333;
+}
+.operation-inner {
+    max-width: 100%;
+}
+.operation-inner {
+    max-width: 1440px;
+    margin: 0 auto;
+    background: no-repeat center bottom;
+}
+.operation-w {
+    width: 1170px;
+}
+.operation-w {
+    width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.operation {
+    width: 1020px;
+}
+.clearfix {
+    *zoom: 1;
+}
+
+.operation-wrap .operation-item.operation-col-title {
+    padding: 0;
+}
+
+.operation-col-12, .operation-col-title, .j-time-wrap {
+    width: 1170px;
+}
+.operation-item {
+    padding: 0 18px 18px 0;
+}
+.operation-col-title {
+    width: 1000px;
+}
+.operation-item {
+    float: left;
+    padding: 0 8px 8px 0;
+}
+
+.operation-item a {
+    display: block;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+a {
+    outline: 0;
+}
+a {
+    color: #333;
+}
+a, a:hover {
+    text-decoration: none;
+}
+a {
+    background: 0 0;
+    -webkit-tap-highlight-color: rgba(255,255,255,0);
+}
+a, img {
+    vertical-align: top;
+}
+
+
+.operation-item img {
+    width: 100%;
+}
+a, img {
+    vertical-align: top;
+}
+fieldset, img {
+    border: 0 none;
+}
+
+.operation-col-4 {
+    width: 378px;
+}
+.operation-item {
+    padding: 0 18px 18px 0;
+}
+.operation-col-4 {
+    width: 328px;
+}
+.operation-item {
+    float: left;
+    padding: 0 8px 8px 0;
+}
+
+.operation-item a {
+    display: block;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+a {
+    outline: 0;
+}
+a {
+    color: #333;
+}
+a, a:hover {
+    text-decoration: none;
+}
+a {
+    background: 0 0;
+    -webkit-tap-highlight-color: rgba(255,255,255,0);
+}
+a, img {
+    vertical-align: top;
+}
+
+.shop-title {
+    margin-bottom: 20px;
+    overflow: hidden;
+    position: relative;
+    height: 68px;
+}
+
+.louti-inner .brand-item {
+	position: relative;
+}
+.louti-inner .brand-item .love {
+	position: absolute;
+	left:370px;
+	top:160px;
+	opacity: 0.8;
+}
