@@ -61,6 +61,9 @@
                         品牌logo
                     </th>
                     <th class="sorting_asc"  rowspan="1" colspan="1" aria-sort="ascending" aria-label="Rendering engine: activate to sort column descending" style="width: 146px;">
+                        品牌广告
+                    </th>
+                    <th class="sorting_asc"  rowspan="1" colspan="1" aria-sort="ascending" aria-label="Rendering engine: activate to sort column descending" style="width: 146px;">
                         截止日期
                     </th>
                     <th class="sorting_asc"  rowspan="1" colspan="1" aria-sort="ascending" aria-label="Rendering engine: activate to sort column descending" style="width: 146px;">
@@ -86,6 +89,7 @@
                         <td class="  sorting_1">{{ $v['brandname'] }}</td>
                         <td class=" ">{{ $data[0]['navname'] }}</td>
                         <td class=" "><img src="{{ $data[$k]['brandlogo'] }}" alt="{{ $data[0]['brandname'] }}" style="width: 200px;height: 60px;" /></td>
+                        <td class=" "><img src="{{ $data[$k]['adslogo'] }}" alt="{{ $data[0]['brandname'] }}" style="width: 200px;height: 60px;" /></td>
                         <td class=" ">{{ date('Y-m-d H:i:s',$v['countdown']) }}</td>
                         <td class=" ">@if($v['state'] == 1) 特卖会@elseif($v['state'] == 2) 预售 @else @endif</td>
                         <td class=" ">@if($v['isnew'] == 1) 参加@elseif($v['isnew'] == 0) 不参加 @else @endif</td>

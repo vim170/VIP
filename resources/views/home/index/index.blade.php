@@ -220,6 +220,29 @@
 						</div>
 					</a>
 				</div>
+				<div class="brand-item">
+					<a href="#" target="_blank">
+						<img class="brand-img" src="/shane/index/img/index/brand-img.jpg"/>
+						<span class="love"><img src="/shane/index/img/index/love_03.png"></span>
+						<div class="brand-item-bottom" title="跨专场，购物满598减80，上不封顶">
+							<i class="item-icon"></i>
+							<span class="item-bottom-tip">跨专场，购物满598减80，上不封顶</span>
+						</div>
+						<div class="brand-info">
+							<span class="brand-discount">
+								<span class="salebg2">1</span>
+								折起
+							</span>
+							<span class="brand-info-name">
+								女装专场特卖大优惠
+								</span>
+								<p class="brand-time">
+									<i class="time-icon"></i>
+									<span class="time-day">剩五天</span>
+								</p>
+						</div>
+					</a>
+				</div>
 		    </div>
 			<div class="shop-sort-ft">
 				<a href="http://lady.vip.com" target="_blank" class="shop-more-btn">

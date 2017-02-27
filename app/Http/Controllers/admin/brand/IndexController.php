@@ -66,6 +66,21 @@ class IndexController extends Controller
    			// 如果修改品牌logo处理其路径
    			$data['brandlogo'] = $brandlogo;
    		}
+      // 判断是否有文件上传
+      if($request -> hasFile('adslogo')){
+        // 获取文件后缀名
+        $ext = $request -> file('adslogo') -> getClientOriginalExtension();
+        // 拼接完整路径
+        $destinationPath = './upload/'.date('Ymd',time());
+        $filename = md5(time().rand(10000,99999)).'.'.$ext;
+        // 将上传的品牌logo上传至upload文件夹下
+        $request -> file('adslogo') -> move($destinationPath,$filename);
+        // 获取上传文件的完整的路径larval框架下使用绝对路径
+        $destination = strstr($destinationPath,'/');
+        $adslogo = $destination.'/'.$filename;
+        // 如果修改品牌logo处理其路径
+        $data['adslogo'] = $adslogo;
+      }
    		// 获取当前时间戳
    		$atime = time();
    		// 将当前时间放入数组

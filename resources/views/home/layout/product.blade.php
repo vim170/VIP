@@ -452,6 +452,7 @@
 <script src="/ho/js/jquery.cookie.js"></script>
 <script src="/ho/js/homePage.js"></script>
 <!--js-->
+{{-- <script src="/shane/index/js/common/jquery-1.12.3.js"></script> --}}
 <script src="/shane/index/js/login.js"></script>
 <script type="text/javascript" src="/shane/index/js/common/common.js" ></script>
 <script type="text/javascript" src="/shane/index/js/common/move.js" ></script>

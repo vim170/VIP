@@ -56,7 +56,7 @@
                                         @if ($v['enable'] == 1) 
                                                 启用 
                                         @elseif ($v['enable'] == 2) 禁用 @else @endif</td>
-                                <td class="sorting_1">{{ $v['atime'] }}</td>
+                                <td class="sorting_1">{{ date("Y-m-d H:i:s",$v['atime']) }}</td>
                                 <td class="sorting_1">
                                     <a href="/admin/navcast/edit/{{ $v['id'] }}" title="修改" style="color: black;padding-left: 20px;font-size: 17px;"><i class="icon-feather"></i></a>
                                     <a href="/admin/navcast/delete/{{ $v['id'] }}" title="删除" style="color: black;padding-left: 20px;font-size: 17px;"><i class="icon-trash"></i></a>

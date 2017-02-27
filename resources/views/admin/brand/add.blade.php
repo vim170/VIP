@@ -53,10 +53,10 @@
 
     			<script type="text/javascript">
     				//下面用于图片上传预览功能
-    				function setImagePreview(avalue) {
-    				var docObj=document.getElementById("doc");
+    				function setImagePreview(doc,preview) {
+    				var docObj=document.getElementById(doc);
     				 
-    				var imgObjPreview=document.getElementById("preview");
+    				var imgObjPreview=document.getElementById(preview);
     				if(docObj.files &&docObj.files[0])
     				{
     				//火狐下，直接设img属性
@@ -100,10 +100,19 @@
 					<div class="mws-form-item clearfix">
 						<img id="preview" src="" width="270" height="200" style="display: block;border:1px solid #ddd; width: 160px; height: 170px;">
 						<p class="mat5">
-						<input type="file" name="brandlogo" id="doc" style="width:170px;" onchange="javascript:setImagePreview();">
+						<input type="file" name="brandlogo" id="doc" style="width:170px;" onchange="javascript:setImagePreview('doc','preview');">
 						</p>
 					</div>
 				</div>
+                    <div class="mws-form-row">
+                        <label class="mws-form-label" style="text-align">广告图片</label>
+                        <div class="mws-form-item clearfix">
+                            <img id="preview1" src="" width="270" height="200" style="display: block;border:1px solid #ddd; width: 160px; height: 170px;">
+                            <p class="mat5">
+                            <input type="file" name="adslogo" id="doc1" style="width:170px;" onchange="javascript:setImagePreview('doc1','preview1');">
+                            </p>
+                        </div>
+                    </div>
     			<div class="mws-form-row" style="text-align: left;">
 					<label class="mws-form-label" style="text-align: left">参加&nbsp;&nbsp;&nbsp;</label>
 					<div class="mws-form-item">
